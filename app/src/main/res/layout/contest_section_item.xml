@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_4sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/contest_Icon"
+                    android:layout_width="@dimen/contest_icon_size"
+                    android:layout_height="@dimen/contest_icon_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:placeholderImage="@drawable/ic_mega_contest"
+                    app:roundAsCircle="true"
+                    app:roundingBorderColor="@color/colorPrimary"
+                    app:roundingBorderWidth="1dp"
+                    app:srcCompat="@drawable/ic_contest_invite_code" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.mw.eleven11.customView.CustomTextView
+
+                    android:id="@+id/contestTypeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/hot_contest"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/contestTypeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/hot_contest_des"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+
+                    app:textfont="r" />
+            </LinearLayout>
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/contest_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:text="View All"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="sb" />
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewContest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:background="@color/home_page_background_home" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_background_home"
+    android:orientation="vertical"
+    tools:context=".UI.matchContest.MatchContestActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/contestlist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/matchDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="@dimen/_3sdp">
+
+            <include
+                layout="@layout/match_timer_info"
+                android:visibility="visible"></include>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/matchDetail">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/private_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:weightSum="2">
+
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/gotContestCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/header_background_home_page"
+                        android:background="@drawable/button_empty_bg_white_secondary"
+                        android:gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Join Contest"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/create_contest"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/header_background_home_page"
+                        android:background="@drawable/button_empty_bg_white_secondary"
+                        android:gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Play Private"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/notFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_80dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/trophy"
+                        android:layout_width="@dimen/dimen_80dp"
+                        android:layout_height="@dimen/dimen_80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/not_found_img" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/notFountMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/trophy"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_5"
+                        android:text="@string/contestNotFound"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small"
+                        app:textfont="@string/MONTSERRAT_BOLD" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contesRel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="@dimen/_2ssp"
+                            app:contentPadding="@dimen/_2ssp">
+
+                            <LinearLayout
+                                android:id="@+id/allContest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.mw.eleven11.customView.CustomTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:includeFontPadding="false"
+                                        android:text="@string/allContest"
+                                        android:textColor="@color/primary_text"
+                                        android:textSize="@dimen/primary_txt_size"
+                                        app:textfont="sb" />
+
+                                    <com.mw.eleven11.customView.CustomTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:includeFontPadding="false"
+                                        android:text="@string/chooseFromVerity"
+                                        android:textColor="@color/secondary_text"
+                                        android:textSize="@dimen/secondary_txt_size"
+                                        app:textfont="r" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_18sdp"
+                                        android:layout_height="@dimen/_18sdp"
+                                        android:tint="@color/black"
+                                        app:srcCompat="@drawable/ic_arrow_gray" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/contestSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_marginBottom="100dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contestContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <!--Mega contest-->
+                        <android.support.v7.widget.CardView
+
+                            android:id="@+id/mega_contest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/mega_contest_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:placeholderImage="@drawable/ic_mega_contest"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/mega_contest_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/mega_contest"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/mega_contest_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:text="@string/mega_contest_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/mega_contest_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/mega_contest_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/warm_grey" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!--hot_contest-->
+                        <android.support.v7.widget.CardView
+
+                            android:id="@+id/hot_contest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/hot_contest_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:placeholderImage="@drawable/ic_mega_contest"
+                                            app:roundAsCircle="true"
+                                            app:roundingBorderColor="@color/colorPrimary"
+                                            app:roundingBorderWidth="1dp"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/hot_contest_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/hot_contest"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/hot_contest_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/hot_contest_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/hot_contest_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/hot_contest_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/warm_grey" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!--contest_for_champions-->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/contest_for_champions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/contest_for_champions_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:placeholderImage="@drawable/ic_mega_contest"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/contest_for_champions_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/contest_for_champions"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/contest_for_champions_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/contest_for_champions_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/contest_for_champions_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/contest_for_champions_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!--Head to head-->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/head_to_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/head_to_head_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:placeholderImage="@drawable/ic_head_to_head"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/head_to_head_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/head_to_head"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/head_to_head_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/head_to_head_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/head_to_head_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/head_to_head_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!--winners take it all-->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/winner_takes_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/winner_takes_all_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:placeholderImage="@drawable/ic_winner_takes_all"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/winner_takes_all_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/winner_takes_all"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/winner_takes_all_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:text="@string/winner_takes_all_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/winner_takes_all_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/winner_takes_all_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!--more contest-->
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/more_contest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/more_contest_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:placeholderImage="@drawable/ic_more_contests"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/more_contest_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/more_contest"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/more_contest_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/more_contest_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/more_contest_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/more_contest_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!--practice contest-->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/practice_contest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_weight=".8"
+                                        android:gravity="center">
+
+                                        <com.facebook.drawee.view.SimpleDraweeView
+                                            android:id="@+id/practice_contest_Icon"
+                                            android:layout_width="@dimen/contest_icon_size"
+                                            android:layout_height="@dimen/contest_icon_size"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+                                            app:srcCompat="@drawable/ic_contest_invite_code" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/practice_contest_Title"
+                                            android:layout_width="match_parent"
+
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/practice_contest"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+                                            app:textfont="bold" />
+
+                                        <com.mw.eleven11.customView.CustomTextView
+
+                                            android:id="@+id/practice_contest_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/practice_contest_des"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="@dimen/text_large"
+
+                                            app:textfont="light" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/practice_contest_rv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/practice_contest_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_5"
+                                    android:drawablePadding="@dimen/margin_5"
+                                    android:gravity="end"
+                                    android:text="@string/moreContest"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_5dp"
+                            app:cardCornerRadius="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_5">
+
+                                <com.mw.eleven11.customView.CustomTextView
+
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/didNotFind"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/text_large"
+                                    app:textfont="light" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/joinButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_10dp"
+                                    android:background="@drawable/join_button_bg"
+                                    android:gravity="center"
+                                    android:padding="@dimen/margin_5"
+                                    android:text="@string/showMeAllContest"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/contest_blue"
+                                    android:textSize="@dimen/textsize_small"
+                                    app:textfont="light" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundMain"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <com.mw.eleven11.customView.CustomTextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/playWithfriends"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_large"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/proveYourSkill"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_small"
+                        app:textfont="light" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+        <!--   </android.support.v4.widget.SwipeRefreshLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorHint" />
+
+            <LinearLayout
+                android:id="@+id/saveLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_my_team"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_empty_bg_white_stroke_theme"
+                    android:backgroundTint="@color/header_background_home_page"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_4sdp"
+
+                    android:paddingBottom="@dimen/_4sdp">
+
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/ctv_my_team"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:background="@drawable/circle_theme"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_7sdp"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/myTeamCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:text="@string/myTeam"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_join_contest"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/header_background_home_page"
+                    android:background="@drawable/button_empty_bg_white_stroke_theme"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_4sdp"
+
+                    android:paddingBottom="@dimen/_4sdp">
+
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/ctv_join_contest"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:background="@drawable/circle_theme"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_7ssp"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:gravity="center"
+                        android:text="@string/contest_joined"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/saveRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:padding="@dimen/_8sdp"
+                android:visibility="visible">
+
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:id="@+id/create_teaam1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_empty_bg_white_stroke_theme"
+                    android:backgroundTint="@color/header_background_home_page"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/create_teaam1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:textfont="r" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/loader_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

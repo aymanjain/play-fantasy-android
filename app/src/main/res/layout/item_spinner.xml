@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mw.eleven11.customView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    style="@style/FlatWaveColorButtonRippleStyleGray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingLeft="@dimen/_8sdp"
+    android:textColor="@color/secondary_text"
+    android:textSize="@dimen/primary_txt_size"
+    app:textfont="r" />

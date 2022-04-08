@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hi_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:background="@color/white"
+    android:elevation="@dimen/_1ssp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardMaxElevation="@dimen/_20sdp"
+    app:cardElevation="@dimen/_12sdp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivAmazing"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/linout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bu" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="F4 COW DEC"
+            android:textColor="@color/home_page_button_icon_banner_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/ivAmazing"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="06 Dec,2021"
+            android:textColor="@color/textLight"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvHeader" />
+
+        <TextView
+            android:id="@+id/tvEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Entry"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSubHeader"
+            app:layout_constraintEnd_toEndOf="@+id/tvTime"
+            app:layout_constraintTop_toTopOf="@+id/tvSubHeader" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="₹19"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPoolAmount"
+            app:layout_constraintEnd_toEndOf="@+id/tvTime"
+            app:layout_constraintStart_toStartOf="@+id/tvEntry"
+            app:layout_constraintTop_toTopOf="@+id/tvPoolAmount" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="42 / 3000"
+            android:textColor="#373737"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSpots"
+            app:layout_constraintEnd_toEndOf="@+id/tvTime"
+            app:layout_constraintTop_toTopOf="@+id/tvSpots" />
+
+        <TextView
+            android:id="@+id/tvSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Prize Pool"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/ivAmazing"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <TextView
+            android:id="@+id/tvPoolAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="₹42,750"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tvSubHeader"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubHeader" />
+
+        <TextView
+            android:id="@+id/tvSpots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Total Spots"
+            android:textColor="#373737"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tvSubHeader"
+            app:layout_constraintTop_toBottomOf="@+id/tvPoolAmount" />
+
+        <ImageView
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/ic_line"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSpots" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/header_background_home_page"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvPrize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="Prize Breakup"
+                    android:textColor="#373737"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardBackgroundColor="#C4C4C4"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="Join Now"
+                    android:textColor="#373737"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--android:background="#B3FFFFFF"-->
+</android.support.v7.widget.CardView>

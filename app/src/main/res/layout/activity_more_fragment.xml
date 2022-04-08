@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical"
+    tools:context=".UI.more.MoreFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_play_logo_new" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/inviteFriendsLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="visible"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/inviteFriends"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/inviteFriendsMore"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/myReferrals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/invite_amp_my_referrals"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/contestInviteCodeLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/contestInviteCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/contestInviteCode"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/verifyYourAccountLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/verify_your_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/verify_your_account"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/offerLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/offers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/offers"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fantasyPointSystemLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/fantasyPointSystem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/fantasyPointSystem"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fantasyFootballPointSystemLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="visible"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/fantasyFootballPointSystem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/fantasyFootballPointSystem"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fantasyKabaddiPointSystemLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/fantasyKabaddiPointSystem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="@string/fantasyKabaddiPointSystem"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/how_to_playLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/how_to_play"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/how_to_play"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/how_to_playLinFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/how_to_play_football"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/how_to_playLin_auction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/how_to_play_auction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/how_to_play_auction"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/how_to_playLin_gully"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/how_to_play_gully"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/how_to_play_gc"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fantasy_cricket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/fantasy_cricket"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/blog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/ctv_blog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+                            android:text="@string/blog"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/how_to_playLin_football"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/how_to_play_football"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="@string/how_to_play_football"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/how_to_playLin_kabaddi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/how_to_play_kabaddi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="@string/how_to_play_kabaddi"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/help_deskLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/help_desk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="@string/help_desk"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/workWithUsLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="visible"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/workWithUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/contactUs"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/about_usLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/about_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="@string/about_us"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/legalityLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/legality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="@string/legality"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/spin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone"
+                app:cardElevation="@dimen/cardElvationMore"
+                app:contentPadding="@dimen/_8ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center_vertical"
+
+
+                            android:text="Spin Wheel"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/infoIcon_size"
+                            android:layout_height="@dimen/infoIcon_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/dimen_10dp"
+                            app:srcCompat="@drawable/ic_arrow_primary_text_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8ssp"
+                android:gravity="center_vertical"
+                android:text="app version"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="r" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomImageView
+                android:id="@+id/civ_team1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:actualImageScaleType="centerInside"
+                app:image_type="square"
+                app:placeholderImage="@drawable/ic_gallery_bg"
+                app:roundAsCircle="false" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="IND"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="r" />
+
+        </LinearLayout>
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:text="VS"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            app:textfont="r" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomImageView
+                android:id="@+id/civ_team2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:actualImageScaleType="centerInside"
+                app:image_type="square"
+                app:placeholderImage="@drawable/ic_gallery_bg"
+                app:roundAsCircle="false" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="IND"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="r" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Starting Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_sp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Total Runs Scored Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_trap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_trsp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Fours Scored Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_fs_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_fsp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Sixes Scored Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ss_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ssp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Strike Rate Bonus Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_srb_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_srbp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Batting Bonus Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bb_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bbp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Duck Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_d_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_dp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Wickets Taken Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_wt_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_wtp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Maidens Overs Bonus Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_mob_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_mobp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Economy Bonus Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_eb_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ebp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Bowling Bonus Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bow_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bow_bp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Total Run Outs Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_tro_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_trop"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Stumping Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_stump_ap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_stump_p"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+
+
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Catches Points"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_cap"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_cp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+
+
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Dot Ball"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_dvp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_dbp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+
+
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="No Ball"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_nbp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_np"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+
+
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Wide Ball"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_wbp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_cwbp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/default_background" />
+
+</LinearLayout>

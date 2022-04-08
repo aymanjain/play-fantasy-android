@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mw.eleven11">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.gallery3d.permission.GALLERY_PROVIDER" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_01"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_01"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+
+        tools:replace="allowBackup">
+        <activity
+            android:name=".UI.stockTrade.activity.TeamListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.stockTrade.activity.StockTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.stockTrade.activity.PrizeBreakupActivity"
+            android:exported="false" /> <!-- android:networkSecurityConfig="@xml/network_security_config" -->
+        <activity
+            android:name=".UI.previewTeam.PlayerPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.favoriteTeam.SetFavoriteTeam"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UI.pointSystem.PointSystemActivity" />
+        <activity
+            android:name=".UI.splash.SplashActivityNew"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.startup.StartupActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.loginRagisterModule.LoginScreen"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.stockTrade.activity.StockMatchesActivity" />
+        <activity
+            android:name=".UI.loginRagisterModule.Register"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.loginRagisterModule.PasswordScreen"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.loginRagisterModule.HaveCode"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.forgotPassword.ForgotPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.resetPassword.ResetPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.verifyEmail.VeriyOtpActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.home.HomeNavigation"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="domain.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.outsideEvents.OutSideEvent"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.inviteFriends.InviteFriendsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.joinContest.InsufficientAmountActivity"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".UI.contestInviteCode.InviteCodes"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.matchContest.MatchContestActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.myAccount.MyAccountActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.myAccount.MyAccountDialogActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.personalDetails.PersonalDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.allContest.AllContest"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.contestDetailLeaderBoard.ContestLeaderBoard"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.createTeam.CreateTeamActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.createCaption.CreateCaptionActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.myTeams.MyTeamsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.joinContest.JoinContestActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.joinedContests.AllJoinedContest"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.inviteContest.InviteContestActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.contestDetail.ContestDetail"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.verifyAccount.VerifyAccountActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.verifyOtp.VerifyOTPActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.loginRagisterModule.VerifyPhoneNumber"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.playerPoints.PlayerPointsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.createContest.CreateContestActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.winnerNumberSelection.WinnerNumberSelectionActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.player.PlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.changePassword.ChangePasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.changeUserAvatar.UserAvatarActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.changeTeamName.ChangeTeamName"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.verifyOtp.VerfiMobileOTP"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.leaderboardRanking.LeaderboardRankingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.addMoney.AddMoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".UI.versionUpdate.UpdateVersionDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.versionUpdate.UpdateVersionDialogCompalsoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.transections.TransactionsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.notifications.NotificationsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.withdrawAmount.WithdrawAmountDialogActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden" />
+        <activity
+            android:name=".UI.outsideEvents.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UI.howToPlay.HowToPlayActivity" />
+        <activity android:name=".UI.pointSystem.FootballPointSystemActivity" />
+        <activity android:name=".UI.mlb.ReferralUsersActivity" />
+        <activity android:name=".fcm.NotificationClickActivity" />
+        <activity android:name=".UI.withdrawAmount.PaytmWithdrawOtp" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_trophy_home" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/razor_pay" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/file_provider_authority"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver android:name=".utility.MySMSBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

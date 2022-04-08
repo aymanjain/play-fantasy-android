@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_background_home_page">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/dimen_15dp"
+            android:text="Select Captain"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_title_txt_size"
+            app:textfont="light" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_close_dialog" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Captain"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_title_txt_size"
+            app:textfont="light" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/captainselection" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner_captain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/bg_select_captain" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Vice Captain"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_title_txt_size"
+            app:textfont="light" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vicecaptainlabel" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner_vise_captain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/bg_select_captain" />
+
+
+    <com.mw.eleven11.customView.CustomTextView
+        android:id="@+id/ctv_btn_submit"
+        style="@style/default_ripple"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/shedow_yellow_background"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:textfont="@string/bold" />
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="menu_item_icon_size">24dp</dimen>
+    <dimen name="menu_item_size">48dp</dimen>
+
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="social_button_padding">7dp</dimen>
+    <dimen name="elevation">10dp</dimen>
+    <dimen name="radius_corner">3dp</dimen>
+    <dimen name="dimen_35dp">35dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_7dp">7dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_70dp">70dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="loading_container_size">45dp</dimen>
+    <dimen name="loading_container_padding">9dp</dimen>
+    <dimen name="dialog_title_txt_size">18sp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
+    <dimen name="item_offset_large">10dp</dimen>
+    <dimen name="item_offset">5dp</dimen>
+    <dimen name="item_offset_less">3dp</dimen>
+    <dimen name="item_offset_very_less">2dp</dimen>
+    <dimen name="item_offset_1px">1px</dimen>
+    <dimen name="text_very_very__small">9sp</dimen>
+    <dimen name="text_very_small">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_small_11sp">11sp</dimen>
+    <dimen name="text_very_medium">13sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">15sp</dimen>
+    <dimen name="text_sub_large">17sp</dimen>
+    <dimen name="text_extra_large">18sp</dimen>
+    <dimen name="item_offset_1">0.5dp</dimen>
+
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_border_width">2dp</dimen>
+
+
+    <dimen name="edt_txt_size">15sp</dimen>
+    <dimen name="edt_txt_size_normal">14sp</dimen>
+
+    <dimen name="player_height">70dp</dimen>
+    <dimen name="player_width">70dp</dimen>
+
+    <!--Splash screen-->
+    <dimen name="extra_large_text_size">32sp</dimen>
+    <dimen name="text_elivation">8dp</dimen>
+
+    <!--LOGIN FORM-->
+
+    <dimen name="logo_text_margin_top">40dp</dimen>
+    <dimen name="edit_box_height">50dp</dimen>
+    <dimen name="form_margin">35dp</dimen>
+    <dimen name="form_margin_top">50dp</dimen>
+    <dimen name="edit_box_padding">18dp</dimen>
+    <dimen name="edit_box_drawable_padding_left">10dp</dimen>
+    <dimen name="textsize_too_small">10sp</dimen>
+    <dimen name="textsize8sp">8sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_small_10sp">10sp</dimen>
+    <dimen name="textsize_regular">14sp</dimen>
+    <dimen name="textsize_extra">16sp</dimen>
+    <dimen name="textsize_extra_large">18sp</dimen>
+    <dimen name="element_margin_top">15dp</dimen>
+
+    <!--LOGIN FORM-->
+    <dimen name="login_form_horizontal_margin">20dp</dimen>
+    <dimen name="login_form_horizontal_margin_new">25dp</dimen>
+    <dimen name="login_form_edt_padding">10dp</dimen>
+    <dimen name="login_form_margin_vertical">80dp</dimen>
+    <dimen name="login_form_car_width">200dp</dimen>
+    <dimen name="login_form_car_margin_bottom">30dp</dimen>
+    <dimen name="login_form_login_btn_bottom_margin">20dp</dimen>
+
+
+    <!--SIGNUP FORM-->
+
+    <dimen name="margin_top">15dp</dimen>
+
+
+    <!-- Form Margin-->
+
+    <dimen name="form_padding">16dp</dimen>
+    <dimen name="form_edt_txt_padding">15dp</dimen>
+    <dimen name="form_edt_txt_bottom_margin">10dp</dimen>
+    <dimen name="form_padding_half">8dp</dimen>
+    <dimen name="form_edt_txt_size">@dimen/secondary_txt_size</dimen>
+    <dimen name="radio_btn_heading_margin">3dp</dimen>
+    <dimen name="radio_btn_left_margin">15dp</dimen>
+    <dimen name="license_pic_height">120dp</dimen>
+
+
+    <dimen name="slider_height">339dp</dimen>
+    <dimen name="my_profile_img_size">120dp</dimen>
+    <dimen name="my_profile_img_icon_size">40dp</dimen>
+
+    <!--Pic Upload bottom sheet-->
+    <dimen name="pic_upload_sheet_img_size">50dp</dimen>
+
+    <!--OPTION SCREEN-->
+    <dimen name="option_width">150dp</dimen>
+    <dimen name="option_text_padding">6dp</dimen>
+    <dimen name="option_size">60dp</dimen>
+    <dimen name="toolbar_title_text_size">@dimen/_12ssp</dimen>
+    <dimen name="option_text_margin">15dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+
+    <!-- ME SECTION-->
+    <dimen name="image_small_width">32dp</dimen>
+    <dimen name="image_width">110dp</dimen>
+
+    <!--PROFILE-->
+    <dimen name="buttonSize">100dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="cardMargin">8dp</dimen>
+    <dimen name="cardElvation">8dp</dimen>
+    <dimen name="containPadding">16dp</dimen>
+    <dimen name="infoIcon_size">30dp</dimen>
+
+    <!--ADD ACCOUNT-->
+    <dimen name="margin_5">5dp</dimen>
+
+    <dimen name="elevation_4">4dp</dimen>
+
+    <!--More-->
+    <dimen name="cardElvationMore">@dimen/_3ssp</dimen>
+
+    <!--Contest-->
+
+    <dimen name="contest_icon_size">40dp</dimen>
+
+    <dimen name="edit_text_divider_height">1dp</dimen>
+    <dimen name="edit_text_divider_bottom_padding">1dp</dimen>
+    <dimen name="card_corner_radius">5dp</dimen>
+
+    <!--change password-->
+
+    <dimen name="change_pwd_btn_padding">15dp</dimen>
+    <dimen name="change_pwd_btn_mar_top">50dp</dimen>
+    <dimen name="change_pwd_mar_top">10dp</dimen>
+    <dimen name="change_pwd_cet_spacing">20dp</dimen>
+
+
+    <dimen name="abc_action_bar_progress_bar_size">40.0dip</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+
+    <!--Select mode screen-->
+    <dimen name="sms_tab_height">65dp</dimen>
+    <dimen name="sms_tab_margin">20dp</dimen>
+    <dimen name="sms_tab_img_size">50dp</dimen>
+    <dimen name="sms_tab_txt_size">18sp</dimen>
+    <dimen name="sms_tab_icon_margin">20dp</dimen>
+
+    <!--Auction-general-->
+    <dimen name="ag_title_bar_txt_size">12sp</dimen>
+    <dimen name="ag_list_item_title_txt_size">12sp</dimen>
+    <dimen name="ag_list_item_dsc_txt_size">10sp</dimen>
+
+    <!--Auction Series item-->
+    <dimen name="asi_time_txt_size">10sp</dimen>
+    <dimen name="asi_icon_size">40dp</dimen>
+
+
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+
+
+    <!--Auction Series item-->
+    <dimen name="ah_btn_txt_size">10sp</dimen>
+    <dimen name="ah_btn_margin">2dp</dimen>
+
+    <!--Auction Home-->
+    <dimen name="ah_player_info_text_size">10sp</dimen>
+    <dimen name="ah_player_info_text_divider_height">1px</dimen>
+
+
+    <!--auction series info header-->
+    <dimen name="asih_height">48dp</dimen>
+
+    <dimen name="auc_btn_txt_size">12sp</dimen>
+    <dimen name="auc_btn_padding">5dp</dimen>
+
+    <dimen name="toolbar_icon_size">@dimen/_24ssp</dimen>
+    <dimen name="toolbar_icon_padding">@dimen/_6ssp</dimen>
+    <dimen name="toolbar_title_txt_size">@dimen/_13ssp</dimen>
+    <dimen name="toolbar_title_margin_left">@dimen/_12sdp</dimen>
+
+
+    <dimen name="primary_txt_size">@dimen/_12ssp</dimen>
+    <dimen name="secondary_txt_size">@dimen/_10ssp</dimen>
+    <dimen name="secondary_txt_size6">@dimen/_9ssp</dimen>
+
+
+    <dimen name="simpletooltip_padding">@dimen/_4sdp</dimen>
+    <dimen name="simpletooltip_arrow_width">@dimen/_20sdp</dimen>
+    <dimen name="simpletooltip_arrow_height">@dimen/_10sdp</dimen>
+    <dimen name="fantasy_stats_header_txt_size">@dimen/_7ssp</dimen>
+    <dimen name="fantasy_stats_header_width">@dimen/_70sdp</dimen>
+    <dimen name="fantasy_stats_header_padding_vertical">@dimen/_6sdp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+
+</resources>

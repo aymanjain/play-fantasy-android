@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.pointSystem.PointSystemFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/batting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_background_home_page">
+
+            <ImageView
+                android:id="@+id/iv_batting"
+                android:layout_width="40dp"
+                android:padding="@dimen/margin_5"
+                android:layout_height="@dimen/dimen_40dp"
+                app:srcCompat="@drawable/batting" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/player_batting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_batting"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Batting"
+                android:textColor="@color/white"
+                app:textAllCaps="true"
+                app:textfont="@string/semiBold" />
+
+            <ImageView
+                android:id="@+id/bat_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dimen_10dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_up_arrow" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_bat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:nestedScrollingEnabled="false" />
+
+
+        <RelativeLayout
+            android:id="@+id/strike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_strike"
+                android:layout_width="40dp"
+                android:padding="@dimen/margin_5"
+                android:layout_height="@dimen/dimen_40dp"
+                app:srcCompat="@drawable/batting" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/iv_iv_strike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_strike"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Strike Rate"
+                android:textColor="@color/black"
+                app:textAllCaps="true"
+                app:textfont="@string/semiBold" />
+
+            <ImageView
+                android:id="@+id/strike_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:rotation="180"
+                android:padding="@dimen/dimen_10dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_up_arrow" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_strike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:nestedScrollingEnabled="false" />
+
+        <RelativeLayout
+            android:id="@+id/bowling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_bowling"
+                android:layout_width="40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:padding="@dimen/margin_5"
+                app:srcCompat="@drawable/bowling" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/player_bolling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/iv_bowling"
+                android:text="Bowling"
+                android:textColor="@color/black"
+                app:textAllCaps="true"
+                app:textfont="@string/semiBold" />
+
+            <ImageView
+                android:id="@+id/bowl_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dimen_10dp"
+                android:rotation="180"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_up_arrow" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_bowl"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+        <RelativeLayout
+            android:id="@+id/economy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_economy"
+                android:layout_width="40dp"
+                android:padding="@dimen/margin_5"
+                android:layout_height="@dimen/dimen_40dp"
+                app:srcCompat="@drawable/bowling" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/iv_iv_iv_economy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_economy"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Economy"
+                android:textColor="@color/black"
+                app:textAllCaps="true"
+                app:textfont="@string/semiBold" />
+
+            <ImageView
+                android:id="@+id/economy_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:rotation="180"
+                android:padding="@dimen/dimen_10dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_up_arrow" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_economy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:nestedScrollingEnabled="false" />
+
+        <RelativeLayout
+            android:id="@+id/fielding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_fielding"
+                android:layout_width="40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                app:srcCompat="@drawable/fielding" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/player_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Feilding"
+                android:layout_toRightOf="@+id/iv_fielding"
+                android:textColor="@color/black"
+                app:textAllCaps="true"
+                app:textfont="@string/semiBold" />
+
+            <ImageView
+                android:id="@+id/field_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dimen_10dp"
+                android:rotation="180"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_up_arrow" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_field"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:src="@drawable/caption"/>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_small"
+            android:text="Your Caption earns 2x points for its performance in the real-time game."
+            android:textColor="@color/black"
+            app:textfont="@string/light"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:src="@drawable/vice_caption"/>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_small"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="1.5x points are rewarded to your Vice-Caption for its on-filed performance."
+            android:textColor="@color/black"
+            app:textfont="@string/light"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

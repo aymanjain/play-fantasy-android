@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.joinContest.InsufficientAmountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shedow_button_background"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_large"
+            app:textfont="@string/MONTSERRAT_BOLD"
+            android:text="Insufficient Balance"/>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/text_small"
+            app:textfont="@string/MONTSERRAT_REGULAR"
+            android:text="Add cash to your account to join contest"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:textfont="@string/MONTSERRAT_REGULAR"
+                android:text="Wallet Balance"/>
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/walletBal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:textfont="@string/MONTSERRAT_REGULAR"
+                android:text="12"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:textfont="@string/MONTSERRAT_REGULAR"
+                android:text="Contest Fees"/>
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/contestfee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:textfont="@string/MONTSERRAT_REGULAR"
+                android:text="12"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/doneIconColor"
+                android:textSize="@dimen/text_medium"
+                app:textfont="@string/MONTSERRAT_REGULAR"
+                android:text="Adding Money"/>
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/addMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/doneIconColor"
+                android:textSize="@dimen/text_medium"
+                app:textfont="@string/MONTSERRAT_REGULAR"
+                android:text="12"/>
+
+        </LinearLayout>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/greenstyle_button"
+            android:backgroundTint="@color/header_background_home_page"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/add_cash"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_medium"
+            app:rd_enable="true"
+            app:textfont="light"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cross"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_blue"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_cross" />
+
+</RelativeLayout>

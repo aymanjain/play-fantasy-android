@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <com.cunoraz.gifview.library.GifView
+        android:id="@+id/gif1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:gif="@drawable/comingsoon"/>
+
+    <com.mw.eleven11.customView.CustomTextView
+        android:layout_below="@id/gif1"
+        android:id="@+id/notification_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:text="Coming soon..."
+        android:textColor="@color/header_background_home_page"
+        android:textSize="@dimen/_15sdp"
+        app:textfont="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_background_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="@dimen/_3sdp">
+
+            <include
+                layout="@layout/match_timer_info"
+                android:visibility="visible"></include>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_background_home_page"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/create_captain_description"
+                android:textColor="@color/white"
+                android:textSize="@dimen/primary_txt_size"
+                app:textAllCaps="true"
+                app:textfont="sb" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/create_captain_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="r" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_players_info_header_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_team_info"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_4sdp"
+
+            android:paddingRight="@dimen/_4sdp"
+            android:weightSum="100">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_type_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_header_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="TYPE"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="r" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow1"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/ctv_header_txt1"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_down_arrow_bf" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_points_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_header_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="POINTS"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="r" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow2"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/ctv_header_txt2"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_long_arrow" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_c_per_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_header_txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/bf_PER_C_BY"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="r" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow3"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/ctv_header_txt3"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_long_arrow" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_vc_per_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_header_txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/bf_PER_VC_BY"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="r" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow4"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/ctv_header_txt4"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_long_arrow" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/list_item_matches" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_background"
+        android:padding="@dimen/_8sdp"
+        android:visibility="visible">
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_solid_bg_theme_inactive"
+            android:paddingLeft="@dimen/_32sdp"
+            android:paddingTop="@dimen/_4sdp"
+
+            android:paddingRight="@dimen/_32sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/save_team"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

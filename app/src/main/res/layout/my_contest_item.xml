@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hi_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardElevation="@dimen/_3ssp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/your_winnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="Your Winnings is 10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/secondary_txt_size"
+            android:visibility="visible"
+            app:textfont="r" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/total_winnings"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/price_pool"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="sb" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/total_winnings_amount"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r"
+                        tools:text="15 Lakhs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/winners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/winners"
+                        android:textColor="@color/secondary_text"
+
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/winnersCount"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r"
+                        tools:text="15 Lakhs" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/entry_fee"
+                        android:layout_width="@dimen/dimen_60dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/entry_fee"
+                        android:textAlignment="center"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/entry_fee_amount"
+                        android:layout_width="@dimen/dimen_60dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r"
+                        tools:text="499" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@color/default_background" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/joinedWith"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/joinedWith"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="sb" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/teamName"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="Team 1"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/pointsCAP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/pointsCAP"
+                        android:textColor="@color/secondary_text"
+
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="221.1"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r"
+                        tools:text="15 Lakhs" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/rankCap"
+                        android:layout_width="@dimen/dimen_60dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/rankCap"
+                        android:textAlignment="center"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/rank"
+                        android:layout_width="@dimen/dimen_60dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="#499"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/viewLeaderBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/viewLeaderBoard"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_small"
+                app:drawableRightCompat="@drawable/ic_arrow_black_new"
+                app:textfont="r" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

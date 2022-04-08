@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hi_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/winning_amount"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="r" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_view"
+                android:layout_width="@dimen/contest_icon_size"
+                android:layout_height="@dimen/contest_icon_size"
+                android:layout_centerInParent="true"
+                app:actualImageScaleType="fitCenter"
+                app:placeholderImage="@drawable/ic_mega_contest"
+                app:roundAsCircle="true"
+                app:srcCompat="@drawable/ic_contest_invite_code" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/amount"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="r" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/secondary_text" />
+</LinearLayout>

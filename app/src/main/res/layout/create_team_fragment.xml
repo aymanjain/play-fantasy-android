@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_background_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="@dimen/_3sdp">
+
+            <include
+                layout="@layout/match_timer_info"
+                android:visibility="visible"></include>
+
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/margin_5"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_background_home_page"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_players"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--/11"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="b" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/players"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textAllCaps="true"
+                    app:textfont="r" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_credit_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:text="--/100"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="b" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/credit_left"
+                    android:textColor="@color/white"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textAllCaps="true"
+                    app:textfont="r" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="0">
+
+            <!--android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/margin_5"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewPlayer1"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer2"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer3"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer4"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer5"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer6"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer7"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer8"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer9"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer10"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/viewPlayer11"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/WK"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="WK"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_small"
+                    app:rd_enable="false"
+                    app:textfont="@string/semiBold" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.mw.eleven11.customView.CustomImageView
+                        android:id="@+id/civ_wk"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_white_border_light"
+                        android:visibility="gone"
+                        app:actualImageScaleType="fitCenter"
+                        app:fadeDuration="500"
+                        app:failureImage="@drawable/ic_wk"
+                        app:placeholderImage="@drawable/ic_wk"
+                        app:roundAsCircle="true" />
+
+                    <ImageView
+                        android:id="@+id/ic_wk"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/dimen_2dp"
+                        android:background="@drawable/circle_player_role_on"
+                        android:padding="@dimen/margin_5"
+                        android:src="@drawable/ic_wk" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_wk"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/circle_gray_bg_white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_11sp"
+                        app:srcCompat="@drawable/ic_camera"
+                        app:textfont="light" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/BAT"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="BAT"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_small"
+                    app:rd_enable="false"
+                    app:textfont="@string/semiBold" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.mw.eleven11.customView.CustomImageView
+                        android:id="@+id/civ_bat"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_white_border_light"
+                        android:padding="2dp"
+                        android:visibility="gone"
+                        app:actualImageScaleType="fitCenter"
+                        app:fadeDuration="500"
+                        app:failureImage="@drawable/ic_bat"
+                        app:placeholderImage="@drawable/ic_bat"
+                        app:roundAsCircle="true" />
+
+                    <ImageView
+                        android:id="@+id/ic_bat"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/dimen_2dp"
+                        android:background="@drawable/circle_player_role_off"
+                        android:padding="@dimen/margin_5"
+                        android:src="@drawable/ic_bat" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_bat"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/circle_blue_bg_white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_11sp"
+                        app:srcCompat="@drawable/ic_camera"
+                        app:textfont="light" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/AR"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="AR"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_small"
+                    app:rd_enable="false"
+                    app:textfont="@string/semiBold" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.mw.eleven11.customView.CustomImageView
+                        android:id="@+id/civ_ar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_white_border_light"
+                        android:padding="2dp"
+                        android:visibility="gone"
+                        app:actualImageScaleType="fitCenter"
+                        app:fadeDuration="500"
+                        app:failureImage="@drawable/ic_allrounder"
+                        app:placeholderImage="@drawable/ic_allrounder"
+                        app:roundAsCircle="true" />
+
+                    <ImageView
+                        android:id="@+id/ic_allrounder"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/dimen_2dp"
+                        android:background="@drawable/circle_player_role_off"
+                        android:padding="@dimen/margin_5"
+                        android:src="@drawable/ic_allrounder" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_ar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/circle_blue_bg_white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_11sp"
+                        app:srcCompat="@drawable/ic_camera"
+                        app:textfont="light" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/BOWL"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="BOWL"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_small"
+                    app:rd_enable="false"
+                    app:textfont="@string/semiBold" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.mw.eleven11.customView.CustomImageView
+                        android:id="@+id/civ_bowl"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_white_border_light"
+                        android:padding="2dp"
+                        android:visibility="gone"
+                        app:actualImageScaleType="fitCenter"
+                        app:fadeDuration="500"
+                        app:failureImage="@drawable/ic_bowl"
+                        app:placeholderImage="@drawable/ic_bowl"
+                        app:roundAsCircle="true" />
+
+                    <ImageView
+                        android:id="@+id/ic_bowl"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/dimen_2dp"
+                        android:background="@drawable/circle_player_role_off"
+
+                        android:padding="@dimen/margin_5"
+                        android:src="@drawable/ic_bowl" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_bowl"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/circle_blue_bg_white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_11sp"
+                        app:srcCompat="@drawable/ic_camera"
+                        app:textfont="light" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/ll_wk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewWK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="WK (0)"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="sb" />
+
+                    <View
+                        android:id="@+id/indicatorWK"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@color/primary_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewBAT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="BAT (0)"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="sb" />
+
+                    <View
+                        android:id="@+id/indicatorBAT"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@color/primary_text"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_ar"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewAR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="AR (0)"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="sb" />
+
+                    <View
+                        android:id="@+id/indicatorAR"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@color/primary_text"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bowl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewBOWL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="BOWL (0)"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="sb" />
+
+                    <View
+                        android:id="@+id/indicatorBOWL"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@color/primary_text"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/pick_one_wc"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/primary_txt_size"
+            app:textAllCaps="false"
+            app:textfont="sb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_background_home_page"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/playerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:text="SELECTION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textAllCaps="true"
+                    app:textfont="r" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/pointsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:text="@string/points"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textAllCaps="true"
+                    app:textfont="r" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_8sdp">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/creditsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:text="@string/credits"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:drawableRightCompat="@drawable/ic_sort_up"
+                    android:drawableTint="@color/white"
+                    app:textAllCaps="true"
+                    app:textfont="r" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/default_background" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/list_item_players" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_background"
+        android:padding="@dimen/_4sdp"
+        android:visibility="visible">
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_team_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_empty_bg_white_stroke_theme"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/team_preview"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_solid_bg_theme_inactive"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="Continue"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/loader_layout"
+        android:visibility="gone" />
+</RelativeLayout>

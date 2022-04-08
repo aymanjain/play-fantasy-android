@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    tools:context=".UI.previewTeam.PlayerStatsFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/tv_perform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Player Performance"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:textAllCaps="true"
+                app:textfont="r" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardMaxElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_32sdp"
+                        android:background="@color/white"
+                        android:elevation="0dp"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/primary_text"
+                        app:tabIndicatorHeight="@dimen/_1sdp"
+                        app:tabMode="fixed"
+                        app:tabTextColor="@color/primary_text" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_fielding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/type"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="CT"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="ST"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/odi"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_fielding_odi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/odi_field_catches"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/odi_field_st"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/t20"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_fielding_t20"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t20_field_catches"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t20_field_st"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/test"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_fielding_test"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/test_field_catches"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/test_field_st"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="T10"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_fielding_t10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t10_field_catches"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t10_field_st"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_batting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="4">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/type"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/avg"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/str"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/runs"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="4">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/odi"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_batting_odi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/odi_bat_avg"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/odi_bat_str"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/odi_bat_runs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_below="@+id/ctv_date"
+                            android:background="@color/default_background" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="4">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/t20"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_batting_t20"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t20_bat_avg"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t20_bat_str"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t20_bat_runs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_below="@+id/ctv_date"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="4">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/test"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_batting_test"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/test_bat_avg"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/test_bat_str"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/test_bat_runs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_below="@+id/ctv_date"
+                            android:background="@color/default_background" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:weightSum="4">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="T10"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_no_stats_batting_t10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="No stats available"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                android:visibility="gone"
+                                app:textfont="r" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t10_bat_avg"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t10_bat_str"
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/t10_bat_runs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size"
+                                app:textAllCaps="true"
+                                app:textfont="r" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/matchwise_fantacy_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Match Wise Player Selection"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:rd_enable="false"
+                app:textAllCaps="true"
+                app:textfont="r" />
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/stats_not_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Sorry, currently no data found!"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                android:visibility="gone" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardMaxElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_8sdp">
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/matches"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/selected_by"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/selected_by"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/points_sort"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/points"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="@color/default_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"/>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

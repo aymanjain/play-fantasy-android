@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Both",
+    "value": "BOTH"
+  },{
+    "title": "Debit",
+    "value": "DEBIT"
+  },
+  {
+    "title": "Credit",
+    "value": "CREDIT"
+  }
+]

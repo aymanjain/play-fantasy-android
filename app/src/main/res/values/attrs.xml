@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="textfont" format="string" />
+        <attr name="hintfont" format="string" />
+        <attr name="edittextpwd" format="string" />
+        <attr name="editcharpwd" format="string" />
+        <attr name="isemoji" format="string" />
+        <attr name="drawableLeftCompat" format="reference" />
+        <attr name="drawableRightCompat" format="reference" />
+        <attr name="drawableTopCompat" format="reference" />
+        <attr name="drawableBottomCompat" format="reference" />
+        <attr name="text_font" format="string" />
+        <attr name="hint_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer" />
+        <attr name="pet_iconHide" format="integer" />
+        <attr name="pet_hoverShowsPw" format="boolean" />
+        <attr name="pet_nonMonospaceFont" format="boolean" />
+        <attr name="pet_disableIconAlpha" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSpinner">
+        <attr name="optionJsonArray" format="reference" />
+        <attr name="selectValue" format="string" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="image_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="square" value="1" />
+            <enum name="half" value="2" />
+            <enum name="halfplus" value="3" />
+            <enum name="threebytwo" value="4" />
+            <enum name="oneplus" value="5" />
+            <enum name="welcome" value="6" />
+            <enum name="banner" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomPinView">
+        <!-- {@deprecated Use itemCount instead.} -->
+        <attr name="boxCount" format="integer" />
+        <!-- {@deprecated Use itemSize instead.} -->
+        <attr name="boxHeight" format="dimension" />
+        <!-- {@deprecated Use itemRadius instead.} -->
+        <attr name="boxRadius" format="dimension" />
+        <!-- {@deprecated Use itemSpacing instead.} -->
+        <attr name="boxMargin" format="dimension" />
+        <attr name="itemCount" format="integer" />
+        <attr name="itemSize" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="reference|color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StepView">
+        <attr format="color" name="sv_selectedCircleColor" />
+        <attr format="dimension" name="sv_selectedCircleRadius" />
+        <attr format="color" name="sv_selectedTextColor" />
+        <attr format="color" name="sv_selectedStepNumberColor" />
+        <attr format="dimension" name="sv_stepNumberTextSize" />
+        <attr format="color" name="sv_doneStepMarkColor" />
+        <attr format="color" name="sv_doneCircleColor" />
+        <attr format="dimension" name="sv_doneCircleRadius" />
+        <attr format="color" name="sv_doneTextColor" />
+        <attr format="color" name="sv_nextTextColor" />
+        <attr format="color" name="sv_nextStepLineColor" />
+        <attr format="color" name="sv_doneStepLineColor" />
+        <attr format="dimension" name="sv_stepPadding" />
+        <attr format="dimension" name="sv_textPadding" />
+        <attr format="dimension" name="sv_stepLineWidth" />
+        <attr name="sv_textSize" />
+        <attr name="sv_background" />
+        <attr name="sv_animationDuration" />
+        <attr format="reference" name="sv_stepViewStyle" />
+        <attr format="enum" name="sv_animationType">
+            <enum name="Line" value="0" />
+            <enum name="Circle" value="1" />
+            <enum name="All" value="2" />
+            <enum name="None" value="3" />
+        </attr>
+        <attr format="integer" name="sv_stepsNumber" />
+        <attr format="reference" name="sv_steps" />
+        <attr format="reference" name="sv_typeface" />
+
+        <attr name="selectedColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="unselectedColor" format="color" />
+        <attr name="gapWidth" format="dimension" />
+
+        <attr name="vpiLinePageIndicatorStyle" format="reference" />
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="verticaltextview">
+        <attr name="direction">
+            <enum name="uptodown" value="0" />
+            <enum name="downtoup" value="1" />
+            <enum name="lefttoright" value="2" />
+            <enum name="righttoleft" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LuckyWheelView">
+        <attr name="lkwBackgroundColor" format="color" />
+        <attr name="lkwCursor" format="reference" />
+        <attr name="lkwCenterImage" format="reference" />
+        <attr name="lkwEdgeColor" format="color" />
+        <attr name="lkwEdgeWidth" format="integer" />
+        <attr name="lkwTopTextColor" format="color" />
+        <attr name="lkwTopTextPadding" format="dimension" />
+        <attr name="lkwTopTextSize" format="dimension" />
+        <attr name="lkwSecondaryTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

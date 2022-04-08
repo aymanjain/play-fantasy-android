@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    tools:context=".UI.personalDetails.PersonalDetailsActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_play_logo_new" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                app:srcCompat="@drawable/ic_back" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/black">
+
+                            <com.mw.eleven11.customView.CustomEditText
+                                android:id="@+id/ciet_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/black"
+                                android:hint="Full Name"
+                                android:imeActionLabel="Next"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                app:et_dividerColor="@color/black"
+                                app:et_dividerErrorColor="@color/black"
+                                app:et_dividerHeight="0dp"
+                                app:et_labelTextColor="@color/black"
+                                app:et_labelTextSize="@dimen/text_very_small"
+                                app:hintfont="r"
+                                app:textfont="r" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColorHint="@color/black">
+
+                            <com.mw.eleven11.customView.CustomEditText
+                                android:id="@+id/ctv_set_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/black"
+                                android:hint="@string/date_of_birth"
+                                android:imeActionLabel="Next"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingStart="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                app:et_dividerColor="@color/black"
+                                app:et_dividerErrorColor="@color/black"
+                                app:et_dividerHeight="0dp"
+                                app:et_labelTextColor="@color/black"
+                                app:et_labelTextSize="@dimen/text_very_small"
+                                app:hintfont="r"
+                                app:textfont="r" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <!--       <View
+                                   android:layout_width="match_parent"
+                                   android:layout_height="@dimen/_1sdp"
+                                   android:background="@color/black"
+                                   android:visibility="gone"/>-->
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text="@string/date_of_birth"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/ctv_set_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/et_underline_unselected"
+                                android:gravity="center_vertical"
+                                android:hint="DD MM YYYY"
+                                android:paddingLeft="@dimen/login_form_edt_padding"
+                                android:textColor="@color/primary_text"
+                                android:textColorHint="@color/primary_text"
+                                android:textSize="@dimen/_10ssp"
+                                app:textfont="r" />
+
+                            &lt;!&ndash; <View
+
+                                 android:layout_width="match_parent"
+                                 android:layout_height="@dimen/_1sdp"
+                                 android:layout_marginTop="@dimen/_8sdp"
+                                 android:visibility="gone"
+                                 android:background="@color/black" />&ndash;&gt;
+                        </LinearLayout>-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:orientation="vertical">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="@string/gender"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size" />
+
+                            <RadioGroup
+                                android:id="@+id/rb_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.mw.eleven11.customView.CustomRadioButton
+                                    android:id="@+id/rb_male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="@string/male"
+                                    android:textColor="@color/primary_text"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:theme="@style/RadioButtonStyle" />
+
+                                <com.mw.eleven11.customView.CustomRadioButton
+                                    android:id="@+id/rb_female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:text="@string/female"
+                                    android:textColor="@color/primary_text"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:theme="@style/RadioButtonStyle" />
+
+                            </RadioGroup>
+
+                            <!--
+
+                                                        <View
+
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="@dimen/_1sdp"
+                                                            android:layout_marginTop="@dimen/_8sdp"
+                                                            android:background="@color/black"
+                                                            android:visibility="gone"/>
+                            -->
+
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textColorHint="@color/black">
+
+                            <com.mw.eleven11.customView.CustomEditText
+                                android:id="@+id/ciet_address"
+                                style="@style/SignUPCustomEditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/black"
+                                android:hint="@string/address"
+                                android:imeActionLabel="Next"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                app:et_dividerColor="@color/black"
+                                app:et_dividerErrorColor="@color/black"
+                                app:et_dividerHeight="0dp"
+                                app:et_labelTextColor="@color/black"
+                                app:et_labelTextSize="@dimen/text_very_small"
+                                app:hintfont="r"
+                                app:textfont="r" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/black"
+                            android:visibility="gone" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textColorHint="@color/black">
+
+                            <com.mw.eleven11.customView.CustomEditText
+                                android:id="@+id/ciet_city"
+                                style="@style/SignUPCustomEditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/black"
+                                android:hint="@string/city"
+                                android:imeActionLabel="Next"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                app:et_dividerColor="@color/black"
+                                app:et_dividerErrorColor="@color/black"
+                                app:et_dividerHeight="0dp"
+                                app:et_labelTextColor="@color/black"
+                                app:et_labelTextSize="@dimen/text_very_small"
+                                app:hintfont="r"
+                                app:textfont="r" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <!--<View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/black"
+                            android:visibility="gone" />-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textColorHint="@color/black">
+
+                            <com.mw.eleven11.customView.CustomEditText
+                                android:id="@+id/ciet_pincode"
+                                style="@style/SignUPCustomEditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/black"
+                                android:hint="@string/pincode"
+                                android:imeActionLabel="Next"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                app:et_dividerColor="@color/black"
+                                app:et_dividerErrorColor="@color/black"
+                                app:et_dividerHeight="0dp"
+                                app:et_labelTextColor="@color/black"
+                                app:et_labelTextSize="@dimen/text_very_small"
+                                app:hintfont="r"
+                                app:textfont="r" />
+                        </android.support.design.widget.TextInputLayout>
+                        <!--      <View
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/_1sdp"
+                                  android:background="@color/black"
+                                  android:visibility="gone"/>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:orientation="vertical">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:text="@string/state"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/secondary_txt_size" />
+
+                            <com.mw.eleven11.customView.CustomSpinner
+                                android:id="@+id/spinner_states"
+                                style="@style/mySpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_txt_form_bg_inner"
+                                android:padding="@dimen/login_form_edt_padding" />
+
+                        </LinearLayout>
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/ctv_update_profile_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:background="@drawable/button_solid_bg_theme_active"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:text="@string/update_profile"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textAllCaps="true"
+                            app:textfont="r" />
+
+
+                        <com.mw.eleven11.customView.CustomEditText
+                            android:id="@+id/ciet_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:hint="Email Address"
+                            android:imeActionLabel="Next"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:padding="@dimen/login_form_edt_padding"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textSize="@dimen/_10ssp"
+                            android:visibility="gone"
+                            app:et_dividerColor="@color/black"
+                            app:et_dividerErrorColor="@color/black"
+                            app:et_dividerHeight="0dp"
+                            app:et_dividerPadding="3dp"
+                            app:et_labelTextColor="@color/black"
+                            app:et_labelTextSize="@dimen/text_very_small"
+                            app:hintfont="r"
+                            app:textfont="r" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.mw.eleven11.customView.CustomEditText
+                        android:id="@+id/ciet_password"
+                        style="@style/SignUPCustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:imeActionLabel="Next"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLength="50"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green"
+                        android:textSize="@dimen/edt_txt_size_normal"
+                        app:et_labelTextColor="@color/green"
+                        app:et_labelTextSize="@dimen/text_small"
+                        app:hintfont="normal"
+                        app:textfont="normal" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_change_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/label_change"
+                        android:textColor="@color/black"
+                        app:textfont="light" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.mw.eleven11.customView.CustomEditText
+                        android:id="@+id/ciet_your_fav_team"
+                        style="@style/SignUPCustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="@string/your_fav_team"
+                        android:imeActionLabel="Next"
+                        android:imeOptions="actionNext"
+                        android:maxLength="50"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/edt_txt_size_normal"
+                        app:hintfont="normal"
+                        app:textfont="normal" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/set_favorite_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/set"
+                        android:textColor="@color/black"
+                        app:textfont="light" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_verify_ur_account"
+                        style="@style/SignUPCustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom_line"
+                        android:padding="@dimen/login_form_edt_padding"
+
+                        android:text="@string/verify_your_account"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/verify"
+                        android:textColor="@color/black"
+                        app:textfont="light" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        style="@style/SignUPCustomEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:text="@string/allow_sms_notification"
+                        app:textfont="light" />
+
+                    <Switch
+                        android:id="@+id/toggle_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_gravity="center"
+                        android:checked="true"
+                        android:theme="@style/MyToogleTheme" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            layout="@layout/loader_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

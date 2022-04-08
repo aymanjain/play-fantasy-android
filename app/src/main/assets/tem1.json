@@ -1,0 +1,139 @@
+{
+  "ResponseCode": "200",
+  "Message": "Success",
+  "Data": {
+    "ContestGUID": "dd59d4b5-7ae1-2c17-5d12-854bd32ce701",
+    "ContestName": "New Unlimited",
+    "ContestSize": "Unlimited",
+    "MatchTypeByApi": "Real",
+    "WinningType": "Paid Join Contest",
+    "WinUpTo": "1.50",
+    "WinningRatio": "45",
+    "UnfilledWinningPercent": "GuranteedPool",
+    "SmartPool": "No",
+    "Privacy": "No",
+    "TotalJoined": "1",
+    "IsPaid": "Yes",
+    "StatusID": "1",
+    "WinningAmount": "0",
+    "EntryFee": "50",
+    "NoOfWinners": "0",
+    "EntryType": "Multiple",
+    "Status": "Pending",
+    "ContestFormat": "League",
+    "ContestType": "Infinity Pool",
+    "CustomizeWinning": [
+      {
+        "From": "1",
+        "WinningAmount": "",
+        "percent": "100"
+      }
+    ],
+    "UserInvitationCode": "xmp5Ja",
+    "TeamNameLocal": "Rajasthan Royals",
+    "TeamNameVisitor": "Kolkata Knight Riders",
+    "IsConfirm": "No",
+    "CashBonusContribution": "10.00",
+    "TeamNameShortLocal": "RR",
+    "TeamNameShortVisitor": "KKR",
+    "MatchGUID": "72ed1a22-2351-ce3f-1a63-01b5091189a8",
+    "IsPrivacyNameDisplay": "No",
+    "GuaranteeSeat": "Yes",
+    "MatchScoreDetails": {},
+    "TotalAmountReceived": "0",
+    "TotalWinningAmount": "0",
+    "IsJoined": "Yes",
+    "UserTeamDetails": [
+      {
+        "UserTeamGUID": "1c091316-7761-6f7b-1b7b-f1e0a2985c47",
+        "UserTeamName": " Team 1",
+        "UserTeamType": "Normal",
+        "UserTeamID": "80",
+        "MatchID": "114",
+        "UserID": "1800",
+        "TotalPoints": ""
+      }
+    ],
+    "Statics": {
+      "NormalContest": 0,
+      "JoinedContest": 0,
+      "TotalTeams": 0,
+      "H2HContests": 0
+    }
+  }
+}
+
+{
+  "ResponseCode": "200",
+  "Message": "Success",
+  "Data": {
+    "ContestGUID": "dd59d4b5-7ae1-2c17-5d12-854bd32ce701",
+    "ContestName": "New Unlimited",
+    "ContestSize": "Unlimited",
+    "MatchTypeByApi": "Real",
+    "WinningType": "Paid Join Contest",
+    "WinUpTo": "1.50",
+    "WinningRatio": "45",
+    "UnfilledWinningPercent": "GuranteedPool",
+    "SmartPool": "No",
+    "Privacy": "No",
+    "TotalJoined": "2",
+    "IsPaid": "Yes",
+    "StatusID": "1",
+    "WinningAmount": "75",
+    "EntryFee": "50",
+    "NoOfWinners": "1",
+    "EntryType": "Multiple",
+    "Status": "Pending",
+    "ContestFormat": "League",
+    "ContestType": "Infinity Pool",
+    "CustomizeWinning": [
+      {
+        "From": "1",
+        "To": "1",
+        "Percent": "100",
+        "WinningAmount": "75"
+      }
+    ],
+    "UserInvitationCode": "xmp5Ja",
+    "TeamNameLocal": "Rajasthan Royals",
+    "TeamNameVisitor": "Kolkata Knight Riders",
+    "IsConfirm": "No",
+    "CashBonusContribution": "10.00",
+    "TeamNameShortLocal": "RR",
+    "TeamNameShortVisitor": "KKR",
+    "MatchGUID": "72ed1a22-2351-ce3f-1a63-01b5091189a8",
+    "IsPrivacyNameDisplay": "No",
+    "GuaranteeSeat": "Yes",
+    "MatchScoreDetails": {},
+    "TotalAmountReceived": "0",
+    "TotalWinningAmount": "0",
+    "IsJoined": "Yes",
+    "UserTeamDetails": [
+      {
+        "UserTeamGUID": "23f0c7d7-3e75-3af4-d713-281cde854376",
+        "UserTeamName": " Team 2",
+        "UserTeamType": "Normal",
+        "UserTeamID": "81",
+        "MatchID": "114",
+        "UserID": "1800",
+        "TotalPoints": ""
+      },
+      {
+        "UserTeamGUID": "1c091316-7761-6f7b-1b7b-f1e0a2985c47",
+        "UserTeamName": " Team 1",
+        "UserTeamType": "Normal",
+        "UserTeamID": "80",
+        "MatchID": "114",
+        "UserID": "1800",
+        "TotalPoints": ""
+      }
+    ],
+    "Statics": {
+      "NormalContest": 0,
+      "JoinedContest": 0,
+      "TotalTeams": 0,
+      "H2HContests": 0
+    }
+  }
+}

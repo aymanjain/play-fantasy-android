@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item_bank_warning"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_8ssp"
+    android:layout_marginTop="@dimen/_8ssp"
+    android:layout_marginRight="@dimen/_8ssp"
+    android:layout_marginBottom="@dimen/_8ssp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="@string/winnings_messages"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/primary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_your_mobile_number"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_your_email_address"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_your_pan_card"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

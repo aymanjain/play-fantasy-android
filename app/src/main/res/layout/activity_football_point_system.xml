@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.pointSystem.FootballPointSystemActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/playingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_playingTime"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:padding="@dimen/margin_5"
+                    app:srcCompat="@drawable/ic_chronometer" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_playingTime"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="PlayingTime"
+                    android:textColor="@color/black"
+                    app:textAllCaps="true"
+                    app:textfont="@string/semiBold" />
+
+                <ImageView
+                    android:id="@+id/attack_playingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/dimen_10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/ic_up_arrow" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_playingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/attack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_attack"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:padding="@dimen/margin_5"
+                    app:srcCompat="@drawable/ic_soccer" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/player_attack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_attack"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="Attack"
+                    android:textColor="@color/black"
+                    app:textAllCaps="true"
+                    app:textfont="@string/semiBold" />
+
+                <ImageView
+                    android:id="@+id/attack_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/dimen_10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/ic_up_arrow" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_attack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/defense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_defense"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:padding="@dimen/margin_5"
+                    app:srcCompat="@drawable/ic_football_player" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/player_defense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_defense"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="Defense"
+                    android:textColor="@color/black"
+                    app:textAllCaps="true"
+                    app:textfont="@string/semiBold" />
+
+                <ImageView
+                    android:id="@+id/defense_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/dimen_10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/ic_up_arrow" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_defense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/penalties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_penalties"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:padding="@dimen/margin_5"
+                    app:srcCompat="@drawable/ic_card" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/player_penalties"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_penalties"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="Cards &amp; Other penalties"
+                    android:textColor="@color/black"
+                    app:textAllCaps="true"
+                    app:textfont="@string/semiBold" />
+
+                <ImageView
+                    android:id="@+id/iv_penalties_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/dimen_10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/ic_up_arrow" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_iv_penalties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:src="@drawable/caption" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Your Caption earns 2x points for its performance in the real-time game."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:textfont="@string/light" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:src="@drawable/vice_caption" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:padding="@dimen/dimen_10dp"
+                android:text="1.5x points are rewarded to your Vice-Caption for its on-filed performance."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:textfont="@string/light" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

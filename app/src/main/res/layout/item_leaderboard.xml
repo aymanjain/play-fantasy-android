@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_leaderboard_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.mw.eleven11.customView.CustomTextView
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/nav_leaderboard"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_medium"
+                app:rd_enable="false"
+                app:textfont="light" />
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_joined"
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/teams"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_medium"
+                app:rd_enable="false"
+                app:textfont="light" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ctv_download"
+                android:layout_toLeftOf="@+id/ctv_download"
+                android:text="@string/viewteamMsg"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                android:visibility="visible"
+                app:textfont="r" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_centerVertical="true"
+                android:id="@+id/ctv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:background="@drawable/button_empty_bg_white_stroke_theme"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/viewteam"
+                android:textColor="@color/white"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textAllCaps="true"
+                app:textfont="r" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

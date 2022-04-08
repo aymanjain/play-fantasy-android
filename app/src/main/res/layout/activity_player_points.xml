@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_play_logo_new" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                app:srcCompat="@drawable/ic_back" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/shortingLinRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2sdp"
+            app:cardMaxElevation="@dimen/_3sdp">
+
+            <RelativeLayout
+                android:id="@+id/shortingLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_6sdp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/playerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:text="@string/players"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@+id/l2"
+                    android:layout_weight="1">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/selected_by"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:text="@string/selected_by"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:text="@string/Scored"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:drawableRightCompat="@drawable/ic_sort_up"
+                        app:textfont="r" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--<eleven11n11.customView.CustomTextView
+            android:id="@+id/playerText"
+            style="@style/SignUPCustomEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/players"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_small"
+            app:textfont="@string/ASAP" />
+
+        <eleven11n11.customView.CustomTextView
+            android:id="@+id/points"
+            style="@style/SignUPCustomEditTextStyle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/margin_5"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/points"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_small"
+            app:textfont="@string/ASAP" />
+
+
+
+        <eleven11n11.customView.CustomTextView
+            android:id="@+id/selected_by"
+            style="@style/SignUPCustomEditTextStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_toLeftOf="@+id/points"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/selected_by"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_small"
+            app:textfont="@string/ASAP" />
+-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom_tab"
+            android:layout_below="@+id/shortingLinRoot">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#EEEEEE"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_4sdp">
+
+            <ImageView
+                android:id="@+id/iv_player"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:srcCompat="@drawable/ic_check_mark_new" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_players"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:textfont="r" />
+
+            <ImageView
+                android:id="@+id/iv_top_player"
+
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_below="@+id/ctv_player_name"
+                android:layout_marginLeft="@dimen/_16sdp"
+
+                android:layout_marginRight="@dimen/_8sdp"
+                app:srcCompat="@drawable/ic_star_new" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/top_players"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+
+                app:textfont="r" />
+
+
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/loader_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

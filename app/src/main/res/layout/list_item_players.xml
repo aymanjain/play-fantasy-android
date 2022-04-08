@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hi_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.mw.eleven11.customView.CustomImageView
+                    android:id="@+id/iv_player"
+                    android:layout_width="@dimen/_46sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    app:actualImageScaleType="fitCenter"
+                    app:failureImage="@drawable/player"
+                    app:failureImageScaleType="fitCenter"
+                    app:placeholderImage="@drawable/player"
+                    app:placeholderImageScaleType="fitCenter" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_country"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:background="@drawable/bg_local"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:singleLine="true"
+                    android:text="IND"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp"
+                    app:textfont="r" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Sel by 67%"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="r" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_is_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_7ssp"
+                    app:textfont="r" />
+
+            </LinearLayout>
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/total_points"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="9.5"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:textfont="r" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_credits"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:text="9.5"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+                <ImageView
+                    android:id="@+id/iv_cross"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:padding="@dimen/_4sdp"
+                    app:srcCompat="@drawable/ic_add_button" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bluredRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6FFFFFF"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/default_background" />
+
+</FrameLayout>

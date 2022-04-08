@@ -1,0 +1,30 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.verifyAccount.VerifyAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_background">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:elevation="10dp" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include"
+            android:background="@color/default_background">
+
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,307 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_background">
+
+
+        <LinearLayout
+            android:id="@+id/ll_toolbar_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/app_bar_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/header_background_home_page"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize">
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_play_logo_new" />
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        app:srcCompat="@drawable/ic_back" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/matchInfoRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_toolbar_root"
+            app:cardMaxElevation="@dimen/_3sdp">
+
+            <include
+                layout="@layout/match_timer_info"
+                android:visibility="visible"></include>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottamRel"
+            android:layout_below="@id/matchInfoRoot"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/matchDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dimen_10dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5"
+                    android:weightSum="3">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/teamsVS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/textColor"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="@dimen/dimen_10dp"
+                        android:text="22h 11m 12s"
+                        android:textColor="@color/green"
+                        app:drawableLeftCompat="@drawable/ic_time"
+                        app:textfont="light" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_background_home_page"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/contest_size_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/contest_size"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/price_pool_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/price_pool"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/entry_fee_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/entry_fee"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="r" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/contest_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1000"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="b" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/price_pool"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="2000"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="b" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/entry_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="25"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textAllCaps="true"
+                        app:textfont="b"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/choose_total_winner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="@string/choose_total_winner"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:textfont="r" />
+
+            <RelativeLayout
+                android:id="@+id/winnersRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/border_yellow_bg_white_new"
+                android:padding="@dimen/_8sdp">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/winners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/contest_size"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:drawableRightCompat="@drawable/info_down_arrow"
+                    app:textfont="r" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_background"
+                tools:listitem="@layout/list_item_matches" />
+
+        </LinearLayout>
+
+        <include
+
+            layout="@layout/loader_layout"
+            android:visibility="gone"></include>
+
+
+        <RelativeLayout
+            android:id="@+id/bottamRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_background"
+            android:padding="@dimen/_8sdp"
+            android:visibility="visible">
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_save"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_empty_bg_white_stroke_theme"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingTop="@dimen/_4sdp"
+
+                android:paddingRight="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/create_contest_and_invite_friends"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:textfont="r" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

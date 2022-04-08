@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:clickable="true"
+    android:elevation="@dimen/_4sdp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_browser" />
+
+        <ImageView
+            android:id="@+id/iv_error_not_found"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_browser" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/primary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/tv_tryAgn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/button_solid_bg_theme_active"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:textfont="r" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            style="?android:progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/header_background_home_page"
+            android:padding="5dp" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/play_regular"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textColor="@color/header_background_home_page"
+            android:textSize="@dimen/text_small"
+            android:visibility="gone"
+            app:textfont="light" />
+    </LinearLayout>
+
+</RelativeLayout>

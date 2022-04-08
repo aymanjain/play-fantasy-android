@@ -1,0 +1,106 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_background_home">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_page_background_home">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/include"
+            android:background="@color/white">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/login_form_horizontal_margin"
+                android:scrollbarSize="0dp"
+                android:scrollbarThumbVertical="@android:color/transparent"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.rey.material.widget.ImageView
+                        android:id="@+id/iv_friendly"
+                        style="@style/FlatWaveColorButtonRippleStyleGray1"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:padding="@dimen/margin_5"
+                        app:rd_enable="true"
+                        app:srcCompat="@drawable/invitation" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/invitation_code"
+                        android:textAllCaps="true"
+                        android:textColor="@color/secondary_txt_color"
+                        android:textSize="@dimen/text_extra_large"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/invitation_code"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_extra_large"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/share_code_message"
+                        android:textColor="@color/secondary_txt_color"
+                        android:textSize="@dimen/text_small"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_invite"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/app_style_button"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/invite_friends"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:rd_enable="true"
+                        app:textfont="light" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

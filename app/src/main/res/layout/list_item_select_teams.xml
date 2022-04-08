@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.mw.eleven11.customView.CustomImageView
+        android:id="@+id/iv_check"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:padding="2dp"
+        android:tint="@color/green"
+        app:actualImageScaleType="fitCenter"
+        app:fadeDuration="500"
+        app:placeholderImageScaleType="fitCenter"
+        app:roundAsCircle="true" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:id="@+id/cardViewRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_team_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_8ssp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_4sdp">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/customTextViewTeamName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_already_added"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/already_added"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textfont="r" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/customTextViewTeamNameLocal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IND"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/customTextViewTeamPlayerCountLocal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/customTextViewTeamNameVisitor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IND"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/customTextViewTeamPlayerCountVisitor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp">
+
+                    <com.mw.eleven11.customView.CustomImageView
+                        android:id="@+id/customImageViewCaptainImage"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_horizontal"
+                        app:failureImage="@drawable/player"
+                        app:placeholderImage="@drawable/player" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewCaptainName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/bg_visitor"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:singleLine="true"
+                        android:text="M.S. Dhoni"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/_8ssp"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewIndicatorCaptain"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle_black_border_white"
+                        android:gravity="center"
+                        android:text="C"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7ssp"
+                        app:srcCompat="@drawable/ic_camera"
+                        app:textfont="r" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_8sdp">
+
+
+                    <com.mw.eleven11.customView.CustomImageView
+                        android:id="@+id/customImageViewViceCaptainImage"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_horizontal"
+                        app:failureImage="@drawable/player"
+                        app:placeholderImage="@drawable/player" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewViceCaptainName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/bg_local"
+                        android:backgroundTint="@color/header_background_home_page"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:singleLine="true"
+                        android:text="M.S. Dhoni"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8ssp"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewIndicatorViceCaptain"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle_black_border_white"
+                        android:gravity="center"
+                        android:text="VC"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7ssp"
+                        app:srcCompat="@drawable/ic_camera"
+                        app:textfont="r" />
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="WAK"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewCountWK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="BAT"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewCountBAT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="AR"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewCountAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="BOWL"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/customTextViewCountBOWL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="sb" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

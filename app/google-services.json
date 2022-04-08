@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "265068366171",
+    "project_id": "eleven11-1617785456097",
+    "storage_bucket": "eleven11-1617785456097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265068366171:android:75f1ef2c31df6ed173727e",
+        "android_client_info": {
+          "package_name": "com.mw.eleven11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265068366171-7k24ol0qv1bcilcbikfvlar5nkd30kgb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mw.eleven11",
+            "certificate_hash": "63f05990f8e53444c7cd48130a59eaafda6d9b04"
+          }
+        },
+        {
+          "client_id": "265068366171-m6oe2138pl4ifcq3lp41c2q6gbdj481j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mw.eleven11",
+            "certificate_hash": "fd92f0f29cc73466eebef40904abbac3d381ce08"
+          }
+        },
+        {
+          "client_id": "265068366171-4ghvbl6g784sdgrn0b4g15mu5ql280vo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZZLa9fPkKh9y2VAFUmvEqTymy7LyAK-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265068366171-4ghvbl6g784sdgrn0b4g15mu5ql280vo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

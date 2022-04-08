@@ -1,0 +1,191 @@
+
+
+
+{
+  "AuctionPlayerChange": {
+    "ContestGUID": "6aafd52c-ddfa-1708-0726-6c4c28dab775",
+    "PlayerGUID": "6ee18707-f8af-dc12-db5f-bb59ef5bff55",
+    "getBidPlayerData": {
+      "ResponseCode": "200",
+      "Message": "Player successfully in auction.",
+      "Data": {
+        "PlayerGUID": "6ee18707-f8af-dc12-db5f-bb59ef5bff55",
+        "PlayerName": "Heinrich Klaasen",
+        "PlayerID": "290",
+        "PlayerPic": "http:\/\/134.209.111.236\/api\/uploads\/PlayerPic\/3a86069a-29c7-8e72-8aee-6a465ecc9753.png",
+        "PlayerCountry": "",
+        "PlayerBattingStyle": "Right-Hand Bat",
+        "PlayerBowlingStyle": "",
+        "PlayerBattingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 0,
+            "Innings": 0,
+            "NotOut": 0,
+            "Runs": 0,
+            "Balls": 0,
+            "HighestScore": "",
+            "Hundreds": 0,
+            "Fifties": 0,
+            "Fours": 0,
+            "Sixes": 0,
+            "Average": 0,
+            "StrikeRate": 0,
+            "Catches": 0,
+            "Stumpings": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 0,
+            "Innings": 0,
+            "NotOut": 0,
+            "Runs": 0,
+            "Balls": 0,
+            "HighestScore": "",
+            "Hundreds": 0,
+            "Fifties": 0,
+            "Fours": 0,
+            "Sixes": 0,
+            "Average": 0,
+            "StrikeRate": 0,
+            "Catches": 0,
+            "Stumpings": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 0,
+            "Innings": 0,
+            "NotOut": 0,
+            "Runs": 0,
+            "Balls": 0,
+            "HighestScore": "",
+            "Hundreds": 0,
+            "Fifties": 0,
+            "Fours": 0,
+            "Sixes": 0,
+            "Average": 0,
+            "StrikeRate": 0,
+            "Catches": 0,
+            "Stumpings": 0
+          }
+        },
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 0,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": 0,
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "\/",
+            "BestMatch": 0,
+            "Economy": 0,
+            "Average": 0,
+            "StrikeRate": 0,
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 0,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": 0,
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "\/",
+            "BestMatch": 0,
+            "Economy": 0,
+            "Average": 0,
+            "StrikeRate": 0,
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 0,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": 0,
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "\/",
+            "BestMatch": 0,
+            "Economy": 0,
+            "Average": 0,
+            "StrikeRate": 0,
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "PlayerSalary": "0.00",
+        "PointsData": [
+
+        ],
+        "PlayerRole": "WicketKeeper",
+        "CurrentBidUser": {
+
+        },
+        "CurrentBidPlayerTime": {
+          "PlayerID": "290",
+          "DateTime": ""
+        }
+      }
+    },
+    "PlayerStatus": "1"
+  },
+  "AuctionJoinedContestUser": {
+    "ContestGUID": "6aafd52c-ddfa-1708-0726-6c4c28dab775",
+    "PlayerGUID": "6ee18707-f8af-dc12-db5f-bb59ef5bff55",
+    "auctionJoinedContestUser": {
+      "ResponseCode": "200",
+      "Message": "Success",
+      "Data": {
+        "TotalRecords": "2",
+        "Records": [
+          {
+            "UserGUID": "8936f7ff-39ba-81ed-a9f6-fe8f37e34da1",
+            "UserTeamID": "",
+            "FirstName": "Raul pareta",
+            "Username": "RAHULPARETA999",
+            "ProfilePic": "http:\/\/134.209.111.236\/api\/uploads\/profile\/picture\/6.png",
+            "AuctionTimeBank": "180",
+            "AuctionBudget": "999600000",
+            "AuctionUserStatus": "Online",
+            "IsHold": "No",
+            "AuctionHoldDateTime": "",
+            "UserTeamPlayers": [
+
+            ]
+          },
+          {
+            "UserGUID": "67f0d893-e7c8-79c8-f9d8-af1040e54bb1",
+            "UserTeamID": "",
+            "FirstName": "Shubham",
+            "Username": "4CEQ4W",
+            "ProfilePic": "http:\/\/134.209.111.236\/api\/uploads\/profile\/picture\/default.jpg",
+            "AuctionTimeBank": "180",
+            "AuctionBudget": "1000000000",
+            "AuctionUserStatus": "Online",
+            "IsHold": "No",
+            "AuctionHoldDateTime": "",
+            "UserTeamPlayers": [
+
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+

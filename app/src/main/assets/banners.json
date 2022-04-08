@@ -1,0 +1,50 @@
+{
+  "Message": "Success",
+  "Data": {
+    "Records": [
+      {
+        "MediaGUID": "0460a45a-b792-0d05-37ef-b1130a39f41e",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_0460a45a-b792-0d05-37ef-b1130a39f41e.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/0460a45a-b792-0d05-37ef-b1130a39f41e.png",
+        "MediaCaption": "Banner 2"
+      },
+      {
+        "MediaGUID": "070d1a43-a672-2d76-50c9-2fb2ec451059",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_070d1a43-a672-2d76-50c9-2fb2ec451059.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/070d1a43-a672-2d76-50c9-2fb2ec451059.png",
+        "MediaCaption": ""
+      },
+      {
+        "MediaGUID": "a8110b3d-8dae-f687-aa9e-d9061396a903",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_a8110b3d-8dae-f687-aa9e-d9061396a903.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/a8110b3d-8dae-f687-aa9e-d9061396a903.png",
+        "MediaCaption": ""
+      },
+      {
+        "MediaGUID": "d88eafb3-ad70-bd3e-1edd-f41dc2a69bf8",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_d88eafb3-ad70-bd3e-1edd-f41dc2a69bf8.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/d88eafb3-ad70-bd3e-1edd-f41dc2a69bf8.png",
+        "MediaCaption": ""
+      },
+      {
+        "MediaGUID": "64e288bf-935d-3b3a-97d0-3d2446107d77",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_64e288bf-935d-3b3a-97d0-3d2446107d77.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/64e288bf-935d-3b3a-97d0-3d2446107d77.png",
+        "MediaCaption": ""
+      },
+      {
+        "MediaGUID": "b566d388-9e61-1fbe-9916-a9e61f111603",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_b566d388-9e61-1fbe-9916-a9e61f111603.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/b566d388-9e61-1fbe-9916-a9e61f111603.png",
+        "MediaCaption": ""
+      },
+      {
+        "MediaGUID": "0249dd28-7579-80ac-a8ad-ccfea48f8e17",
+        "MediaThumbURL": "http://192.168.1.211/515-/api/uploads/Banner/110_0249dd28-7579-80ac-a8ad-ccfea48f8e17.png",
+        "MediaURL": "http://192.168.1.211/515-/api/uploads/Banner/0249dd28-7579-80ac-a8ad-ccfea48f8e17.png",
+        "MediaCaption": ""
+      }
+    ],
+    "TotalRecords": 7
+  }
+}

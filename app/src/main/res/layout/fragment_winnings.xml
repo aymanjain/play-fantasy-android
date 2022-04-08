@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    tools:context=".UI.contestDetailLeaderBoard.winnings.WinningsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFreeContestInfoRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/customTextViewFreeRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="Rank 1-4"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/primary_txt_size"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/customTextViewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Winner takes all the glory!"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearLayoutPaidWinnignRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            tools:listitem="@layout/list_item_matches" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="@string/note_winnings"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            app:textfont="r" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

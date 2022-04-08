@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/form_edt_txt_padding"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/pud_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pic_upload_sheet_img_size"
+                android:layout_height="@dimen/pic_upload_sheet_img_size"
+                android:background="@drawable/ic_option_camera"
+                android:scaleType="center"
+                android:tint="@color/colorPrimary" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camera"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/primary_txt_size"
+                app:textfont="sb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pud_gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pic_upload_sheet_img_size"
+                android:layout_height="@dimen/pic_upload_sheet_img_size"
+                android:background="@drawable/ic_gallery"
+                android:scaleType="center"
+                android:tint="@color/yellow" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallery"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/primary_txt_size"
+                app:textfont="sb" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

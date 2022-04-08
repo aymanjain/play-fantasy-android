@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/ic_outline_account_balance_wallet_24"
+            android:title="My Balance"
+            app:actionViewClass="android.widget.TextView" />
+        <item
+            android:id="@+id/nav_earn"
+            android:icon="@drawable/ic_earn_money"
+            android:title="Earn ₹200"
+            app:actionViewClass="android.widget.Button" />
+       <!-- <item
+            android:id="@+id/nav_findPeople"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Find People" />-->
+        <item
+            android:id="@+id/nav_MyCoupons"
+            android:icon="@drawable/ic_outline_card_giftcard_24"
+            android:title="My Coupons" />
+    </group>
+
+    <group
+        android:id="@+id/middle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_HowToPlay"
+            android:icon="@drawable/ic_how_to_play"
+            android:title="How to Play" />
+        <!--<item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_outline_leaderboard_24"
+            android:title="Series Leaderboard" />-->
+    </group>
+
+    <group
+        android:id="@+id/bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_MyInfoSetting"
+            android:icon="@drawable/ic_outline_settings_24"
+            android:title="My Info Settings" />
+        <item
+            android:id="@+id/nav_More"
+            android:icon="@drawable/ic_outline_more_24"
+            android:title="More" />
+    </group>
+</menu>

@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.mw.eleven11"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 50
+        versionName "1.50"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true
+
+        def date = new Date();
+        def formattedDate = date.format('dd-MMM-yy HH:mm')
+//        setProperty("archivesBaseName", "Eleven11-v$versionName" + "(" + formattedDate + ")")
+        vectorDrawables.useSupportLibrary = true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile(
+                    'proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+
+            /*buildConfigField "String", "SERVER_URL", '"http://playtelgames.com"'
+            buildConfigField "String", "STAGE_URL", '"http://playtelgames.com"'
+            buildConfigField "String", "SAFETY_NET_API_SITE_KEY", '"6LeZDKcZAAAAALf3PsGLqDZcUkKJKMSpWI8eWCqH"'*/
+
+            buildConfigField "String", "SERVER_URL", '"https://apiplaytelgames.com"'
+            buildConfigField "String", "STAGE_URL", '"https://apiplaytelgames.com"'
+            buildConfigField "String", "SAFETY_NET_API_SITE_KEY", '"6LeZDKcZAAAAALf3PsGLqDZcUkKJKMSpWI8eWCqH"'
+
+            /*buildConfigField "String", "SERVER_URL", '"http://159.65.147.114/ifln"'
+            buildConfigField "String", "STAGE_URL", '"http://159.65.147.114/ifln"'
+            buildConfigField "String", "SAFETY_NET_API_SITE_KEY", '"6LeZDKcZAAAAALf3PsGLqDZcUkKJKMSpWI8eWCqH"'*/
+
+        }
+
+        debug {
+            /*buildConfigField "String", "SERVER_URL", '"http://playtelgames.com"'
+            buildConfigField "String", "STAGE_URL", '"http://playtelgames.com"'
+            buildConfigField "String", "SAFETY_NET_API_SITE_KEY", '"6LeZDKcZAAAAALf3PsGLqDZcUkKJKMSpWI8eWCqH"'*/
+
+            buildConfigField "String", "SERVER_URL", '"https://apiplaytelgames.com"'
+            buildConfigField "String", "STAGE_URL", '"https://apiplaytelgames.com"'
+            buildConfigField "String", "SAFETY_NET_API_SITE_KEY", '"6LeZDKcZAAAAALf3PsGLqDZcUkKJKMSpWI8eWCqH"'
+
+            /*buildConfigField "String", "SERVER_URL", '"http://159.65.147.114/ifln"'
+            buildConfigField "String", "STAGE_URL", '"http://159.65.147.114/ifln"'
+            buildConfigField "String", "SAFETY_NET_API_SITE_KEY", '"6LeZDKcZAAAAALf3PsGLqDZcUkKJKMSpWI8eWCqH"'*/
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+//    buildFeatures {
+//        viewBinding true
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:animated-vector-drawable:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:customtabs:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-media-compat:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+
+    //butterknife gradle
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // Dependency for Google Sign-In
+    implementation "com.google.android.gms:play-services-auth:16.0.1"
+
+    // Dependency for fcm messaging
+    implementation "com.google.firebase:firebase-core:16.0.5"
+    implementation "com.google.firebase:firebase-messaging:17.3.4"
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+
+    // Fresco Library dependency for showing images.
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    // Fresco Library dependency for showing gif.
+    implementation 'com.facebook.fresco:animated-gif:1.9.0'
+    //for facebook login
+    implementation 'com.facebook.android:facebook-login:4.33.0'
+    // Retrofit API related Library dependency
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    // Rey Material Library dependency for bellow lollipop design support.
+    implementation 'com.github.rey5137:material:1.2.5'
+    // Image Cropping Libary dependency.
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //PayTm
+    implementation 'com.paytm:pgplussdk:1.3.3'
+
+    //Razorpay
+    implementation 'com.razorpay:checkout:1.4.9'
+    implementation 'com.android.support:exifinterface:28.0.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6' // scalable dp for any dimentions
+    implementation 'com.intuit.ssp:ssp-android:1.0.6' // scalable sp for font size
+    implementation 'com.google.android.gms:play-services-safetynet:16.0.0'
+    implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.Cutta:GifView:1.4'
+    implementation'com.squareup.picasso:picasso:2.5.2'
+
+}
+apply plugin: 'com.google.gms.google-services'

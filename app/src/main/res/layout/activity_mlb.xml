@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.mlb.ReferralUsersActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:padding="18dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_back" />
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/menu"
+                android:layout_toEndOf="@+id/back"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_play_logo_new" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/menu"
+                android:layout_toEndOf="@+id/back"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_title_text_size"
+                android:visibility="gone"
+                app:textAllCaps="true"
+                app:textfont="light" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:padding="18dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_back" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bg_invite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00A44E"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10dp">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/tv_reference_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Your invite code xyzwet"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_copy_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shedow_yellow_background"
+                    android:backgroundTint="@color/header_background_home_page"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="Copy Code"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium"
+                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_SMS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="Share via SMS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_medium"
+                        app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                    <View
+                        android:id="@+id/view_sms"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_5"
+                        android:background="@color/yellow" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/share_via_mail"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_medium"
+                        app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                    <View
+                        android:id="@+id/view_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_5"
+                        android:background="@color/greyDarkBg" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.mw.eleven11.customView.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:background="@drawable/border_round_corner"
+                android:gravity="center"
+                android:hint="@string/enter_mobile_number"
+                android:inputType="phone"
+                android:padding="@dimen/dimen_10dp"
+                android:text=" "
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_medium"
+                android:visibility="gone" />
+
+            <com.mw.eleven11.customView.CustomEditText
+                android:id="@+id/cet_mobile_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:background="@drawable/border_round_corner"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:hint="Enter Mobile Number"
+                android:imeActionLabel="Next"
+                android:inputType="number"
+                android:padding="@dimen/dimen_10dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="@dimen/text_medium"
+                app:hintfont="@string/REGULAR"
+                app:textfont="light" />
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:backgroundTint="@color/header_background_home_page"
+                android:background="@drawable/shedow_yellow_background"
+                android:padding="@dimen/dimen_10dp"
+                android:text="@string/invite"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:textAllCaps="true"
+                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp">
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_twitter" />
+
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_toLeftOf="@+id/twitter"
+                    app:srcCompat="@drawable/ic_instagram" />
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_toLeftOf="@+id/insta"
+                    app:srcCompat="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/whatsapp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_toLeftOf="@+id/facebook"
+                    app:srcCompat="@drawable/ic_whatsapp" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:text="@string/share_with_nfriends_via_social"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium"
+                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_20">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/earnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/round_corner_bg_black"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="@string/your_earnings"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/border_round_corner"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_40dp"
+                        android:layout_marginEnd="@dimen/dimen_10dp"
+                        android:orientation="vertical">
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/total_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:layout_marginBottom="@dimen/dimen_30dp"
+                            android:background="@drawable/border_round_corner"
+                            android:padding="@dimen/dimen_10dp"
+                            android:text="@string/total_balance"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/level1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/dimen_10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_round_corner"
+                                android:gravity="center_vertical"
+                                android:text="Level 1\n 12"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_small"
+                                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/dimen_10dp"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/border_round_corner"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/dimen_10dp">
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/level1_referred"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/circle_green"
+                                    android:gravity="center"
+                                    android:text="10"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_small" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Referred"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            </LinearLayout>
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/level1_amt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/shedow_yellow_background"
+                                android:backgroundTint="@color/header_background_home_page"
+                                android:gravity="center_vertical"
+                                android:padding="14dp"
+                                android:text="Level 3"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_medium"
+                                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:tint="@color/greyDarkBg"
+                            app:srcCompat="@drawable/ic_sort_up" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/level2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/dimen_10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_round_corner"
+                                android:gravity="center_vertical"
+                                android:text="Level 1\n 12"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_small"
+                                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/dimen_10dp"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/border_round_corner"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/dimen_10dp">
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/level2_referred"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/circle_green"
+                                    android:gravity="center"
+                                    android:text="10"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_small" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Referred"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            </LinearLayout>
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/level2_amt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/shedow_yellow_background"
+                                android:gravity="center_vertical"
+                                android:padding="14dp"
+                                android:text="Level 3"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_medium"
+                                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:tint="@color/greyDarkBg"
+                            app:srcCompat="@drawable/ic_sort_up" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_marginBottom="@dimen/dimen_15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/level3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/dimen_10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_round_corner"
+                                android:gravity="center_vertical"
+                                android:text="Level 1\n 12"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_small"
+                                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/dimen_10dp"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/border_round_corner"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/dimen_10dp">
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/level3_referred"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/circle_green"
+                                    android:gravity="center"
+                                    android:text="10"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_small" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Referred"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            </LinearLayout>
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/level3_amt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/shedow_yellow_background"
+                                android:gravity="center_vertical"
+                                android:padding="14dp"
+                                android:text="Level 3"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_medium"
+                                app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

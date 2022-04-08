@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#711C83</color>
+    <color name="colorPrimaryDark">#51145D</color>
+    <!--<color name="colorPrimaryLight">#F1D6F6</color>-->
+    <color name="colorPrimaryLight">#8080ff</color>
+
+    <color name="colorAccent">#000000</color>
+<!--424242-->
+    <color name="createTeamSeector">#009AFA</color>
+
+    <color name="rouge">#ffc51d23</color>
+
+    <color name="greyDarkBg">#E4E2E2</color>
+    <color name="greyBg">#FAFAFA</color>
+    <color name="warm_grey">#ff868586</color>
+    <color name="greyish_brown">#ff4a4a4a</color>
+    <color name="greyis_brown">#5E4A4A4A</color>
+    <color name="bluecolor">#3659a5</color>
+    <color name="brightSkyBlue">#97B4D5</color>
+    <color name="lightSkyBlue">#DAECFE</color>
+    <color name="white_four">#ffe8e8e8</color>
+    <color name="line_select">#ff868586</color>
+    <color name="line_unselect">#ffafafaf</color>
+
+    <color name="black">#000000</color>
+    <color name="darkblack">#000000</color>
+    <color name="light_black">#424242</color>
+    <color name="nav_icon">#cf1717</color>
+    <color name="nav_icon_light">#a6cf1717</color>
+    <color name="secondary">#a3a8b4</color>
+    <color name="card_shadow">#dae1ec</color>
+    <color name="facebook_color">#3b5998</color>
+
+    <color name="orange">#E94720</color>
+    <color name="red">#ed0a0a</color>
+
+    <color name="offWhite">#FAFAFA</color>
+
+    <color name="colorPrimaryDarkApp">#9a0606</color>
+    <color name="preview_text">#ABBFA6</color>
+
+    <color name="button_green">#5fc73b</color>
+    <color name="startColor">#A66586AF</color>
+    <color name="endColor">#A6Cf1717</color>
+    <color name="backgroundMain">#E4E2E2</color>
+
+
+    <color name="very_light_blue">#EDF5FB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ofwhite">#80FFFFFF</color>
+    <color name="light_blue">#ff8cdbf5</color>
+    <color name="unselected_blue">#8EAFCE</color>
+    <color name="selected_blue">#3474AA</color>
+    <color name="lightYellow">#FFECD2</color>
+    <color name="yellow">#FBBF02</color>
+    <color name="textColorMain">#FFFFFF</color>
+    <color name="textColor">#424242</color>
+    <color name="textColorLight">#676767</color>
+    <color name="textColorHint">#A9A9A9</color>
+
+    <color name="colorControlNormal">#6586AF</color>
+
+    <color name="input_gray">#FFDEE6E6</color>
+    <color name="light_grey">#d3d3d3</color>
+
+    <color name="white_dark">#F8F8F8</color>
+
+    <color name="blue">#FF1784C7</color>
+    <color name="linkTextColor">#636ED8</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider_color">#E5EAF1</color>
+    <color name="fee_background">#EDF5FB</color>
+    <color name="fee_background_border">#636ED8</color>
+    <color name="cashBonusColor">#15CC6F</color>
+    <color name="drawbleColor">#FFFFFF</color>
+    <color name="doneIconColor">#00BA3C</color>
+    <color name="contest_blue">#2C5BA0</color>
+    <color name="text_focused">#FFFFFF</color>
+    <color name="text_default">#FFFFFF</color>
+
+    <color name="text_focused1">#424242</color>
+    <color name="text_default1">#424242</color>
+    <color name="border_focused">#FFFFFF</color>
+    <color name="secondary_tab_color">#FFFFFF</color>
+    <color name="grey_white">#979797</color>
+    <color name="colorSwitchThumbNormal">#FFFFFF</color>
+    <color name="colorSwitchThumbPressed">#15CC6F</color>
+    <color name="colorSwitchNormal">#CCCFD8</color>
+    <color name="colorSwitchPressed">#E4E9EF</color>
+    <color name="transparent_1">#15000000</color>
+    <color name="gray">#95a5a6</color>
+    <color name="google">#DA473D</color>
+    <color name="secondary_txt_color">#424242</color>
+    <color name="colorPrimary_trans">#26F7B72C</color>
+
+    <color name="stepview_circle_done">@android:color/white</color>
+    <color name="stepview_circle_selected">@android:color/white</color>
+    <color name="stepview_line_done">@android:color/white</color>
+    <color name="stepview_line_next">#26ffffff</color>
+    <color name="stepview_mark">@color/stepview_selected_number</color>
+    <color name="stepview_selected_number">#Cf1717</color>
+    <color name="stepview_text_done">#40ffffff</color>
+    <color name="stepview_text_next">#40ffffff</color>
+    <color name="stepview_text_selected">@android:color/white</color>
+
+
+    <color name="SkyBlueLight">#CDE7FE</color>
+    <color name="flat_blue">#ff3759a5</color>
+    <color name="selected_text_blue">#4073AE</color>
+    <color name="unselected_text_blue">#97b4d5</color>
+    <color name="yellow_light">#E8FFE124</color>
+    <color name="yellow_d">#ffe124</color>
+    <color name="green_back">#4E970C</color>
+
+
+    <color name="auction_trans_color">#000000</color>
+
+    <color name="arrow_dis">#BCBDBF</color>
+
+    <color name="spin1">#545353</color>
+    <color name="spin2">#f7f5f5</color>
+    <color name="spin3">#009a9a</color>
+    <color name="spin4">#f69f00</color>
+    <color name="spin5">#b04191</color>
+    <color name="spin6">#83c7b8</color>
+    <color name="spin7">#de96bc</color>
+    <color name="spin8">#009dd0</color>
+    <color name="spin9">#e73085</color>
+    <color name="spin10">#ffeb54</color>
+    <color name="off">#CFD0D4</color>
+
+
+
+    <color name="primary_text">#131313</color>
+    <color name="secondary_text">#99151515</color>
+    <color name="divider">#AEACAC</color>
+    <color name="default_background">#EEEEEE</color>
+    <color name="green">#00BA3C</color>
+
+    <color name="simpletooltip_background">#CC000000</color>
+    <color name="simpletooltip_text">@color/white</color>
+    <color name="simpletooltip_arrow">@color/simpletooltip_background</color>
+    <color name="lightslategray">#778899</color>
+
+
+
+    <color name="header_background_home_page">#2648D1</color>
+    <color name="home_page_background_home">#F4F4FA</color>
+    <color name="home_page_text_grey_color">#B0B0B0</color>
+    <color name="home_page_right_icon_color">#90EE90</color>
+    <color name="home_page_button_icon_banner_color">#2648D1</color>
+
+    <color name="light_pink">#c78c9a</color>
+    <color name="brown_red">#950011</color>
+    <color name="lavenderColor">#8993a8</color>
+    <color name="light_green">#47a951</color>
+    <color name="dark_green">#045e21</color>
+    <color name="light_purple">#8c22e8</color>
+    <color name="deep_blue">#1c3f95</color>
+    <color name="stock">#52145D</color>
+    <color name="textLight">#B78A8A</color>
+
+
+
+
+
+
+
+
+
+
+</resources>

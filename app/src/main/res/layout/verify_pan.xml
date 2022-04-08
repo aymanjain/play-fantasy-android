@@ -1,0 +1,205 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_background">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollPan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="0dp"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:scrollbars="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_your_pan"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="b" />
+
+                    <com.mw.eleven11.customView.CustomEditText
+                        android:id="@+id/edt_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_txt_form_bg_inner"
+                        android:hint="@string/name"
+                        android:imeActionLabel="Next"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLength="40"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:textColor="@color/primary_text"
+                        android:textColorHint="@color/secondary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.CustomEditText
+                        android:id="@+id/edt_pan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/edit_txt_form_bg_inner"
+                        android:hint="@string/pan_number"
+                        android:imeActionLabel="Done"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="15"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:textColor="@color/primary_text"
+                        android:textColorHint="@color/secondary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/edit_txt_form_bg_inner"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="@string/date_of_birth"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:textColor="@color/primary_text"
+                        android:textColorHint="@color/secondary_text"
+                        android:textSize="@dimen/edt_txt_size_normal"
+                        app:drawableRightCompat="@drawable/ic_calendar_pan"
+                        app:textfont="r" />
+
+                    <com.mw.eleven11.customView.CustomSpinner
+                        android:id="@+id/cs_country"
+                        style="@style/mySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/edit_txt_form_bg_inner"
+                        android:padding="@dimen/login_form_edt_padding"
+                        android:visibility="gone"
+                        app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+                    <com.mw.eleven11.customView.CustomSpinner
+                        android:id="@+id/cs_state"
+                        style="@style/mySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/edit_txt_form_bg_inner"
+                        android:padding="@dimen/login_form_edt_padding"
+                        app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+                    <LinearLayout
+                        android:id="@+id/civ_panRoot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:background="@drawable/edit_txt_form_bg_inner"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_4sdp">
+
+                        <com.mw.eleven11.customView.CustomImageView
+                            android:id="@+id/civ_pan"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            app:actualImageScaleType="fitCenter"
+                            app:failureImage="@drawable/ic_gallery_bg"
+                            app:failureImageScaleType="fitCenter"
+                            app:image_type="halfplus"
+                            app:placeholderImage="@drawable/ic_gallery_bg"
+                            app:placeholderImageScaleType="fitCenter" />
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:text="@string/upload_pan_card_image"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            app:srcCompat="@drawable/ic_add_player" />
+                    </LinearLayout>
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/all_fields_are_mandatory"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_why"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/why_should_i_submit_my_pan_card"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="b" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_solid_bg_theme_active"
+                        android:gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include
+            layout="@layout/item_warning_pan"
+            android:visibility="gone"></include>
+
+        <include
+            layout="@layout/item_pan_verified"
+            android:visibility="gone"></include>
+
+        <include
+            layout="@layout/loader_layout"
+            android:visibility="gone"></include>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hi_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:background="@color/white"
+    android:elevation="@dimen/_1ssp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="@dimen/_12sdp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Adani Enterprises"
+            android:textColor="#373737"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader">
+
+            <RadioButton
+                android:id="@+id/radioBuy"
+                android:layout_width="30dp"
+                android:layout_height="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioSell"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:orientation="horizontal" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Buy"
+            android:textColor="#373737"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Sell"
+            android:textColor="#373737"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <ImageView
+            android:id="@+id/ivgreen"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintEnd_toStartOf="@+id/ivLogo"
+            app:layout_constraintTop_toTopOf="@+id/tvHeader"
+            app:srcCompat="@drawable/ic_ggreen" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvHeader"
+            app:srcCompat="@drawable/ic_adani" />
+
+
+        <ImageView
+            android:id="@+id/ivRed"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivgreen"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.875"
+            app:srcCompat="@drawable/ic_gred" />
+
+        <TextView
+            android:id="@+id/tvPrize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="₹ 1,708.10"
+            android:textColor="#373737"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <TextView
+            android:id="@+id/tvDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="@dimen/_6sdp"
+
+            android:fontFamily="@font/roboto_medium"
+            android:text="0.54 %"
+            android:textColor="#373737"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvPrize"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrize" />
+
+        <ImageView
+            android:id="@+id/ivGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDown"
+            app:layout_constraintEnd_toStartOf="@+id/tvDown"
+            app:layout_constraintTop_toTopOf="@+id/tvDown"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!--android:background="#B3FFFFFF"-->
+</android.support.v7.widget.CardView>

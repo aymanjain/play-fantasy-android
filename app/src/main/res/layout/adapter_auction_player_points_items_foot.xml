@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_dark"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingBottom="@dimen/margin_5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomImageView
+                android:id="@+id/civ_team1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:actualImageScaleType="centerInside"
+                app:image_type="square"
+                app:placeholderImage="@drawable/ic_gallery_bg"
+                app:roundAsCircle="false" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="IND"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ag_list_item_title_txt_size"
+                app:textfont="Lato-Bold.ttf" />
+
+        </LinearLayout>
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:text="VS"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:textfont="Lato-Bold.ttf" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomImageView
+                android:id="@+id/civ_team2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:actualImageScaleType="centerInside"
+                app:image_type="square"
+                app:placeholderImage="@drawable/ic_gallery_bg"
+                app:roundAsCircle="false" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="IND"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ag_list_item_title_txt_size"
+                app:textfont="Lato-Bold.ttf" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5"
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Starting Points"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_sp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_played_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Played More"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_trap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_trsp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Red Card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_fs_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_fsp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Yellow Card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ss_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ssp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every 2 Shots On Goal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bb_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bbp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_goal_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every Goal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_d_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every Assist"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_wt_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_wtp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every 10 Passes Completed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_mob_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_mobp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every 2 Goals Conceded"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_eb_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_ebp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every Own Goal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bow_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_bow_bp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every Penalty Missed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_tro_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_trop"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every 3 Shots Saved GK"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_stump_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_stump_p"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5"
+        android:background="@color/white"
+
+
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every 3 Tackles Made"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_cap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_cp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/greyDarkBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_clean_sheet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Clean Sheet GK Defender"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_srb_ap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_srbp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5"
+        android:background="@color/white"
+
+
+        >
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Every Penalty Saved GK"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_dvp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_dbp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ag_list_item_title_txt_size"
+            app:textfont="Lato-Bold.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyDarkBg" />
+
+
+</LinearLayout>

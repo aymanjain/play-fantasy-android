@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:padding="@dimen/dimen_10dp"
+    android:layout_width="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <com.mw.eleven11.customView.CustomImageView
+                android:id="@+id/iv_player"
+                app:placeholderImage="@drawable/player"
+                app:failureImage="@drawable/player"
+                app:actualImageScaleType="centerCrop"
+                app:placeholderImageScaleType="centerCrop"
+                app:failureImageScaleType="centerCrop"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:image_type="square" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_position"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/circle_yellow_bg_white"
+                android:drawableTint="#353535"
+                android:gravity="center"
+                android:text="9"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_camera"
+                app:textfont="Lato-Bold.ttf" />
+        </FrameLayout>
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_solid_with_two_cornor"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="ABC"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:textfont="Lato-Bold.ttf" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_credits"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/black_solid_two_cornors"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="9.5"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:rd_enable="false"
+            app:textfont="Lato-Bold.ttf" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

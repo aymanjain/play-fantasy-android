@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+          <!--  <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/eleven_logo_text"
+                android:tint="@color/white" />-->
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                app:srcCompat="@drawable/ic_back" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/menu"
+                android:layout_toLeftOf="@+id/menu"
+                android:layout_toEndOf="@+id/back"
+                android:layout_toRightOf="@+id/back"
+                android:gravity="center_horizontal"
+                android:text="Mobile Number Verify"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:textfont="r" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_item_mobile_not_verified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_3sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="vertical">
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/verify_your_mobile"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+
+                <com.mw.eleven11.customView.CustomEditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    android:imeActionLabel="Done"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:textColor="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:hintfont="r"
+                    app:textfont="r" />
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="@string/you_will_receive_otp_on_this_mobile_number"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="r" />
+
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_send_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/button_color_primary"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/send_otp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

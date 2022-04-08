@@ -1,0 +1,327 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_play_logo_new" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                app:srcCompat="@drawable/ic_back" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text="Your winnings"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/winning_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text="Amount"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:textfont="r" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_bank"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_kyc" />
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/bank_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/ctv_account_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:text="Amount"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomEditText
+                        android:id="@+id/edt_mood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ex_amount"
+                        android:imeActionLabel="Done"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="50"
+                        android:textColor="@color/primary_text"
+                        android:textColorHint="@color/secondary_text"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:hintfont="r"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Amount"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="Transfer To"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/primary_txt_size"
+                        android:visibility="gone"
+                        app:rd_enable="true" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.mw.eleven11.customView.CustomRadioButton
+                            android:id="@+id/rb_bank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Bank"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:theme="@style/RadioButtonStyle" />
+
+                        <com.mw.eleven11.customView.CustomRadioButton
+                            android:id="@+id/rb_patym"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Paytm"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:theme="@style/RadioButtonStyle" />
+
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_mobile_no_root"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:background="@drawable/bg_paytm_no"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:text="Registered Number"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                app:rd_enable="true" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:id="@+id/edt_phoneno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                app:rd_enable="true" />
+
+                        </LinearLayout>
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/ctv_change_no"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/app_style_button"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Change No"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:rd_enable="true"
+                            app:textfont="light" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_solid_bg_theme_active"
+            android:gravity="center"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/continue_"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:textAllCaps="true"
+            app:textfont="r" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

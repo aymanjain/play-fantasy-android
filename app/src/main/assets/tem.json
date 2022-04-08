@@ -1,0 +1,2230 @@
+{
+  "ResponseCode": 200,
+  "Message": "Success",
+  "Data": {
+    "Records": [
+      {
+        "PlayerGUID": "41839f2e-86eb-10dd-4b36-44b7fe5e49b1",
+        "PlayerName": "David Miller",
+        "PlayerRole": "Batsman",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/9f424f5b-75f9-92b3-4a67-2b982f3799da.png",
+        "PlayerBattingStyle": "LHB",
+        "PlayerBowlingStyle": "Right-arm offbreak",
+        "MatchType": "T20I",
+        "TeamGUID": "16820a2e-b5ab-e202-1750-5d55125cdd5b",
+        "PlayerBowlingStats": {
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 120,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 68,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 279,
+            "Innings": 3,
+            "Balls": 18,
+            "Overs": 3,
+            "Runs": 31,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "10.33",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 219,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 63,
+            "Innings": 4,
+            "Balls": 50,
+            "Overs": 8.2,
+            "Runs": 42,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "5.04",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "41",
+            "CalculatedPoints": "41"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "5",
+            "CalculatedPoints": "5"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate150N199.99",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "178.26",
+            "CalculatedPoints": "10.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "41",
+            "CalculatedPoints": "10.0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "41",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "9.00",
+        "TeamNameShort": "SA",
+        "TotalPoints": 138,
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "69.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Captain"
+      },
+      {
+        "PlayerGUID": "f5c37a2d-bf3e-fb10-99a9-f2f2f7f987cb",
+        "PlayerName": "Rassie van der Dussen",
+        "PlayerRole": "Batsman",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/player.png",
+        "PlayerBattingStyle": "Right-hand bat",
+        "PlayerBowlingStyle": "Legbreak",
+        "MatchType": "T20I",
+        "TeamGUID": "16820a2e-b5ab-e202-1750-5d55125cdd5b",
+        "PlayerBowlingStats": {
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 9,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 6,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 88,
+            "Innings": 6,
+            "Balls": 54,
+            "Overs": 9,
+            "Runs": 55,
+            "Wickets": 3,
+            "BestInning": "2\/15",
+            "BestMatch": "2\/15",
+            "Economy": "6.11",
+            "Average": "18.33",
+            "StrikeRate": "18.0",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 97,
+            "Innings": 4,
+            "Balls": 132,
+            "Overs": 22,
+            "Runs": 82,
+            "Wickets": 4,
+            "BestInning": "2\/25",
+            "BestMatch": "2\/25",
+            "Economy": "3.72",
+            "Average": "20.50",
+            "StrikeRate": "33.0",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 110,
+            "Innings": 16,
+            "Balls": 317,
+            "Overs": 52.5,
+            "Runs": 218,
+            "Wickets": 4,
+            "BestInning": "2\/39",
+            "BestMatch": "2\/39",
+            "Economy": "4.12",
+            "Average": "54.50",
+            "StrikeRate": "79.2",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "34",
+            "CalculatedPoints": "34"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate100N149.99",
+            "DefinedPoints": "5.0",
+            "ScoreValue": "113.33",
+            "CalculatedPoints": "5.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "34",
+            "CalculatedPoints": "10.0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "34",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "8.50",
+        "TeamNameShort": "SA",
+        "TotalPoints": "53.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "53.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "f22587ea-7cb4-61e0-4656-a4e09188e74a",
+        "PlayerName": "Avishka Fernando",
+        "PlayerRole": "Batsman",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/player.png",
+        "PlayerBattingStyle": "Right-hand bat",
+        "PlayerBowlingStyle": "Right-arm medium-fast",
+        "MatchType": "T20I",
+        "TeamGUID": "68e60ce4-ebe3-1f3f-4bdb-9ca3535dd0b5",
+        "PlayerBowlingStats": {
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 5,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 1,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 15,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 24,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 16,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs 2019-03-20 18:05:52.165 26072-28252/com.mw.mymatch D/OkHttp: ": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "16",
+            "CalculatedPoints": "16"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "2",
+            "CalculatedPoints": "2"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate100N149.99",
+            "DefinedPoints": "5.0",
+            "ScoreValue": "106.66",
+            "CalculatedPoints": "5.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "16",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "16",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "8.00",
+        "TeamNameShort": "SL",
+        "TotalPoints": "25.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "25.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "ccd63abe-6239-7e53-4a3c-ee0c65ca494f",
+        "PlayerName": "Faf du Plessis",
+        "PlayerRole": "Batsman",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/8be014c6-9a2f-27fa-2369-6ec4263b2ea3.png",
+        "PlayerBattingStyle": "Right-hand bat",
+        "PlayerBowlingStyle": "Legbreak",
+        "MatchType": "T20I",
+        "TeamGUID": "16820a2e-b5ab-e202-1750-5d55125cdd5b",
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 58,
+            "Innings": 5,
+            "Balls": 78,
+            "Overs": 13,
+            "Runs": 69,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "5.30",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 134,
+            "Innings": 11,
+            "Balls": 192,
+            "Overs": 32,
+            "Runs": 189,
+            "Wickets": 2,
+            "BestInning": "1\/8",
+            "BestMatch": "1\/8",
+            "Economy": "5.90",
+            "Average": "94.50",
+            "StrikeRate": "96.0",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 44,
+            "Innings": 2,
+            "Balls": 8,
+            "Overs": 1.2,
+            "Runs": 3,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "2.25",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 192,
+            "Innings": 52,
+            "Balls": 790,
+            "Overs": 131.4,
+            "Runs": 917,
+            "Wickets": 50,
+            "BestInning": "5\/19",
+            "BestMatch": "5\/19",
+            "Economy": "6.96",
+            "Average": "18.34",
+            "StrikeRate": "15.8",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 2,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 252,
+            "Innings": 0,
+            "Balls": 2238,
+            "Overs": 373,
+            "Runs": 2030,
+            "Wickets": 54,
+            "BestInning": "4\/47",
+            "BestMatch": "4\/47",
+            "Economy": "5.44",
+            "Average": "37.59",
+            "StrikeRate": "41.4",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 138,
+            "Innings": 0,
+            "Balls": 2558,
+            "Overs": 426.2,
+            "Runs": 1477,
+            "Wickets": 41,
+            "BestInning": "4\/39",
+            "BestMatch": "",
+            "Economy": "3.46",
+            "Average": "36.02",
+            "StrikeRate": "62.3",
+            "FourPlusWicketsInSingleInning": 3,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "21",
+            "CalculatedPoints": "21"
+          },
+          {
+            "PointsTypeG 2019-03-20 18:05:52.166 26072-28252/com.mw.mymatch D/OkHttp: UID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "2",
+            "CalculatedPoints": "2"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate75N99.99",
+            "DefinedPoints": "-5.0",
+            "ScoreValue": "91.30",
+            "CalculatedPoints": "-5.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "21",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "21",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "10.00",
+        "TeamNameShort": "SA",
+        "TotalPoints": "21.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "21.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "81ab2ab4-c193-66a4-86f3-3fc6210e8587",
+        "PlayerName": "Isuru Udana",
+        "PlayerRole": "Bowler",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/player.png",
+        "PlayerBattingStyle": "Right-hand bat",
+        "PlayerBowlingStyle": "Left-arm medium-fast",
+        "MatchType": "T20I",
+        "TeamGUID": "68e60ce4-ebe3-1f3f-4bdb-9ca3535dd0b5",
+        "PlayerBowlingStats": {
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 5,
+            "Innings": 5,
+            "Balls": 174,
+            "Overs": 29,
+            "Runs": 186,
+            "Wickets": 2,
+            "BestInning": "2\/50",
+            "BestMatch": "2\/50",
+            "Economy": "6.41",
+            "Average": "93.00",
+            "StrikeRate": "87.0",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 18,
+            "Innings": 18,
+            "Balls": 354,
+            "Overs": 59,
+            "Runs": 497,
+            "Wickets": 16,
+            "BestInning": "3\/13",
+            "BestMatch": "3\/13",
+            "Economy": "8.42",
+            "Average": "31.06",
+            "StrikeRate": "22.1",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 113,
+            "Innings": 110,
+            "Balls": 2201,
+            "Overs": 366.5,
+            "Runs": 2913,
+            "Wickets": 127,
+            "BestInning": "4\/31",
+            "BestMatch": "4\/31",
+            "Economy": "7.94",
+            "Average": "22.93",
+            "StrikeRate": "17.3",
+            "FourPlusWicketsInSingleInning": 2,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 99,
+            "Innings": 97,
+            "Balls": 3916,
+            "Overs": 652.4,
+            "Runs": 3495,
+            "Wickets": 128,
+            "BestInning": "5\/59",
+            "BestMatch": "5\/59",
+            "Economy": "5.35",
+            "Average": "27.30",
+            "StrikeRate": "30.5",
+            "FourPlusWicketsInSingleInning": 4,
+            "FivePlusWicketsInSingleInning": 1,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 89,
+            "Innings": 142,
+            "Balls": 9845,
+            "Overs": 1640.5,
+            "Runs": 5930,
+            "Wickets": 193,
+            "BestInning": "7\/58",
+            "BestMatch": "7\/69",
+            "Economy": "3.61",
+            "Average": "30.72",
+            "StrikeRate": "51.0",
+            "FourPlusWicketsInSingleInning": 8,
+            "FivePlusWicketsInSingleInning": 3,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "12",
+            "CalculatedPoints": "12"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate200NMore",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "200.00",
+            "CalculatedPoints": "15.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "12",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "12",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": " 2019-03-20 18:05:52.166 26072-28252/com.mw.mymatch D/OkHttp: 15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "8.50",
+        "TeamNameShort": "SL",
+        "TotalPoints": "30.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "30.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "1e4dc4ec-cbdb-182d-baea-90ff6040d0af",
+        "PlayerName": "Akila Dananjaya",
+        "PlayerRole": "Bowler",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/player.png",
+        "PlayerBattingStyle": "LHB",
+        "PlayerBowlingStyle": "Right-arm offbreak",
+        "MatchType": "T20I",
+        "TeamGUID": "68e60ce4-ebe3-1f3f-4bdb-9ca3535dd0b5",
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 5,
+            "Innings": 10,
+            "Balls": 1013,
+            "Overs": 168.5,
+            "Runs": 655,
+            "Wickets": 27,
+            "BestInning": "6\/115",
+            "BestMatch": "8\/44",
+            "Economy": "3.87",
+            "Average": "24.25",
+            "StrikeRate": "37.5",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 3,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 34,
+            "Innings": 32,
+            "Balls": 1653,
+            "Overs": 275.3,
+            "Runs": 1423,
+            "Wickets": 48,
+            "BestInning": "6\/29",
+            "BestMatch": "6\/29",
+            "Economy": "5.16",
+            "Average": "29.64",
+            "StrikeRate": "34.4",
+            "FourPlusWicketsInSingleInning": 2,
+            "FivePlusWicketsInSingleInning": 2,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 17,
+            "Innings": 17,
+            "Balls": 364,
+            "Overs": 60.4,
+            "Runs": 453,
+            "Wickets": 15,
+            "BestInning": "2\/9",
+            "BestMatch": "2\/9",
+            "Economy": "7.46",
+            "Average": "30.20",
+            "StrikeRate": "24.2",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 59,
+            "Innings": 55,
+            "Balls": 1186,
+            "Overs": 197.4,
+            "Runs": 1402,
+            "Wickets": 66,
+            "BestInning": "4\/17",
+            "BestMatch": "4\/17",
+            "Economy": "7.09",
+            "Average": "21.24",
+            "StrikeRate": "17.9",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 73,
+            "Innings": 68,
+            "Balls": 3208,
+            "Overs": 534.4,
+            "Runs": 2556,
+            "Wickets": 86,
+            "BestInning": "6\/29",
+            "BestMatch": "6\/29",
+            "Economy": "4.78",
+            "Average": "29.72",
+            "StrikeRate": "37.3",
+            "FourPlusWicketsInSingleInning": 5,
+            "FivePlusWicketsInSingleInning": 2,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 45,
+            "Innings": 76,
+            "Balls": 6794,
+            "Overs": 1132.2,
+            "Runs": 4049,
+            "Wickets": 147,
+            "BestInning": "7\/139",
+            "BestMatch": "8\/44",
+            "Economy": "3.57",
+            "Average": "27.54",
+            "StrikeRate": "46.2",
+            "FourPlusWicketsInSingleInning": 5,
+            "FivePlusWicketsInSingleInning": 6,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "8",
+            "CalculatedPoints": "8"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "2",
+            "CalculatedPoints": "2"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate0N49.99",
+            "DefinedPoints": "-15.0",
+            "ScoreValue": "200.00",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "8",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "8",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "8.50",
+        "TeamNameShort": "SL",
+        "TotalPoints": "12.00",
+        "PlayerBattingSt 2019-03-20 18:05:52.166 26072-28252/com.mw.mymatch D/OkHttp: ats": {
+
+        },
+        "PointCredits": "12.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "f03edfaf-d674-996a-b66b-96b2757d67f1",
+        "PlayerName": "Dale Steyn",
+        "PlayerRole": "Bowler",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/715484c9-5e39-ddbd-9ddd-59fa17c93f95.png",
+        "PlayerBattingStyle": "Right-hand bat",
+        "PlayerBowlingStyle": "Right-arm fast",
+        "MatchType": "T20I",
+        "TeamGUID": "16820a2e-b5ab-e202-1750-5d55125cdd5b",
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 93,
+            "Innings": 171,
+            "Balls": 18608,
+            "Overs": 3101.2,
+            "Runs": 10077,
+            "Wickets": 439,
+            "BestInning": "7\/51",
+            "BestMatch": "11\/60",
+            "Economy": "3.24",
+            "Average": "22.95",
+            "StrikeRate": "42.3",
+            "FourPlusWicketsInSingleInning": 27,
+            "FivePlusWicketsInSingleInning": 26,
+            "TenPlusWicketsInSingleInning": 5
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 125,
+            "Innings": 124,
+            "Balls": 6256,
+            "Overs": 1042.4,
+            "Runs": 5087,
+            "Wickets": 196,
+            "BestInning": "6\/39",
+            "BestMatch": "6\/39",
+            "Economy": "4.87",
+            "Average": "25.95",
+            "StrikeRate": "31.9",
+            "FourPlusWicketsInSingleInning": 4,
+            "FivePlusWicketsInSingleInning": 3,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 43,
+            "Innings": 43,
+            "Balls": 925,
+            "Overs": 154.1,
+            "Runs": 1034,
+            "Wickets": 59,
+            "BestInning": "4\/9",
+            "BestMatch": "4\/9",
+            "Economy": "6.70",
+            "Average": "17.52",
+            "StrikeRate": "15.6",
+            "FourPlusWicketsInSingleInning": 2,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 198,
+            "Innings": 195,
+            "Balls": 4409,
+            "Overs": 734.5,
+            "Runs": 4897,
+            "Wickets": 225,
+            "BestInning": "4\/9",
+            "BestMatch": "4\/9",
+            "Economy": "6.66",
+            "Average": "21.76",
+            "StrikeRate": "19.5",
+            "FourPlusWicketsInSingleInning": 4,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 178,
+            "Innings": 0,
+            "Balls": 8736,
+            "Overs": 1456,
+            "Runs": 6935,
+            "Wickets": 278,
+            "BestInning": "6\/39",
+            "BestMatch": "6\/39",
+            "Economy": "4.76",
+            "Average": "24.94",
+            "StrikeRate": "31.4",
+            "FourPlusWicketsInSingleInning": 5,
+            "FivePlusWicketsInSingleInning": 6,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 141,
+            "Innings": 0,
+            "Balls": 27183,
+            "Overs": 4530.3,
+            "Runs": 14569,
+            "Wickets": 618,
+            "BestInning": "8\/41",
+            "BestMatch": "",
+            "Economy": "3.21",
+            "Average": "23.57",
+            "StrikeRate": "43.9",
+            "FourPlusWicketsInSingleInning": 33,
+            "FivePlusWicketsInSingleInning": 35,
+            "TenPlusWicketsInSingleInning": 7
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate0N49.99",
+            "DefinedPoints": "-15.0",
+            "ScoreValue": "33.33",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "8.50",
+        "TeamNameShort": "SA",
+        "TotalPoints": "3.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "3.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "696148fa-89e7-a0ce-f984-52d03937ad62",
+        "PlayerName": "Kamindu Mendis",
+        "PlayerRole": "AllRounder",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/player.png",
+        "PlayerBattingStyle": "LHB",
+        "PlayerBowlingStyle": "Slow left-arm orthodox",
+        "MatchType": "T20I",
+        "TeamGU 2019-03-20 18:05:52.166 26072-28252/com.mw.mymatch D/OkHttp: ID": "68e60ce4-ebe3-1f3f-4bdb-9ca3535dd0b5",
+        "PlayerBowlingStats": {
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 2,
+            "Innings": 2,
+            "Balls": 84,
+            "Overs": 14,
+            "Runs": 79,
+            "Wickets": 1,
+            "BestInning": "1\/45",
+            "BestMatch": "1\/45",
+            "Economy": "5.64",
+            "Average": "79.00",
+            "StrikeRate": "84.0",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 2,
+            "Innings": 2,
+            "Balls": 24,
+            "Overs": 4,
+            "Runs": 36,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "9.00",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 11,
+            "Innings": 9,
+            "Balls": 102,
+            "Overs": 17,
+            "Runs": 130,
+            "Wickets": 3,
+            "BestInning": "1\/6",
+            "BestMatch": "1\/6",
+            "Economy": "7.64",
+            "Average": "43.33",
+            "StrikeRate": "34.0",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 17,
+            "Innings": 17,
+            "Balls": 785,
+            "Overs": 130.5,
+            "Runs": 713,
+            "Wickets": 19,
+            "BestInning": "3\/34",
+            "BestMatch": "3\/34",
+            "Economy": "5.44",
+            "Average": "37.52",
+            "StrikeRate": "41.3",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 6,
+            "Innings": 10,
+            "Balls": 539,
+            "Overs": 89.5,
+            "Runs": 383,
+            "Wickets": 12,
+            "BestInning": "3\/48",
+            "BestMatch": "5\/101",
+            "Economy": "4.26",
+            "Average": "31.91",
+            "StrikeRate": "44.9",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "41",
+            "CalculatedPoints": "41"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "3",
+            "CalculatedPoints": "3"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "2",
+            "CalculatedPoints": "2"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate100N149.99",
+            "DefinedPoints": "5.0",
+            "ScoreValue": "141.37",
+            "CalculatedPoints": "5.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "41",
+            "CalculatedPoints": "10.0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "41",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "8.50",
+        "TeamNameShort": "SL",
+        "TotalPoints": 94.5,
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "63.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "ViceCaptain"
+      },
+      {
+        "PlayerGUID": "d8430f51-585f-dc2c-2df1-def99d561bab",
+        "PlayerName": "Thisara Perera",
+        "PlayerRole": "AllRounder",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/player.png",
+        "PlayerBattingStyle": "LHB",
+        "PlayerBowlingStyle": "Right-arm medium-fast",
+        "MatchType": "T20I",
+        "TeamGUID": "68e60ce4-ebe3-1f3f-4bdb-9ca3535dd0b5",
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 6,
+            "Innings": 8,
+            "Balls": 954,
+            "Overs": 159,
+            "Runs": 653,
+            "Wickets": 11,
+            "BestInning": "4\/63",
+            "BestMatch": "4\/151",
+            "Economy": "4.10",
+            "Average": "59.36",
+            "StrikeRate": "86.7",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 153,
+            "Innings": 144,
+            "Balls": 5391,
+            "Overs": 898.3,
+            "Runs": 5267,
+            "Wickets": 169,
+            "BestInning": "6\/44",
+            "BestMatch": "6\/44",
+            "Economy": "5.86",
+            "Average": "31.16",
+            "StrikeRate": "31.8",
+            "FourPlusWicketsInSingleInning": 5,
+            "FivePlusWicketsInSingleInning": 4,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 77,
+            "Innings": 63,
+            "Ba 2019-03-20 18:05:52.166 26072-28252/com.mw.mymatch D/OkHttp: lls": 1036,
+            "Overs": 172.4,
+            "Runs": 1583,
+            "Wickets": 51,
+            "BestInning": "3\/24",
+            "BestMatch": "3\/24",
+            "Economy": "9.16",
+            "Average": "31.03",
+            "StrikeRate": "20.3",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 258,
+            "Innings": 235,
+            "Balls": 4139,
+            "Overs": 689.5,
+            "Runs": 5894,
+            "Wickets": 226,
+            "BestInning": "5\/26",
+            "BestMatch": "5\/26",
+            "Economy": "8.54",
+            "Average": "26.07",
+            "StrikeRate": "18.3",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 1,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 225,
+            "Innings": 213,
+            "Balls": 8102,
+            "Overs": 1350.2,
+            "Runs": 7911,
+            "Wickets": 267,
+            "BestInning": "6\/44",
+            "BestMatch": "6\/44",
+            "Economy": "5.85",
+            "Average": "29.62",
+            "StrikeRate": "30.3",
+            "FourPlusWicketsInSingleInning": 10,
+            "FivePlusWicketsInSingleInning": 7,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 33,
+            "Innings": 52,
+            "Balls": 3590,
+            "Overs": 598.2,
+            "Runs": 2299,
+            "Wickets": 56,
+            "BestInning": "5\/69",
+            "BestMatch": "6\/139",
+            "Economy": "3.84",
+            "Average": "41.05",
+            "StrikeRate": "64.1",
+            "FourPlusWicketsInSingleInning": 2,
+            "FivePlusWicketsInSingleInning": 1,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "19",
+            "CalculatedPoints": "19"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate75N99.99",
+            "DefinedPoints": "-5.0",
+            "ScoreValue": "90.47",
+            "CalculatedPoints": "-5.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "19",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "19",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "9.50",
+        "TeamNameShort": "SL",
+        "TotalPoints": "17.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "17.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "45febb30-1d27-bbf5-76cf-56764337c2fe",
+        "PlayerName": "Jean-Paul Duminy",
+        "PlayerRole": "AllRounder",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/473cd5c5-9959-83af-e7ae-b7a102058e71.png",
+        "PlayerBattingStyle": "LHB",
+        "PlayerBowlingStyle": "Right-arm offbreak",
+        "MatchType": "T20I",
+        "TeamGUID": "16820a2e-b5ab-e202-1750-5d55125cdd5b",
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 46,
+            "Innings": 57,
+            "Balls": 2703,
+            "Overs": 450.3,
+            "Runs": 1601,
+            "Wickets": 42,
+            "BestInning": "4\/47",
+            "BestMatch": "4\/51",
+            "Economy": "3.55",
+            "Average": "38.11",
+            "StrikeRate": "64.3",
+            "FourPlusWicketsInSingleInning": 2,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 194,
+            "Innings": 131,
+            "Balls": 3459,
+            "Overs": 576.3,
+            "Runs": 3082,
+            "Wickets": 68,
+            "BestInning": "4\/16",
+            "BestMatch": "4\/16",
+            "Economy": "5.34",
+            "Average": "45.32",
+            "StrikeRate": "50.8",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 79,
+            "Innings": 40,
+            "Balls": 457,
+            "Overs": 76.1,
+            "Runs": 581,
+            "Wickets": 21,
+            "BestInning": "3\/18",
+            "BestMatch": "3\/18",
+            "Economy": "7.62",
+            "Average": "27.66",
+            "StrikeRate": "21.7",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 247,
+            "Innings": 133,
+            "Balls": 1736,
+            "Overs": 289.2,
+            "Runs": 2207,
+            "W 2019-03-20 18:05:52.167 26072-28252/com.mw.mymatch D/OkHttp: ickets": 73,
+            "BestInning": "4\/17",
+            "BestMatch": "4\/17",
+            "Economy": "7.62",
+            "Average": "30.23",
+            "StrikeRate": "23.7",
+            "FourPlusWicketsInSingleInning": 3,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 268,
+            "Innings": 0,
+            "Balls": 4613,
+            "Overs": 768.5,
+            "Runs": 3994,
+            "Wickets": 92,
+            "BestInning": "4\/16",
+            "BestMatch": "4\/16",
+            "Economy": "5.19",
+            "Average": "43.41",
+            "StrikeRate": "50.1",
+            "FourPlusWicketsInSingleInning": 1,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 108,
+            "Innings": 0,
+            "Balls": 5434,
+            "Overs": 905.4,
+            "Runs": 3162,
+            "Wickets": 77,
+            "BestInning": "5\/108",
+            "BestMatch": "",
+            "Economy": "3.49",
+            "Average": "41.06",
+            "StrikeRate": "70.5",
+            "FourPlusWicketsInSingleInning": 3,
+            "FivePlusWicketsInSingleInning": 1,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "9",
+            "CalculatedPoints": "9"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "1",
+            "CalculatedPoints": "1"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate0N49.99",
+            "DefinedPoints": "-15.0",
+            "ScoreValue": "128.57",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "9",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "9",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "9.50",
+        "TeamNameShort": "SA",
+        "TotalPoints": "12.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "12.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      },
+      {
+        "PlayerGUID": "34a94a85-fad9-631a-7b62-dec94e329b11",
+        "PlayerName": "Quinton de Kock",
+        "PlayerRole": "WicketKeeper",
+        "PlayerPic": "http:\/\/MyMatch11.com\/api\/uploads\/PlayerPic\/9f6bc25c-a96a-58c5-5706-32d74b107670.png",
+        "PlayerBattingStyle": "LHB",
+        "PlayerBowlingStyle": "",
+        "MatchType": "T20I",
+        "TeamGUID": "16820a2e-b5ab-e202-1750-5d55125cdd5b",
+        "PlayerBowlingStats": {
+          "Test": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 40,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ODI": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 106,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20i": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 36,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "T20": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 151,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "ListA": {
+            "MatchID": 0,
+            "InningID": 0,
+            "Matches": 147,
+            "Innings": 0,
+            "Balls": 0,
+            "Overs": "",
+            "Runs": 0,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          },
+          "FirstClass": {
+            "MatchID": 0,
+            "Inni 2019-03-20 18:05:52.167 26072-28252/com.mw.mymatch D/OkHttp: ngID": 0,
+            "Matches": 69,
+            "Innings": 1,
+            "Balls": 6,
+            "Overs": 1,
+            "Runs": 9,
+            "Wickets": 0,
+            "BestInning": "",
+            "BestMatch": "",
+            "Economy": "9.00",
+            "Average": "",
+            "StrikeRate": "",
+            "FourPlusWicketsInSingleInning": 0,
+            "FivePlusWicketsInSingleInning": 0,
+            "TenPlusWicketsInSingleInning": 0
+          }
+        },
+        "IsPlaying": "Yes",
+        "PointsData": [
+          {
+            "PointsTypeGUID": "StatringXI",
+            "DefinedPoints": "2.0",
+            "ScoreValue": 1,
+            "CalculatedPoints": "2.0"
+          },
+          {
+            "PointsTypeGUID": "EveryRunScored",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "13",
+            "CalculatedPoints": "13"
+          },
+          {
+            "PointsTypeGUID": "Four",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "2",
+            "CalculatedPoints": "2"
+          },
+          {
+            "PointsTypeGUID": "Six",
+            "DefinedPoints": "1.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "StrikeRate75N99.99",
+            "DefinedPoints": "-5.0",
+            "ScoreValue": "76.47",
+            "CalculatedPoints": "-5.0"
+          },
+          {
+            "PointsTypeGUID": "For30runs",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "13",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Duck",
+            "DefinedPoints": "-2.0",
+            "ScoreValue": "13",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Wicket",
+            "DefinedPoints": "10.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Maiden",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "EconomyRate0N5Balls",
+            "DefinedPoints": "15.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "RunOUT",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Stumping",
+            "DefinedPoints": "6.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          },
+          {
+            "PointsTypeGUID": "Catch",
+            "DefinedPoints": "4.0",
+            "ScoreValue": "0",
+            "CalculatedPoints": "0"
+          }
+        ],
+        "PlayerSalary": "10.00",
+        "TeamNameShort": "SA",
+        "TotalPoints": "12.00",
+        "PlayerBattingStats": {
+
+        },
+        "PointCredits": "12.00",
+        "TopPlayer": "No",
+        "PlayerPosition": "Player"
+      }
+    ],
+    "TotalPoints": 417.5,
+    "TotalRecords": 11
+  }
+}

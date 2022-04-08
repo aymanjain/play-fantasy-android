@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_background_home">
+
+    <LinearLayout
+        android:id="@+id/no_matches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:text="There's no matches available now"
+            android:textColor="@color/warm_grey"
+            android:visibility="visible"
+            app:textfont="light" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="But Don't Worry"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            app:textfont="@string/semiBold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:src="@drawable/banner_d" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:text="We've matches in other sports"
+            android:textColor="@color/warm_grey"
+            android:visibility="visible"
+            app:textfont="light" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/matches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/series"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dimen_10dp"
+                android:text="@string/seriesByFilter"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone"
+                app:textfont="light" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/selectMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dimen_10dp"
+                android:text="@string/selectMatch"
+                android:textColor="@color/warm_grey"
+                android:visibility="gone"
+                app:textfont="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_date_frag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/list_item_matches" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+                <include
+                    layout="@layout/footer_layout"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/loader_layout"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

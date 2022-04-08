@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auction_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/header_background_home_page"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            android:elevation="@dimen/margin_5"
+            android:gravity="center"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_change_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toRightOf="@+id/iv_change_mode"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/submit_squad"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:textAllCaps="true"
+                    app:textfont="bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16dp">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_description"
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/create_captain_description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ag_list_item_title_txt_size"
+                app:rd_enable="false"
+
+                app:textfont="Lato-Bold.ttf" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_title"
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/create_captain_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ag_list_item_dsc_txt_size"
+                app:rd_enable="false"
+                app:textfont="Lato-Medium.ttf" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+
+            android:layout_weight="1"
+            android:background="@color/transparent_1"
+            tools:listitem="@layout/list_item_matches" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_next"
+            style="@style/default_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_auc_btn"
+            android:gravity="center"
+            android:padding="@dimen/auc_btn_padding"
+            android:text="@string/save_team"
+
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/auc_btn_txt_size"
+            app:textAllCaps="true"
+            app:textfont="@string/auc_btn_font"
+
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

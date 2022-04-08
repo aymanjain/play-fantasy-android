@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mw.eleven11.customView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:gravity="left"
+    android:text="@string/subject"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:textfont="normal"
+    android:drawableTint="@color/yellow"
+    app:drawableRightCompat="@drawable/ic_down"
+    android:textAlignment="inherit" />

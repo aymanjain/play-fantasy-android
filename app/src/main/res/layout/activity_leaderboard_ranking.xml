@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.leaderboardRanking.LeaderboardRankingActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="10dp" />
+
+    <com.mw.eleven11.customView.CustomTextView
+        android:id="@+id/ctv_select_series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:padding="@dimen/loading_container_padding"
+        android:text="@string/select_series"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/primary_txt_size"
+        app:textfont="light" />
+
+    <com.mw.eleven11.customView.CustomSpinner
+        android:id="@+id/spinner_series"
+        style="@style/mySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_toRightOf="@+id/ctv_select_series"
+        android:padding="@dimen/login_form_edt_padding"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave">
+
+    </com.mw.eleven11.customView.CustomSpinner>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctv_select_series"
+        android:background="@color/yellow"
+        android:orientation="horizontal">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/loading_container_padding"
+            android:text="@string/team"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:textfont="light" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/loading_container_padding"
+            android:text="@string/rank"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:textfont="light" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

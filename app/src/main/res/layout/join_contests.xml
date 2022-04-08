@@ -1,0 +1,518 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/joinContestLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shedow_button_background"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="visible">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="@string/confirmation"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/primary_txt_size"
+            app:rd_enable="true"
+            app:textAllCaps="true"
+            app:textfont="b" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avail_balance"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:textfont="r" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_usable_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/app_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:drawableLeftCompat="@drawable/ic_rupee"
+                app:rd_enable="false"
+                app:textfont="r" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avail_cash_bonus"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:rd_enable="false"
+                app:textfont="r" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_avail_bonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/app_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:drawableLeftCompat="@drawable/ic_rupee"
+                app:textfont="r" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:background="@color/black" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available_chips"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:rd_enable="false"
+                app:textfont="light" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_usable_chips"
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@color/doneIconColor"
+                android:textSize="@dimen/text_medium"
+                app:rd_enable="false"
+                app:textfont="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_chips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <com.mw.eleven11.customView.CustomTextView
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maximum_chips_you_can_use"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:rd_enable="false"
+                app:textfont="light" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_max_chips"
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:drawableTint="@color/google"
+                android:text="@string/app_name"
+                android:textColor="@color/google"
+                android:textSize="@dimen/text_medium"
+                app:drawableLeftCompat="@drawable/ic_rupee"
+
+                app:rd_enable="false"
+                app:textfont="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/label_contest_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contest_fee"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:rd_enable="false"
+                app:textfont="r" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_bonus_contribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/label_contest_fee"
+                android:padding="@dimen/dimen_2dp"
+                android:text="(100% Bonus contibution)"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_txt_size"
+                app:rd_enable="false"
+                app:textfont="r" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_joining_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_txt_size"
+                app:drawableLeftCompat="@drawable/ic_rupee"
+                app:rd_enable="false"
+                app:textfont="b" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.mw.eleven11.customView.CustomTextView
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/cash_rs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                android:visibility="visible"
+                app:rd_enable="false"
+                app:textfont="light" />
+
+            <com.mw.eleven11.customView.CustomEditText
+                android:id="@+id/edt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_txt_form_bg_inner_gray"
+                android:enabled="false"
+                android:hint="@string/cash_rs"
+                android:imeActionLabel="Next"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:padding="@dimen/login_form_edt_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorControlNormal"
+                android:textSize="@dimen/edt_txt_size_normal"
+                android:visibility="visible"
+                app:hintfont="light"
+                app:textfont="light" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                style="@style/rippleStyleTransparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/chips"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:rd_enable="false"
+                app:textfont="light" />
+
+            <EditText
+                android:id="@+id/edt_chips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_txt_form_bg_inner"
+                android:hint="@string/chips"
+                android:imeActionLabel="Next"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/login_form_edt_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorControlNormal"
+                android:textSize="@dimen/edt_txt_size_normal" />
+
+        </LinearLayout>
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/tv2_terms_of_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/join_contest_message"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/secondary_txt_size"
+            android:visibility="visible"
+            app:rd_enable="false"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@drawable/yello_border"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/join_contest_message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            android:visibility="visible"
+            app:rd_enable="false"
+            app:textfont="light" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_join_contests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/button_solid_bg_theme_active"
+            android:gravity="center"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/join_contest"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:textAllCaps="true"
+
+
+            app:textfont="r"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addCashLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border_round_corner"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/available_balance_title"
+            style="@style/rippleStyleTransparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="@string/available_balance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_extra_large"
+            app:rd_enable="true"
+            app:textAllCaps="true"
+            app:textfont="bold" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ammountBalance"
+            style="@style/rippleStyleTransparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="₹40.12"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_small"
+            android:visibility="visible"
+            app:rd_enable="false"
+            app:textfont="light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/winnings"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/winnings"
+                    android:textColor="@color/google"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textAllCaps="true"
+                    app:textfont="light" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/winningsAmount"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="₹0.0"
+                    android:textColor="@color/google"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textfont="light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/unutilizedCash"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/unutilizedCash"
+                    android:textColor="@color/google"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textAllCaps="true"
+                    app:textfont="light" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/unutilizedCashAmount"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="₹0.0"
+                    android:textColor="@color/google"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textfont="light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/bonus"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/bonus"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textAllCaps="true"
+                    app:textfont="light" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/bonusAmount"
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="₹0.0"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_very_small"
+                    app:rd_enable="false"
+                    app:textfont="light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/addcash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/greenstyle_button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/addcash"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:rd_enable="true"
+            app:textfont="light" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cross"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_blue"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_cross_white" />
+
+
+    <include
+        layout="@layout/loader_layout"
+        android:visibility="gone"></include>
+
+</RelativeLayout>

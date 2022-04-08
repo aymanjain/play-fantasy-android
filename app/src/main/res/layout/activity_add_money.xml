@@ -1,0 +1,308 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize" />
+
+        <ScrollView
+            android:layout_below="@+id/include"
+            android:layout_above="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    style="@style/rippleStyleTransparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:text="@string/add_cash_to_your_account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium"
+                    app:rd_enable="false"
+                    app:textfont="@string/light" />
+
+
+                <com.mw.eleven11.customView.CustomEditText
+                    android:id="@+id/edt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black_bg"
+
+                    android:hint="@string/amount_to_add"
+                    android:imeOptions="actionDone"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/edt_txt_size_normal"
+                    app:drawableRightCompat="@drawable/ic_clear"
+                    app:hintfont="light"
+                    app:textfont="light" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_100"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_black_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="₹ 200"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:rd_enable="true"
+                        app:textfont="normal" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_200"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_black_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="₹ 400"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:rd_enable="true"
+                        app:textfont="normal" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_300"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_black_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="₹ 600"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:rd_enable="true"
+                        app:textfont="normal" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/haveACode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/dimen_10dp"
+                        android:text="@string/haveACode"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textsize_small"
+                        app:textfont="bold" />
+
+                </RelativeLayout>
+
+
+              <!--  <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_large"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:buttonTint="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@string/MONTSERRAT_REGULAR"
+                    android:text="Have a promo code."/>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_promocode"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomEditText
+                        android:id="@+id/promo_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_black_bg"
+                        android:hint="Enter Promo code"
+                        android:imeOptions="actionDone"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:padding="10dp"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/textColorHint"
+                        android:textSize="@dimen/edt_txt_size_normal"
+                        app:drawableRightCompat="@drawable/ic_clear"
+                        app:hintfont="light"
+                        app:textfont="light" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/applypromo"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:background="@drawable/greenstyle_button"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="APPLY"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/primary_txt_size"
+                        app:rd_enable="true"
+                        app:textAllCaps="true"
+                        app:textfont="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_promo_succses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/couponCode_ctv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@color/black"
+                        android:layout_margin="@dimen/margin_5"
+                        android:text="Coupon Code :"/>
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/cashbonus_ctv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:layout_margin="@dimen/margin_5"
+                        android:textColor="@color/black"
+                        android:text="Coupon Code :"/>
+
+
+                </LinearLayout>
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_add_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/button_color_primary"
+                    android:gravity="center"
+                   android:paddingVertical="@dimen/_8sdp"
+                    android:text="@string/add_cash"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:rd_enable="true"
+                    app:textAllCaps="true"
+                    app:textfont="normal" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/wireTransfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone"
+                    android:background="@drawable/border_white_bg_blue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/wireTransfer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:rd_enable="true"
+                    app:textfont="normal" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Offers"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dimen_50dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginBottom="@dimen/dimen_30dp"
+                        android:id="@+id/promocode_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <include
+                        layout="@layout/loader_layout"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30dp"
+            android:src="@drawable/payment_sponcer"
+            android:padding="@dimen/margin_5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_5"
+           />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

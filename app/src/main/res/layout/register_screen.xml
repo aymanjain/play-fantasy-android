@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    tools:context=".UI.loginRagisterModule.Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/header_background_home_page"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            android:gravity="center"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="18dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/menu"
+                    android:layout_toLeftOf="@+id/menu"
+                    android:layout_toEndOf="@+id/back"
+                    android:layout_toRightOf="@+id/back"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ragisterPlay"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    app:textfont="r" />
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="18dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_back" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:elevation="@dimen/elevation_4"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/loginWithfacebook"
+                                    android:layout_width="@dimen/_44sdp"
+                                    android:layout_height="@dimen/_44sdp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    app:cardBackgroundColor="#E5EDF7"
+                                    app:cardCornerRadius="@dimen/_25sdp"
+                                    app:cardMaxElevation="@dimen/_3sdp">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="18dp"
+                                        android:layout_margin="@dimen/_8sdp"
+                                        android:scaleType="fitXY"
+                                        android:tint="#9474CB"
+                                        app:srcCompat="@drawable/ic_facebook_icn" />
+                                </android.support.v7.widget.CardView>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="@dimen/_44sdp"
+                                    android:layout_height="@dimen/_44sdp"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    app:cardBackgroundColor="#E5EDF7"
+                                    app:cardCornerRadius="@dimen/_25sdp"
+                                    app:cardMaxElevation="@dimen/_3sdp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="@dimen/_8sdp"
+                                        android:scaleType="fitXY"
+                                        android:tint="#9474CB"
+                                        app:srcCompat="@drawable/ic_google_icn" />
+                                </android.support.v7.widget.CardView>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_20"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:layout_marginRight="@dimen/dimen_15dp"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_txt_form_bg"
+                                android:elevation="@dimen/elevation_4"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_5">
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/loginWithfacebook_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="@dimen/edit_box_drawable_padding_left"
+                                    android:gravity="center"
+                                    android:padding="@dimen/margin_5"
+                                    android:text="@string/FACEBOOK"
+                                    android:textColor="@color/facebook_color"
+
+                                    android:textSize="@dimen/text_small"
+                                    app:drawableLeftCompat="@drawable/ic_facekook"
+                                    app:textfont="@string/light" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:layout_marginRight="@dimen/margin_20"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_txt_form_bg"
+                                android:elevation="@dimen/elevation_4"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_5">
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:id="@+id/loginWithGoogle_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:drawablePadding="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="@string/GOOGLE"
+
+                                    android:textColor="@color/textColorLight"
+                                    android:textSize="@dimen/text_small"
+                                    app:drawableLeftCompat="@drawable/ic_google"
+                                    app:textfont="@string/light" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                        <com.mw.eleven11.customView.CustomInputEditText
+                            style="@style/SignUPCustomEditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/name"
+                            android:imeActionLabel="Next"
+                            android:imeOptions="actionNext"
+                            android:maxLength="50"
+                            android:padding="@dimen/login_form_edt_padding"
+                            android:textColor="@color/textColorLight"
+                            android:textColorHint="@color/secondary_txt_color"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textSize="@dimen/_10ssp"
+                            android:visibility="gone"
+                            app:et_dividerColor="@color/secondary_txt_color"
+                            app:et_labelTextColor="@color/secondary_txt_color"
+                            app:hintfont="r"
+                            app:textfont="r" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColorHint="@color/black">
+
+                                <com.mw.eleven11.customView.CustomEditText
+                                    android:id="@+id/mobileNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="@dimen/dimen_10dp"
+                                    android:layout_marginRight="@dimen/dimen_10dp"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/mobile_No"
+                                    android:imeActionLabel="Next"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="phone"
+                                    android:maxLength="50"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="@dimen/_12ssp"
+                                    app:et_dividerColor="@color/black"
+                                    app:et_dividerErrorColor="@color/black"
+                                    app:et_dividerHeight="0dp"
+                                    app:et_labelTextColor="@color/black"
+                                    app:et_labelTextSize="@dimen/_10ssp"
+                                    app:hintfont="r"
+                                    app:textfont="r" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:layout_marginRight="@dimen/_12sdp"
+                                android:background="@color/black"
+                                android:visibility="gone" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="@string/mobileNoInfo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6ssp"
+                                app:textfont="r" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/margin_20"
+                                android:paddingLeft="@dimen/dimen_10dp"
+                                android:text="@string/mobileNo"
+                                android:textColor="@color/secondary_txt_color"
+                                android:textSize="@dimen/text_very_small"
+                                android:visibility="gone"
+                                app:textfont="semibold" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColorHint="@color/black">
+
+                                <com.mw.eleven11.customView.CustomEditText
+                                    android:id="@+id/email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35sp"
+                                    android:layout_marginLeft="@dimen/dimen_10dp"
+                                    android:layout_marginRight="@dimen/dimen_10dp"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/email"
+                                    android:imeActionLabel="Next"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="50"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="@dimen/_12ssp"
+                                    app:et_dividerColor="@color/black"
+                                    app:et_dividerErrorColor="@color/black"
+                                    app:et_dividerHeight="0dp"
+                                    app:et_labelTextColor="@color/black"
+                                    app:et_labelTextSize="@dimen/_10ssp"
+                                    app:hintfont="r"
+                                    app:textfont="r" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:layout_marginRight="@dimen/_12sdp"
+                                android:background="@color/black"
+                                android:visibility="gone" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="@string/emailInfo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6ssp"
+                                app:textfont="r" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/margin_20"
+                                android:paddingLeft="@dimen/dimen_10dp"
+                                android:text="@string/mobileNo"
+                                android:textColor="@color/secondary_txt_color"
+                                android:textSize="@dimen/text_very_small"
+                                android:visibility="gone"
+                                app:textfont="semibold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_10dp"
+                                android:layout_marginRight="@dimen/dimen_10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".1"
+                                    android:textColorHint="@color/black">
+
+                                    <com.mw.eleven11.customView.CustomEditText
+                                        android:id="@+id/password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp"
+                                        android:backgroundTint="@color/black"
+                                        android:hint="@string/password"
+                                        android:imeActionLabel="Next"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textPassword"
+                                        android:maxLength="50"
+                                        android:paddingLeft="5dp"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/black"
+                                        android:textSize="@dimen/_12ssp"
+                                        app:et_dividerColor="@color/black"
+                                        app:et_dividerErrorColor="@color/black"
+                                        app:et_dividerHeight="0dp"
+                                        app:et_labelTextColor="@color/black"
+                                        app:et_labelTextSize="@dimen/_10ssp"
+                                        app:hintfont="r"
+                                        app:textfont="r" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <CheckBox
+                                    android:id="@+id/pass_check"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_weight=".9"
+                                    android:button="@drawable/password_toggle_drawable" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:layout_marginRight="@dimen/_12sdp"
+                                android:background="@color/black"
+                                android:visibility="gone" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_10dp"
+                                android:text="@string/passwordInfo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6ssp"
+                                app:textfont="r" />
+                        </LinearLayout>
+
+                        <com.mw.eleven11.customView.CustomInputEditText
+                            android:id="@+id/offerCode"
+                            style="@style/SignUPCustomEditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/et_underline_unselected"
+                            android:hint="@string/referralCode"
+                            android:imeActionLabel="Next"
+                            android:imeOptions="actionNext"
+                            android:maxLength="50"
+                            android:padding="1dp"
+                            android:textColor="@color/textColorLight"
+                            android:textColorHint="@color/secondary_txt_color"
+                            android:textSize="@dimen/textsize_small"
+                            android:visibility="gone"
+                            app:et_dividerColor="@color/secondary_txt_color"
+                            app:et_labelTextColor="@color/secondary_txt_color"
+                            app:hintfont="normal"
+                            app:textfont="normal" />
+
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/next"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_12sdp"
+                            android:background="@drawable/button_color_primary"
+                            android:elevation="@dimen/_2ssp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/register"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp"
+                            app:textfont="r" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp">
+
+                            <View
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@color/black" />
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_8sdp"
+                                android:paddingRight="@dimen/_8sdp"
+                                android:text="@string/or"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                app:textfont="r" />
+
+                        </RelativeLayout>
+
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/loginWithGoogle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_12sdp"
+                            app:cardBackgroundColor="@color/header_background_home_page"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:cardMaxElevation="@dimen/_4ssp"
+                            app:contentPadding="@dimen/_6sdp">
+
+
+                            <com.mw.eleven11.customView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawablePadding="@dimen/_16sdp"
+                                android:gravity="center"
+                                android:text="Login with Google"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/primary_txt_size"
+                                app:drawableLeftCompat="@drawable/ic_google_new"
+                                app:textfont="sb" />
+                        </android.support.v7.widget.CardView>
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:id="@+id/iAgree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="@string/iAgree"
+                            android:textColor="@color/secondary_txt_color"
+                            android:textSize="@dimen/_10ssp"
+                            app:textfont="r" />
+
+                    </LinearLayout>
+
+
+                    <!--   <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/margin_5"
+                           android:orientation="horizontal"
+                           android:weightSum="2">
+
+                           <com.mw.eleven11.customView.CustomTextView
+                               android:id="@+id/haveAReferralCode"
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="1.1"
+                               android:gravity="start"
+                               android:padding="@dimen/margin_5"
+                               android:text="@string/lable_have_refrral_code"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10ssp"
+                               android:visibility="visible"
+                               app:textfont="r" />
+
+                           <com.mw.eleven11.customView.CustomTextView
+                               android:id="@+id/register"
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_marginRight="@dimen/margin_5"
+                               android:layout_weight="0.9"
+                               android:gravity="end"
+                               android:padding="@dimen/margin_5"
+                               android:text="@string/lable_already_user"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10ssp"
+                               app:textfont="r" />
+
+
+                       </LinearLayout>-->
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        android:background="@drawable/shedow_red_background"
+                        android:elevation="@dimen/elevation_4"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="@string/haveARefrralCode"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_small"
+                        android:visibility="gone"
+                        app:textfont="@string/semiBold"
+
+                        />
+
+                    <com.mw.eleven11.customView.CustomTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        android:background="@drawable/shedow_red_background"
+                        android:elevation="@dimen/elevation_4"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="@string/alreadyUser"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_small"
+                        android:visibility="gone"
+                        app:textfont="@string/semiBold" />
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/haveAReferralCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:fontFamily="@font/roboto"
+            android:gravity="start"
+            android:padding="@dimen/margin_5"
+            android:text="@string/lable_have_refrral_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="visible"
+            app:textfont="r" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_weight="0.9"
+            android:fontFamily="@font/roboto"
+            android:gravity="end"
+            android:padding="@dimen/margin_5"
+            android:text="@string/lable_already_user"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:textfont="r" />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

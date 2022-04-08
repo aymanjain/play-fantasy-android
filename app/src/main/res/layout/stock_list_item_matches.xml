@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hi_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:background="@color/white"
+    app:cardElevation="@dimen/_12sdp"
+    app:cardMaxElevation="@dimen/_20sdp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivAmazing"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@+id/linout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bu" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Amazing 4"
+            android:textColor="@color/stock"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/ivAmazing"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="14 Hours : 22 mins"
+            android:textColor="@color/stock"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvHeader" />
+
+        <TextView
+            android:id="@+id/tvSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Select 5 Stocks From Nifty Midcap 50"
+            android:textColor="#888888"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/ivAmazing"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            app:cardBackgroundColor="#2648D1"
+            app:cardCornerRadius="@dimen/_16sdp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/linout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTime">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Play Now"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/linout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_background_home_page"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+                android:id="@+id/contest_joined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Super &amp; Free Game Inside!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:textfont="r" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--android:background="#B3FFFFFF"-->
+</android.support.v7.widget.CardView>

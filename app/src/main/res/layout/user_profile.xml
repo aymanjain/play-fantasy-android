@@ -1,0 +1,475 @@
+<!--suppress XmlUnusedNamespaceDeclaration -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/menu"
+                android:layout_toLeftOf="@+id/menu"
+                android:layout_toEndOf="@+id/back"
+                android:layout_toRightOf="@+id/back"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_play_logo_new" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0.1dp"
+                android:background="@drawable/banner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--<ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_92sdp"
+                        android:background="#33000000"
+                        android:visibility="gone" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/rlPicRoot"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_16sdp">
+
+                        <com.mw.eleven11.customView.CustomImageView
+                            android:id="@+id/civPic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:placeholderImage="@drawable/ic_user"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:roundAsCircle="true" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/circle"
+                            app:srcCompat="@drawable/ic_add_button" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_16sdp"
+                        android:orientation="horizontal">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Team Name : "
+                            android:textColor="@color/white_dark"
+                            android:textSize="@dimen/secondary_txt_size6"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/ctvTeamName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="brh2ym"
+                            android:textColor="@color/white_dark"
+                            android:textSize="@dimen/secondary_txt_size6"
+                            app:textfont="r" />
+
+                        <ImageButton
+                            android:id="@+id/ctvBtnEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/ic_edit_team" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--<android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash;<LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/ctvTeamName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="brh2ym"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Team Name"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/_8ssp"
+                            app:textfont="r" />
+                    </LinearLayout>&ndash;&gt;
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/ctvBtnEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Edit"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/secondary_txt_size"
+                        app:textfont="r" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>-->
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="Wallet"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/secondary_txt_size"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_wallet_info_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardMaxElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/ctv_deposited"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$0.00"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bf_Deposited"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/ctv_winnings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$0.00"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bf_Winnings"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp">
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:id="@+id/ctv_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$0.00"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/primary_txt_size"
+                            app:textfont="r" />
+
+                        <com.mw.eleven11.customView.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bf_Bonus"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/secondary_txt_size"
+                            app:textfont="r" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="More Option"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/secondary_txt_size"
+                android:textStyle="normal"
+                app:textfont="r" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_add_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_12ssp">
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Add Money"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/secondary_txt_size"
+                    android:textStyle="normal"
+                    app:drawableRightCompat="@drawable/ic_ms_chevron"
+                    app:textfont="r" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_withdraw_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_12ssp">
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Withdraw Cash"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/secondary_txt_size"
+                    android:textStyle="normal"
+                    app:drawableRightCompat="@drawable/ic_ms_chevron"
+                    app:textfont="r" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_recent_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_12ssp">
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Recent Transaction"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/secondary_txt_size"
+                    android:textStyle="normal"
+                    app:drawableRightCompat="@drawable/ic_ms_chevron"
+                    app:textfont="r" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_12ssp">
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Personal Details"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/secondary_txt_size"
+                    android:textStyle="normal"
+                    app:drawableRightCompat="@drawable/ic_ms_chevron"
+                    app:textfont="r" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="visible"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_12ssp">
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Change Password"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:drawableRightCompat="@drawable/ic_ms_chevron"
+                    app:textfont="r" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_12ssp">
+
+                <com.mw.eleven11.customView.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Logout"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:drawableRightCompat="@drawable/ic_ms_chevron"
+                    app:textfont="r" />
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include
+        layout="@layout/loader_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"></include>
+
+
+</RelativeLayout>

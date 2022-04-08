@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardMaxElevation="@dimen/_3sdp">
+
+        <include
+            layout="@layout/match_timer_info"
+            android:visibility="visible"></include>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/rl_bottom"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_margin="5dp"
+        tools:listitem="@layout/list_item_matches" />
+
+
+    <RelativeLayout
+        android:background="@color/default_background"
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_8sdp"
+        android:visibility="visible">
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_empty_bg_white_stroke_theme"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/create_teaam1"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/default_background"
+        android:id="@+id/ll_create_contest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_4sdp"
+        android:visibility="visible">
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_create_team"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_empty_bg_white_stroke_theme"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/create_team"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_create_contests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_solid_bg_theme_inactive"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/join_contest"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/ctv_switch_team"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_solid_bg_theme_inactive"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/switch_team"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:textfont="r" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/loader_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

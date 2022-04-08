@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_16dp"
+    android:layout_marginRight="@dimen/dimen_16dp"
+    android:background="@drawable/bg_auction_trans"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_marginRight="@dimen/dimen_10dp">
+
+                <com.mw.eleven11.customView.CustomImageView
+                    android:id="@+id/civ_pic"
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_50dp"
+
+                    app:backgroundImage="@color/white"
+                    app:placeholderImage="@drawable/player"
+                    app:roundAsCircle="true" />
+
+                <ImageView
+                    android:id="@+id/iv_indicator"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Upcoming"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textfont="normal" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="IND - BAT"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/secondary_txt_size"
+                    app:textAllCaps="true"
+                    app:textfont="normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_bid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Upcoming"
+                android:textColor="@color/white"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="normal" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100 Lacs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="normal" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/secondary_txt_size"
+                app:textfont="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

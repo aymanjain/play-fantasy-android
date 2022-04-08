@@ -1,0 +1,137 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/white_solid_with_two_cornor"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp">
+                <ImageView
+                    android:id="@+id/title"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:tint="@color/black"
+                    android:src="@drawable/eleven_logo_text"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                style="@style/rippleStyleTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="We are upgrading!"
+                android:paddingTop="@dimen/login_form_edt_padding"
+                android:paddingBottom="@dimen/login_form_edt_padding"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/primary_txt_size"
+                app:rd_enable="true"
+                app:textfont="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@color/light_grey"/>
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_message"
+                style="@style/rippleStyleTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/updateAvailableMessage_compulsory"
+                android:gravity="start"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_12sp"
+                app:rd_enable="true"
+                app:textfont="normal" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@color/light_grey"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/shadow_background"
+                    android:text="@string/cancel"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:rd_enable="true"
+                    app:textfont="normal" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/shedow_yellow_background"
+                    android:text="@string/update"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/primary_txt_size"
+                    app:rd_enable="true"
+                    app:textfont="normal" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_blue"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_cross" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

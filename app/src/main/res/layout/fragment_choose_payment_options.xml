@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetLayout"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/form_edt_txt_padding">
+
+        <LinearLayout
+            android:id="@+id/pud_paytm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/pic_upload_sheet_img_size"
+                android:layout_height="@dimen/pic_upload_sheet_img_size"
+                android:background="@drawable/paytm"
+                android:scaleType="center"
+                android:tint="@color/colorPrimaryDark" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paytm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/form_edt_txt_size"
+                app:textfont="light" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pud_razorPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pic_upload_sheet_img_size"
+                android:layout_height="@dimen/pic_upload_sheet_img_size"
+                android:background="@drawable/razor_pay_logo"
+                android:scaleType="center"
+                android:tint="@color/colorPrimaryDark" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/razorpay"
+                android:textColor="@color/black"
+                android:textSize="@dimen/form_edt_txt_size"
+                app:textfont="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pud_payu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pic_upload_sheet_img_size"
+                android:layout_height="@dimen/pic_upload_sheet_img_size"
+                android:background="@drawable/payu"
+                android:scaleType="center"
+                android:tint="@color/colorPrimaryDark" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayUmoney"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/form_edt_txt_size"
+                app:textfont="light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pud_bank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/pic_upload_sheet_img_size"
+                android:layout_height="@dimen/pic_upload_sheet_img_size"
+                android:scaleType="center"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_bank_building" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wireTransfer"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/form_edt_txt_size"
+                app:textfont="light" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/elevation_4"
+    android:layout_margin="@dimen/margin_5"
+    app:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:tint="@color/green"
+                app:srcCompat="@drawable/ic_giftbox"/>
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/coupon_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Get 5% bonus"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/green"
+                app:font="@string/bold"
+                android:padding="@dimen/dimen_10dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:tint="@color/green"
+                app:srcCompat="@drawable/ic_giftbox"/>
+
+
+        </LinearLayout>
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/coupon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/warm_grey"
+            android:padding="@dimen/margin_5"
+            android:fontFamily="@string/MONTSERRAT_REGULAR"
+            android:gravity="center"
+            android:text="CouponType" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/coupon_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/warm_grey"
+            android:fontFamily="@string/MONTSERRAT_REGULAR"
+            android:padding="@dimen/margin_5"
+            android:gravity="center"
+            android:text="CouponType" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/coupon_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/warm_grey"
+            android:fontFamily="@string/MONTSERRAT_REGULAR"
+            android:padding="@dimen/margin_5"
+            android:gravity="center"
+            android:text="CouponType" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/coupon_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/warm_grey"
+            android:fontFamily="@string/MONTSERRAT_REGULAR"
+            android:padding="@dimen/margin_5"
+            android:gravity="center"
+            android:text="CouponType" />
+
+        <com.mw.eleven11.customView.CustomTextView
+            android:id="@+id/applypromo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/greenstyle_button"
+            android:backgroundTint="@color/header_background_home_page"
+            android:gravity="center"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:padding="5dp"
+            android:text="APPLY"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_txt_size"
+            app:rd_enable="true"
+            app:textAllCaps="true"
+            app:textfont="normal" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</android.support.v7.widget.CardView>

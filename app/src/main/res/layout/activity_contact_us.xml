@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f7"
+    tools:context=".UI.outsideEvents.ContactUsActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:gravity="center"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:padding="18dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_back" />
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/menu"
+                android:layout_toLeftOf="@+id/menu"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_title_text_size"
+                android:visibility="visible"
+                app:textfont="@string/semiBold" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contact_us_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:tint="#868686"
+                        app:srcCompat="@drawable/ic_home" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="Brainbucks Games Private Limited"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:textfont="@string/semiBold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginBottom="@dimen/margin_5"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_35dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_gravity="center"
+                        android:padding="6dp"
+                        android:tint="#868686"
+                        app:srcCompat="@drawable/message" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="info@eleven11.com"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:textfont="@string/semiBold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:tint="#868686"
+                        app:srcCompat="@drawable/location" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="22-23-24, R S Bhandari Marg, Indore Madhya Pradesh, India, 452001"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:textfont="@string/semiBold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contact_us_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10dp"
+                android:weightSum="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <ImageView
+                    android:id="@+id/btn_fb"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/btn_whatsapp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/whatsup" />
+
+                <ImageView
+                    android:id="@+id/btn_twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/twi" />
+
+                <ImageView
+                    android:id="@+id/btn_inta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/insta" />
+
+                <ImageView
+                    android:id="@+id/btn_telegram"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/telegram" />
+
+            </LinearLayout>
+
+
+            <com.mw.eleven11.customView.CustomEditText
+                android:id="@+id/cet_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contact_us_bg"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:textColorHint="#868686"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:textfont="@string/semiBold" />
+
+            <com.mw.eleven11.customView.CustomEditText
+                android:id="@+id/cet_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contact_us_bg"
+                android:hint="Phone"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:textColorHint="#868686"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cet_email"
+                app:textfont="@string/semiBold" />
+
+
+            <com.mw.eleven11.customView.CustomSpinner
+                android:id="@+id/ctv_subject"
+                style="@style/auctionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="@dimen/dimen_10dp"
+                app:selectValue="Subject"
+
+                android:background="@drawable/contact_us_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cet_mobile"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+
+
+            <com.mw.eleven11.customView.CustomEditText
+                android:id="@+id/cet_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contact_us_bg"
+                android:gravity="start"
+                android:hint="Message"
+                android:lines="3"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:textColorHint="#868686"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctv_subject"
+                app:textfont="@string/semiBold" />
+
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_contact_us_bg"
+                android:text="Send Message"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cet_message"
+                app:textfont="@string/REGULAR" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

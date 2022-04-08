@@ -1,0 +1,1244 @@
+<resources>
+    <string name="app_name">Playtel</string>
+
+    <!--<string name="app_name">Eleven11</string>-->
+
+    <!--  <string name="facebook_app_id">2234319083495846</string>
+    <string name="fb_login_protocol_scheme">fb2234319083495846</string>-->
+
+    <string name="facebook_app_id">426400607971745</string>
+    <string name="fb_login_protocol_scheme">fb426400607971745</string>
+
+    <string name="home_navigation_drawer_open">Open navigation drawer</string>
+    <string name="home_navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="razor_pay">rzp_live_wqCD1qShLcXylf</string>
+
+    <string name="EXCEPTION_MESSAGE">Something went wrong, please try again later.</string>
+    <string name="NULL_DATA_MESSAGE">Null response</string>
+
+    <string name="info">INFO</string>
+    <string name="player">PLAYER</string>
+    <!--FONT-->
+    <string name="thin">thin</string>
+    <string name="bold">bold</string>
+    <string name="semiBold">semibold</string>
+    <string name="light">light</string>
+    <string name="ASAP">ASAP</string>
+    <string name="REGULAR">regular</string>
+    <string name="OSWALD">OSWALD</string>
+    <string name="OSWALD_BOLD">OSWALD_BOLD</string>
+    <string name="MONTSERRAT_REGULAR">MONTSERRAT_REGULAR</string>
+    <string name="MONTSERRAT_BOLD">MONTSERRAT_BOLD</string>
+
+    <!--Login-->
+    <string name="emailAddress">Email Address</string>
+    <string name="emailAddressormobile">Email / Mobile No.</string>
+    <string name="password">Password <font color='#FF0000'>*</font></string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forget_password">Forgot password?\n<u>Reset</u></string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="email_not_valid">Email address is not valid</string>
+    <string name="or">or</string>
+    <string name="login">Log In</string>
+    <string name="email">Email <font color='#FF0000'>*</font> </string>
+    <string name="loginWithFacebook">Login with Facebook</string>
+    <string name="loginWithGoogle">Login with Google</string>
+    <string name="dontHaveAccount">Don\'t have an account ? <b><font color='#34AF56'>Register</font></b></string>
+    <string name="network_error">There\'s no network connection right now. Please check your wifi connection or mobile data.</string>
+    <string name="GOOGLE">Google</string>
+    <string name="FACEBOOK">Facebook</string>
+    <string name="empty_email">Please enter email address.</string>
+    <string name="empty_inviteCode">Please enter Invite code.</string>
+
+    <string name="empty_emailMobile">Please enter mobile or email.</string>
+    <string name="invalid_emailMobile">Please enter valid mobile or email.</string>
+    <string name="empty_code">Please enter code.</string>
+    <string name="invalid_email">Please enter valid email address.</string>
+    <string name="invalid_team_name">Invalid team name.</string>
+    <string name="empty_device_token">Device token is empty.</string>
+    <string name="empty_device_type">Device type is empty.</string>
+    <string name="empty_device_id">Device id is empty.</string>
+    <string name="empty_is_social">Empty Is Social.</string>
+    <string name="empty_password">Please enter password.</string>
+    <string name="password_notMatch">Password not match.</string>
+    <string name="short_password">Password minimum length should be 6 characters.</string>
+    <string name="short_confirm_password">Confirm Password length should be 6 characters.</string>
+    <string name="please_select_date">Please select date.</string>
+    <string name="select_date">Select date</string>
+    <string name="select_terms_conditions">Please select Terms &amp; Conditions.</string>
+    <string name="empty_session">Your session is empty.</string>
+    <string name="empty_file">Empty File.</string>
+    <string name="invalid_file">Invalid File, Select other one.</string>
+    <string name="action_canceled">Sorry, you have cancelled action. Please try again.</string>
+    <string name="okay">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="Later">Later</string>
+
+    <string name="mobileNoInfo">You will receive an OTP for verification</string>
+    <string name="emailInfo">No spam. We promise! </string>
+    <string name="passwordInfo">Password must contain Minimum 6 character</string>
+
+    <string name="lable_forget_password">Forgot password?</string>
+    <string name="lable_reset_password">Reset</string>
+
+    <!--ErrorUtil(server side errors)-->
+
+    <!--<string name="pageNotFound">Page Not Found</string>-->
+    <string name="pageNotFound">Data Not Available</string>
+    <string name="OAuthException">OAuthException</string>
+    <string name="tryAgain">Problem while fetching data from server. Please try again later.</string>
+    <string name="invalidSession">Invalid user login session key.</string>
+    <string name="internalErrorTryAgain">Internal server error. Please try again later.</string>
+    <string name="poorConnection">Network Error!\nPoor connection or connection lost.</string>
+    <string name="noConnection">No internet connection.</string>
+    <string name="exception">Exception:</string>
+    <string name="try_again">Try Again</string>
+    <string name="loading">loading&#8230;</string>
+
+    <!--FACEBOOK-->
+    <string name="empty_social_id">Empty Social Id.</string>
+    <string name="empty_social_type">Empty Social Type.</string>
+
+    <!--SIGNUP-->
+    <string name="fullName">Full Name</string>
+    <string name="userName">Username</string>
+    <string name="mobile">Mobile</string>
+    <string name="dob">D.O.B</string>
+    <string name="signup">Sign Up</string>
+    <string name="alreadyUser">Already a user ? Log In</string>
+    <string name="alreadyaUser">Already a user ?\n<u>Log In</u></string>
+    <string name="notAMember">Not a member ? <b><u><font color='#FBC349'>Register</font></u></b></string>
+    <string name="agree_terms_and_conditions">I agree to Eleven11 <b><u><font color='#727272'>T&amp;C\'s</font></u></b></string>
+    <string name="beingAuser"> New Register</string>
+    <!--    <string name="beingAuser">Not an user? <u>Sign up</u></string>-->
+    <string name="please_accept_terms_and_conditions">Please accept Terms &amp; Conditions.</string>
+    <string name="empty_full_name">Please enter full name.</string>
+    <string name="empty_username">Please enter Username.</string>
+    <string name="empty_name">Please enter name.</string>
+    <string name="empty_pan">Please enter PAN number.</string>
+    <string name="empty_aadhar">Please enter Aadhaar number.</string>
+    <string name="empty_account">Please enter account number.</string>
+    <string name="empty_ifsc">Please enter IFSC code.</string>
+    <string name="empty_bank">Please enter bank name.</string>
+    <string name="empty_branch">Please enter branch name.</string>
+    <string name="empty_message">Please enter message.</string>
+    <string name="empty_subject">Please enter subject.</string>
+    <string name="empty_phone_number">Please enter mobile number.</string>
+    <string name="empty_otp">Please enter mobile OTP.</string>
+    <string name="select_dob">Please select D.O.B.</string>
+    <string name="invalid_phone_number">Please enter valid mobile number.</string>
+    <string name="invalid_aadhar">Please enter valid Aadhaar number.</string>
+
+    <!--RESET PASSWORD-->
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="empty_confirm_password">Please enter confirm password.</string>
+    <string name="pleaseCheckYourMail">Please check your mail or phone for verification code.</string>
+
+
+    <!--FORGOT PASSWORD-->
+    <string name="forgotYourPassword">Forgot Your Password?</string>
+    <string name="forgotPasswordText">Don\'t worry just fill in your email address or mobile no. and we\'ll help you reset your password</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="resetCode">Resend Code</string>
+
+    <!--RESET PASSWORD-->
+    <string name="empty_verification_code">Please enter verification code.</string>
+    <string name="invalid_verification_code">Invalid verification code.</string>
+    <string name="empty_new_password">Please enter new password.</string>
+    <string name="empty_old_password">Please enter old password.</string>
+    <string name="password_does_not_match">Password doesn\'t match.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="delete_notifications">Are you sure to delete all notifcations?</string>
+
+    <!--HOME NAVIGATION-->
+    <string name="home">HOME</string>
+    <string name="myContest">MY CONTESTS</string>
+    <string name="me">ME</string>
+    <string name="more">MORE</string>
+    <string name="myMatches">MY MATCHES</string>
+    <string name="profile">PROFILE</string>
+
+
+    <!--GAME OPTIONS-->
+    <string name="cricket">Cricket</string>
+    <string name="football">Football</string>
+    <string name="kabaddi">Kabaddi</string>
+    <string name="basketball">Stock Trade</string>
+    <string name="hockey">Hockey</string>
+
+    <!--HOME FRAGMENT-->
+    <string name="fixtures">Upcoming</string>
+    <string name="live">Live</string>
+    <string name="results">Results</string>
+    <string name="selectSport">Select your sports</string>
+    <string name="VS">VS</string>
+    <string name="vs">vs</string>
+    <string name="selectMatch">Select a Match</string>
+    <string name="matchCenter">Match Center</string>
+    <string name="in_progress">In Progress</string>
+    <string name="Zero_s">0s left</string>
+    <string name="completed">Completed</string>
+    <string name="contest_joined_1">%1$s Contest Joined</string>
+    <string name="empty_page">Page empty.</string>
+
+    <string name="empty_match_id">Page match id.</string>
+    <string name="empty_user_id">Page user id.</string>
+
+    <string name="toProgressText">To progress to a Level 4 Champion</string>
+    <string name="playFor">Play for</string>
+    <string name="join">Join</string>
+    <string name="cashContain">More cash contain</string>
+    <string name="unlockReward">Unlock these reward at level 10</string>
+    <string name="reward">Reward</string>
+    <string name="noRewardEarnd">No reward earned yet.</string>
+    <string name="noRewardEarndtext">More you play,the more you get. Join contest to be champion.</string>
+
+    <string name="yourAccount">Your Account</string>
+    <string name="unutilized">Unutilized</string>
+    <string name="deposited">Deposited</string>
+    <string name="winnings">Winnings</string>
+    <string name="cashBonus">Cash Bonus</string>
+    <string name="addcash">Add Cash</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="playingHistory">Playing History</string>
+    <string name="contest">Contest</string>
+    <string name="contests">Contests</string>
+    <string name="matches">Matches</string>
+    <string name="series">Series</string>
+    <string name="wines">Wins</string>
+    <string name="ranking">Ranking</string>
+    <string name="noRanking">No global ranking to show.</string>
+    <string name="friend">Friends</string>
+    <string name="nofriend">No Friends invite yet.</string>
+    <string name="inviteFriends">Invite friends &amp; get Rs.100</string>
+    <string name="inviteFriendsText">The more friends you invited,the more you both earn.</string>
+    <string name="personalDetail">Personal Detail</string>
+    <string name="fullProfile"><u>Full Profile</u></string>
+    <string name="changePassword">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="rs">Rs. </string>
+    <string name="contestWillOpenSoonMsg">Contests for this match will open soon. Stay tuned!</string>
+
+    <!--ADD ACCOUNT-->
+    <string name="myAccount">My Account</string>
+    <string name="totalBalance">TOTAL BALANCE</string>
+    <string name="amountToExpire">AMOUNT TO EXPIRE</string>
+    <string name="expireInfo">Money deposited by you that you can use to join any contests but can\'t withdraw.</string>
+    <string name="bonusToExpire">BONUS TO EXPIRE</string>
+    <string name="bonusInfo">Money that you can use to join any public contests</string>
+    <string name="winningInfo">Money that you can withdraw or re-use to join any contests.</string>
+    <string name="recentTrasactions">My Recent transactions</string>
+    <string name="withDrawalInProgress">Withdrawal in progress </string>
+    <string name="managePayment">Manage Payments</string>
+    <string name="addRemoveCard">Add/remove card,wallets etc.</string>
+    <string name="entryFeeInfo">Maximum usable cash bonus per match = 10% of entry fees.<font color='#000000'><b><u>Know more</u></b></font></string>
+    <string name="addcashCaps">ADD CASH</string>
+    <string name="logout_app">Are you sure, you want to logout?</string>
+
+    <string name="updateAvalable">New version available, Please update.</string>
+
+    <string name="pleaceVerifyEmailMobile">Please verify your email and mobile number to get cash bonus.</string>
+    <string name="pleaceVerifyEmail">Please verify your email.</string>
+    <string name="pleaceVerifyMobile">Please verify your mobile number.</string>
+
+    <!--Transaction-->
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="transaction_id_">Transaction ID:</string>
+    <string name="transaction_date">Transaction Date:</string>
+    <string name="transaction_status_">Transaction Status:</string>
+    <string name="team_name">Team Name:</string>
+
+    <!--CROP-->
+
+    <string name="file_provider_authority" translatable="false">com.mw.eleven11.fileprovider</string>
+    <string name="exception_message">Something went wrong, please try again later.</string>
+    <string name="chose_option">Chose option</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="storage">Storage</string>
+    <string name="grant_access_message">You need to grant access to</string>
+    <string name="permission_denied">Permission denied!</string>
+    <string name="camera_not_avail">Sorry, It seems your device don\'t have camera.</string>
+
+    <string name="crop__pick_error">No image sources available</string>
+
+    <!--Verify Account-->
+    <string name="verify_your_account">Verify Your Account</string>
+    <string name="mobile_and_email">Mobile &amp; Email</string>
+    <string name="mobile_and_email_step1">Mobile &amp; Email\n Step 1</string>
+    <string name="you_will_receive_otp_on_this_mobile_number">You will receive an OTP on this mobile number.</string>
+    <string name="you_will_receive_code_on_this_email_address">You will receive a code on this email address.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="send_code">Send Code</string>
+    <string name="verify_your_account_to_withdraw_winnings">(Verify your account to withdraw winnings)</string>
+    <string name="winnings_message">To transfer winnings to your bank accounts, please complete the steps mentioned below:</string>
+    <string name="winnings_messages">Please complete your Step 1 &amp; 2 :</string>
+    <string name="your_mobile_number_is_verified">Your mobile number is verified.</string>
+    <string name="your_email_address_is_verified">Your email address is verified.</string>
+    <string name="verify_your_email">Verify Your Email</string>
+
+    <string name="verify_your_mobile">Verify Your Mobile</string>
+    <string name="my_account_message">For deposits, withdrawals ,bonuses etc.</string>
+
+    <string name="pan">PAN</string>
+    <string name="pan_step2">PAN \n Step 2</string>
+    <string name="bank">BANK</string>
+    <string name="bank_step3">BANK \n Step 3</string>
+    <string name="bank_step4">AADHAAR\n Step 4</string>
+
+    <!--VERIFY OTP-->
+    <string name="enter_mobile_OTP">Enter Mobile OTP</string>
+    <string name="enter_email_OTP">Enter Email OTP</string>
+    <string name="check_inbox">Please check your mobile inbox for OTP.</string>
+    <string name="check_email_inbox">Please check your email inbox for OTP.</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify_code">Verify Code</string>
+
+
+    <!--Verify Account-->
+    <string name="enter_your_code8">Enter Your Code length should be 6</string>
+    <string name="enter_your_code">Enter Your Code</string>
+    <string name="check_mail_box">Please check your mail box for verification code.</string>
+    <string name="confirm_code">Confirm Code</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="code_verification">Code Verification</string>
+    <string name="state">State</string>
+
+
+    <!-- Verify Pan-->
+    <string name="verify_your_pan">Verify Your PAN</string>
+    <string name="name">Name</string>
+    <string name="pan_number">PAN number</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="upload_pan_card_image">Upload PAN card image</string>
+    <string name="all_fields_are_mandatory">*All fields are mandatory</string>
+    <string name="why_should_i_submit_my_pan_card">Why should i submit my PAN card?</string>
+    <string name="submit">Submit</string>
+    <string name="your_pan_number_is_verified">Your PAN is verified.</string>
+    <string name="your_adhar_number_is_verified">Your Aadhaar number is verified.</string>
+    <string name="your_adhar_number_is_pending">Your Aadhaar number request is pending.</string>
+    <string name="why_pan">Since The Eleven11 involves money related transactions, it is mandatory for us to verify your PAN card</string>
+    <string name="your_pan_number_request_is_in_pending">Your PAN request is in pending.</string>
+    <string name="select_state">Select state</string>
+    <string name="select_country">Select country</string>
+    <string name="empty_gender">Please select gender.</string>
+    <string name="empty_address">Please enter address.</string>
+    <string name="empty_country">Please select country.</string>
+    <string name="empty_state">Please select state.</string>
+    <string name="please_select_pan_picture">Please select PAN card image.</string>
+    <string name="please_select_bank_file">Please select Bank Related File.</string>
+    <string name="please_select_adhare">Please select Aadhaar card image.</string>
+    <string name="search">Search</string>
+
+    <!--Verify Bank-->
+    <string name="verify_your_bank">Verify Your Bank</string>
+    <string name="account_number">Account number</string>
+    <string name="IFSC_code">IFSC code</string>
+    <string name="bank_name">Bank name</string>
+    <string name="branch_name">Branch name :</string>
+    <string name="upload_bank_file">Upload bank related file.</string>
+    <string name="why_should_i_submit_my_bank_details">Why should i submit my bank details?</string>
+    <string name="verify_your_mobile_number">• Verify your mobile number</string>
+    <string name="verify_your_email_address">• Verify your email address</string>
+    <string name="verify_your_pan_card">• Verify your PAN card</string>
+    <string name="verify_your_aadhar_number">• Verify your Aadhaar number</string>
+    <string name="your_bank_details_is_verified">Your bank details is verified.</string>
+    <string name="why_bank">Since The Eleven11 involves money related transactions, it is mandatory for us to verify your Bank Details</string>
+    <string name="your_bank_details_is_in_pending">Your bank details is in pending.</string>
+    <string name="please_select_bank_document">Please select bank document.</string>
+
+
+    <!--ADD MONEY-->
+    <string name="amount_to_add">Amount to add</string>
+    <string name="add_cash_to_your_account">Add cash to your account.</string>
+    <string name="add_cash">Add Cash</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="err_amount_empty">Please enter a valid non zero amount</string>
+    <string name="empty_payumoney">Empty payUMoney response.</string>
+    <string name="cash_200">200</string>
+    <string name="cash_400">400</string>
+    <string name="cash_600">600</string>
+
+
+    <!--More-->
+    <string name="inviteFriendsMore">Invite Your Friends</string>
+    <string name="contestInviteCode">Contest Invite Code</string>
+    <string name="fantasyPointSystem">Cricket Point System</string>
+    <string name="fantasyFootballPointSystem">Football Point System</string>
+    <string name="fantasyKabaddiPointSystem">Kabaddi Point System</string>
+
+    <string name="fantasy_cricket">Fantasy Cricket</string>
+    <string name="how_to_play">How to Play Cricket</string>
+    <string name="how_to_play_auction">How to Play Fantasy Auction</string>
+    <string name="how_to_play_gc">How to Play Gully Fantasy</string>
+    <string name="blog">Blog</string>
+    <string name="how_to_play_football">How to Play Football</string>
+    <string name="how_to_play_kabaddi">How to Play Kabaddi</string>
+
+    <string name="help_desk">Help Desk</string>
+    <string name="about_us">About Us</string>
+    <string name="legality">Legality</string>
+    <string name="workWithUs">Work With Us</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="version">App version v.</string>
+    <string name="details">Details</string>
+    <string name="nav_helpdesk">Help Desk</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">T&amp;C</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!--Invite screen-->
+    <string name="kickOffYourFriend">Kick off your friend\'s Playtel journey!</string>
+    <string name="forEveryoneFriends">If you have a contest invite code \n enter it and join.</string>
+    <string name="howItWorks"><u>How it Works</u></string>
+    <string name="rulesOfFairPlay">Rules of FairPlay</string>
+    <string name="shareYourInviteCode">SHARE YOUR INVITE CODE</string>
+
+    <!--INVITE CODES-->
+    <string name="inviteCode">Invite Code</string>
+    <string name="joinContest">Join Contest</string>
+    <string name="workInProgress">Work on progress.</string>
+
+    <!--Contest-->
+    <string name="allContest">All Contests</string>
+    <string name="chooseFromVerity">Choose from a variety of contests.</string>
+    <string name="homeContest">Contest not found</string>
+    <string name="joinedContest">JOINED CONTEST</string>
+    <string name="myTeam">MY TEAM</string>
+
+    <string name="contestNotFound">Contest Not Found</string>
+
+    <string name="mega_contest">Mega Contest</string>
+    <string name="mega_contest_des">Get ready form mega winnings!</string>
+
+    <string name="hot_contest">Hot Contest</string>
+    <string name="hot_contest_des">Filling Fast. Join Now!</string>
+
+    <string name="contest_for_champions">Contest for Champions</string>
+    <string name="contest_for_champions_des">High Entry Fees,Intense Competition</string>
+
+    <string name="head_to_head">Head To Head Contest</string>
+    <string name="head_to_head_des">The Ultimate Face Off</string>
+
+    <string name="winner_takes_all">Winner Takes All</string>
+    <string name="winner_takes_all_des">Everything To Play For</string>
+
+    <string name="more_contest">More Contest</string>
+    <string name="more_contest_des">Heep Winning!</string>
+
+    <string name="practice_contest">Practice Contest</string>
+    <string name="practice_contest_cancel">Practice Contest <b><u><font color='#DA473D'>Canceled</font></u></b></string>
+    <string name="practice_contest_des">Hone Your Skills!</string>
+
+    <string name="total_winnings">TOTAL WINNINGS</string>
+    <string name="winners">Winners</string>
+    <string name="entry_fee">Entry</string>
+    <string name="joinCaps">JOIN</string>
+
+    <string name="only">Only</string>
+    <string name="spotLeft">spots left</string>
+    <string name="teams">Teams</string>
+    <string name="spot">Spots</string>
+
+    <string name="didNotFind">Didn\'t find what you ware looking for.</string>
+    <string name="showMeAllContest">Show me all contest.</string>
+    <string name="playWithfriends">Play with friends</string>
+    <string name="proveYourSkill">Prove your skill</string>
+    <string name="contestCode">Enter Contest Code</string>
+    <string name="contestCodeTitle">Contest code</string>
+    <string name="makeContest">Create a Contest</string>
+    <string name="moreContest">more contest</string>
+
+    <!--winners-->
+    <string name="close">Close</string>
+    <string name="winnings_breakup">Winnings Breakup</string>
+    <string name="note_winnings">Note: The actual prize money may be different then the price money mentioned above
+        if there is a tie for any of the winnings positions. Check FAQs for further details.
+        As per government regulations, a tax of 31.2% will be deducted if an individual wins more then Rs 10,000</string>
+
+    <string name="rank">Rank</string>
+    <string name="my_rank">My Rank</string>
+    <string name="price_unit">₹</string>
+    <string name="amount">Amount</string>
+    <string name="winning_amount">Winning Amount</string>
+    <string name="total_winning">Total winnings</string>
+    <string name="filters">Filters</string>
+    <string name="reset">Reset</string>
+    <string name="pay">Pay</string>
+    <string name="contest_size">Contest Size</string>
+    <string name="contest_size1">Contest Size<font color='#FF0000'> *</font></string>
+    <string name="contest_type">Contest type</string>
+    <string name="apply">Apply</string>
+
+    <!--Cash contest-->
+    <string name="confirmWinningTag">Confirm winning even if the contest remain unfilled</string>
+    <string name="joinMultipleTag">Join the multiple team</string>
+    <string name="joinThisContest">Join this contest</string>
+    <string name="nav_leaderboard">Leaderboard</string>
+    <string name="viewteam">View teams</string>
+    <string name="viewteamMsg">View the selected players of all teams after deadline. No team changes post that.</string>
+    <string name="joined">Joined</string>
+    <string name="joinplus">JOIN+</string>
+    <string name="invite">Invite</string>
+    <string name="view_team_fixture_msg">You can download teams only for running &amp; completed matches.</string>
+    <string name="joinedTeam">JOINED WITH</string>
+    <string name="switchTeam">SWITCH TEAM</string>
+
+    <!--CREATE CONTEST-->
+    <string name="create_your_contest">Create Your Contest</string>
+    <string name="create_team">Create Team</string>
+    <string name="league_name">Contest Name<font color='#FF0000'> *</font></string>
+    <string name="give_your_league_a_cool_name">Give your league a cool name</string>
+    <string name="total_winnings_amount">Total Winning Amount(₹)<font color='#FF0000'> *</font></string>
+    <string name="min_0_max_ten">Min 0 &amp; Max 10,000</string>
+    <string name="min_two_max_handrad_dn">Min 1 &amp; Max %1$s</string>
+    <string name="depends_on_contest_size">Depends on contest size</string>
+    <string name="points">Points</string>
+    <string name="no_players_selected_yet">No players selected yet.</string>
+    <string name="mode">Mode</string>
+    <string name="all_friends_to_join_multiple_teams">Allow friends to join with multiple teams.</string>
+    <string name="entry_fee_per_team">Entry Fee Per Team:</string>
+    <string name="entry_fee_message">Entry fee is calculated based on total price amount &amp; contest size.</string>
+    <string name="create_contest_and_invite_friends">Create contest</string>
+    <string name="free">Free</string>
+    <string name="Scored">Scored</string>
+    <string name="public_">Public</string>
+    <string name="my_teams">My Teams</string>
+    <string name="contest_joined">Contest Joined</string>
+    <string name="joined_contest">Joined Contest</string>
+    <string name="joined_contests">Joined Contests</string>
+    <string name="join_contest">Join Contest</string>
+    <string name="join_auction">Join Auction</string>
+    <string name="match_detail">Match Detail</string>
+    <string name="join_contests">Join Contests</string>
+    <string name="rejoin_contest">Rejoin Contest</string>
+    <string name="switch_team">Switch Team</string>
+    <string name="wicket_keeper">Wicket-Keeper</string>
+    <string name="batsmen">Batsmen</string>
+    <string name="all_rounders">All-Rounders</string>
+    <string name="bowlers">Bowlers</string>
+    <string name="pick_one_wc">Select 1 – 4 Wicket-Keeper</string>
+    <string name="pick_three_five_bat">Select 3 – 6 Batsmen</string>
+    <string name="pick_one_three_all">Select 1 – 4 All-Rounders</string>
+    <string name="pick_three_five_bowl">Select 3 – 6 Bowlers</string>
+    <string name="only_one_wicket_keeper_allowed">Only 1 Wicket-Keeper allowed.</string>
+    <string name="every_team_needs_atleast_one_wicket_keeper">Every team needs atleast 1 Wicket-Keeper.</string>
+    <string name="every_team_needs_atleast_one_all_rounders">Every team needs atleast 1 All-Rounders.</string>
+    <string name="every_team_needs_atleast_3_batsmen">Every team needs atleast 3 Batsmen.</string>
+    <string name="every_team_needs_atleast_3_bowlers">Every team needs atleast 3 Bowlers.</string>
+    <string name="max_5_batsmen_allowed">Max 5 Batsmen allowed.</string>
+    <string name="max_3_all_rounders_allowed">Max 3 All-Rounders allowed.</string>
+    <string name="max_5_bowlers_allowed">Max 5 Bowlers allowed.</string>
+    <string name="max_11_players_allowed">Max 11 players allowed.</string>
+    <string name="max_7_players_from_1_team">Max 7 players from 1 team.</string>
+    <string name="credit_left">Credits Left</string>
+    <string name="credits">Credits</string>
+    <string name="players">Players</string>
+    <string name="next">Next</string>
+    <string name="team_preview">Team Preview</string>
+    <string name="only_credit_left">Only %1$s credit left.</string>
+    <string name="save_team">Save Team</string>
+    <string name="create_captain_title">(C) gets 2x points &amp; (VC) gets 1.5x points</string>
+    <string name="create_captain_description">Choose Captain (C) &amp; Vice Captain (VC)</string>
+    <string name="create_c_vc">Choose C &amp; VC</string>
+    <string name="empty_league_name">Please enter league name.</string>
+    <string name="empty_contest_name">Please enter contest name.</string>
+    <string name="empty_total_winning_amount">Please enter total winnings amount.</string>
+    <string name="empty_total_winning_amount_invalid">Minimum 0 total winnings amount not allowed.</string>
+    <string name="empty_contest_sizes">Please enter contest sizes.</string>
+    <string name="empty_no_of_winners">Please enter no. of winners.</string>
+    <string name="all_winners_should_get_prize">All winners should get prize.</string>
+    <string name="percentage_error">Percent sum should be equal to 100%</string>
+    <string name="empty_contest_sizes_invalid">Minimum 2 contest sizes allowed.</string>
+    <string name="contests_for_this_match_will_open_soon">Contests for this match will open soon. Stay tuned!</string>
+
+
+    <!--MY TEAMS-->
+
+    <string name="my_team">My Teams</string>
+    <string name="create_team_1">Create Team %1$s</string>
+    <string name="create_teaam1">Create Team 1</string>
+    <string name="team_1">Team %1$s</string>
+    <string name="captain">Captain</string>
+    <string name="vice_captain">Vice Captain</string>
+    <string name="edit">Edit</string>
+    <string name="preview">Preview</string>
+    <string name="clone">Clone</string>
+
+    <string name="avail_balance">Avail Deposit</string>
+    <string name="avail_cash_bonus">Avail Cash Bonus</string>
+
+    <string name="available_balance">Available Balance</string>
+    <string name="available_bonus">Available Cash</string>
+    <string name="already_added">(Already added)</string>
+    <string name="create_contest">Create Contest</string>
+    <string name="scorecard">Scorecard</string>
+    <string name="available_chips">Available Chips</string>
+    <string name="maximum_chips_you_can_use">Maximum Chips you can use</string>
+    <string name="usable_balance">Usable Balance</string>
+    <string name="usable_chips">Usable Chips</string>
+    <string name="joining_amount">Joining Amount</string>
+    <string name="enter_invite_cod">Enter invite code <font color='#FF0000'>*</font></string>
+    <string name="invite_code_message">If you have a contest invite code, enter it and join</string>
+    <string name="join_contest_message">By Joining this contest, you accept Eleven11 T&amp;C</string>
+    <string name="contest_fee">Contest Fee</string>
+    <string name="contest_full">Contest full</string>
+    <string name="chips">Chip</string>
+    <string name="team">Team</string>
+
+    <string name="cash_rs">Cash(₹)</string>
+    <string name="teams_">Teams</string>
+    <string name="update">Update Now</string>
+    <string name="download_message">You can download &amp; view all other teams in this Contest</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="tc">T&amp;C</string>
+    <string name="view_players_points">View Players Points</string>
+    <string name="time_extended">The match is in new state, You need to refresh this match!</string>
+    <string name="please_wait_match_not_started_yed">Please wait, Match has not started yet!</string>
+    <string name="download_message_alert">You will be able to download teams after the deadline.</string>
+
+    <string name="crash_toast_text">The application is not responding. A report has been sent to the developer. Thanks.</string>
+
+    <!--All contest-->
+    <string name="sort">SORT :</string>
+    <string name="entry">Entry</string>
+
+    <!--PLAYERS DETAILS-->
+    <string name="batting">Batting</string>
+    <string name="bowling">Bowling</string>
+    <string name="player_details">Player Details</string>
+    <string name="born">Born</string>
+    <string name="style">Style</string>
+    <string name="played_for">Played For</string>
+
+    <string name="view_leaderboard">View Leaderboard</string>
+
+    <string name="no_of_winners">No. of Winners</string>
+
+    <!--CONTACT US-->
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="type">Type</string>
+    <string name="percent">Percent</string>
+    <string name="contest_canceled">Contest Cancelled</string>
+
+    <string name="rejoin">Rejoin</string>
+
+    <!--INVITE FRIENDS-->
+
+    <string name="invite_your_contest">Invite Your Friends</string>
+    <string name="invitation_code">Invitation Code</string>
+    <string name="invite_code">Invite Code</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="joined_this_contest">Joined This Contest</string>
+    <string name="share_code_message">Share the unique contest code anywhere</string>
+    <string name="share_your_invite_code_message">Share Your Invite Code</string>
+    <string name="friends_message">Get rewarded referral bonus till your friend play upto Rs 5000/-</string>
+    <string name="friends_message_long">If you love Eleven11 sports, it is very likely that your Friends are also equally passionate about this game. Funtush11.com offers a very lucrative referral program for it’s player. You earn instant Reward of Rs. 100/- and bonus to play for every cash contest that your friend plays upto Rs. 5000/- per friend.</string>
+
+    <!--Contest Detail-->
+    <string name="scorecardCap">SCORECARD</string>
+    <string name="viewPlayerStates">View Player Stats</string>
+    <string name="contestIscanceled">This contest is cancel</string>
+
+    <!--My Contest-->
+    <string name="joinedWith">JOINED WITH</string>
+    <string name="pointsCAP">POINTS</string>
+    <string name="pointsCAPs">Points</string>
+    <string name="rankCap">RANK</string>
+    <string name="viewLeaderBoard">View leaderboard</string>
+    <string name="joinContestUpcoming">Join contest in upcoming matches.</string>
+    <string name="noContestJoined">NO CONTEST JOINED</string>
+    <string name="dreamTeam">BEST TEAM</string>
+    <string name="tellYourFriemds">TELL YOUR FRIENDS</string>
+
+    <string name="pts">Pts</string>
+
+
+    <!--Change password activity-->
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="old_password">Old Password</string>
+    <string name="invalid_old_password">Please enter valid old Password</string>
+    <string name="invalid_new_password">Please enter valid  New Password</string>
+    <string name="invalid_confirm_password">Please enter valid Confirm Password</string>
+    <string name="your_pwd_should_be">Your password should be a minimum of 8 characters with at least 1 number or special character</string>
+
+    <!--Presonal Details-->
+    <string name="your_fav_team">Your Favourite Teams</string>
+    <string name="set">Set</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="verify">Verify</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="pincode">Pin code</string>
+    <string name="country">Country</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="allow_sms_notification">Allow SMS notifications</string>
+    <string name="label_change">Change</string>
+
+    <!--LeaderBoard ranking-->
+    <string name="select_series">Select Series</string>
+    <string name="select_match_series">Select Match Series</string>
+    <string name="leaderboard_ranking">Leaderboard Ranking</string>
+
+    <!--Team status-->
+    <string name="hash">#</string>
+    <string name="team_status">Team Status</string>
+
+    <!--player points activity-->
+    <string name="player_points">Player Points</string>
+    <string name="selected_by">Selected By </string>
+    <string name="top_players">Top Players</string>
+    <string name="your_players">Your Players</string>
+    <string name="notInTeam">Not in your team</string>
+
+    <!--Let's start-->
+    <string name="pickUpcomingMatches">Pick an Upcoming Match</string>
+    <string name="letsStart">Let\'s start</string>
+    <string name="selectmatches">Select Match</string>
+    <string name="j">Create Team</string>
+    <string name="defenders">Defenders</string>
+
+    <!--football create team-->
+    <string name="goal_keeper">Goal-Keeper</string>
+    <string name="midfielders">Midfielders</string>
+    <string name="forwards">Forwards</string>
+    <string name="pick_one_gc">Select 1 Goalkeeper</string>
+    <string name="pick_three_five_DEF">Select 3-5 Defenders</string>
+    <string name="pick_one_three_ST">Select 1-3 Forwards</string>
+    <string name="pick_three_five_MID">Select 3-5 Midfielders</string>
+    <string name="every_team_needs_atleast_one_goal_keeper">Every team needs at least 1 Goalkeeper.</string>
+
+
+    <string name="winners_small">Winners</string>
+
+
+    <string name="every_team_needs_atleast_one_forwards">Every team needs at least 1 Striker.</string>
+    <string name="every_team_needs_atleast_3_defenders">Every team needs at least 3 Defenders.</string>
+    <string name="every_team_needs_atleast_3_midfielders">Every team needs at least 3 Midfielders.</string>
+    <string name="max_5_batsmen_defenders">Max 5 Defenders allowed.</string>
+    <string name="max_3_forwards_allowed">Max 3 Forwards allowed.</string>
+    <string name="max_5_midfielders_allowed">Max 5 Midfielders allowed.</string>
+    <string name="only_one_goal_keeper">Only 1 Goal-Keeper allowed.</string>
+
+    <string name="max_5_defender_allowed">Max 5 Defenders allowed.</string>
+    <string name="max_3_forward_allowed">Max 3 Forwards allowed.</string>
+    <string name="max_5_midfielder_allowed">Max 5 Midfielders allowed.</string>
+    <string name="rider">Raider</string>
+
+    <!--kabaddi create team-->
+    <string name="pick_one_three_RD">Pick 1-3 Raider</string>
+    <string name="pick_two_four_DF">Pick 2-4 Defender</string>
+    <string name="pick_one_two_AR">Pick 1-2 All-rounder</string>
+    <string name="every_team_needs_atleast_one_RD">Every team needs atleast 1 Raider.</string>
+
+    <string name="every_team_needs_atleast_two_DF">Every team needs atleast 2 Defenders.</string>
+    <string name="every_team_needs_atleast_one_AR">Every team needs atleast 1 All-rounder.</string>
+    <string name="max_3_raider_allowed">Max 3 Raider allowed.</string>
+
+    <string name="max_4_defender_allowed">Max 4 Defender allowed.</string>
+    <string name="max_2_allrounder_allowed">Max 2 All-rounder allowed.</string>
+    <string name="max_5_players_from_1_team">Max 5 players from 1 team.</string>
+
+    <string name="max_7_players_allowed">Max 7 players allowed.</string>
+    <string name="total_points">Total Points</string>
+
+
+    <!--Player Activity-->
+    <string name="bats">Bats</string>
+    <string name="bowls">Bowls</string>
+    <string name="nationality">Nationality</string>
+    <string name="birthday">Birthday</string>
+    <string name="add_to_my_team">Add To My Team</string>
+    <string name="matchwise_fantacy_stats">MATCHWISE FANTASY STATS</string>
+    <string name="playing_history">Playing History</string>
+
+    <!--Player playing History-->
+    <string name="recent_performance">Recent Performance</string>
+    <string name="you">You</string>
+    <string name="actual">Actual</string>
+
+    <!--player points activity-->
+
+    <string name="event">Event</string>
+    <string name="starting11">Starting11</string>
+
+    <!--Points Breakup-->
+
+    <string name="runs">Runs</string>
+    <string name="s4">S4</string>
+    <string name="s6">S6</string>
+    <string name="fifty">50</string>
+    <string name="wickets">Wickets</string>
+    <string name="maiden">Maiden</string>
+    <string name="catchh">Catch</string>
+    <string name="run_out">Run Out</string>
+    <string name="duck">Duck</string>
+    <string name="wicket_bonus">Wicket Bonus</string>
+    <string name="economy_rate">Economy Rate</string>
+    <string name="strike_rate">Strike Rate</string>
+    <string name="substitute">Substitute</string>
+
+    <!--Points Breakup Kabaddi-->
+    <string name="raidTouch">Raid Touch</string>
+    <string name="raidBonus">Raid Bonus</string>
+    <string name="successFullTackle">Successful Tackle</string>
+    <string name="superTackle">Super Tackle</string>
+    <string name="pushingAllOut">Pushing All Out</string>
+    <string name="getingAllOut">Getting All Out</string>
+    <string name="unsuccessfulRaid">Unsuccessful Raid</string>
+    <string name="greenCard">Green Card</string>
+    <string name="yellowCard">Yellow Card</string>
+    <string name="redCard">Red Card</string>
+    <string name="total">Total</string>
+    <string name="minutesPlayed">Minutes Played</string>
+
+
+    <!--Points Breakup football-->
+    <string name="goals">Goals</string>
+    <string name="assists">Assists</string>
+    <string name="passesCompleted">Passes Completed</string>
+    <string name="shotsOntarget">Shots On Target</string>
+    <string name="goalSaved">Goal Saved</string>
+    <string name="penaltySaved">Penalty Saved</string>
+    <string name="penaltyMissed">Penalty Missed</string>
+    <string name="cleanSheet">Clean Sheet</string>
+    <string name="tacklesWon">Tackles Won</string>
+    <string name="goalConceded">Goal Conceded</string>
+    <string name="ownGoal">Own Goal</string>
+    <string name="earningThroughFriends">Earning Through Friends</string>
+
+    <!--Invited friends-->
+    <string name="toBeEarned">To Be Earned</string>
+    <string name="theMoreYourText">The more your friends play in cash contests , the more you earn(max ₹100 for each friends)</string>
+    <string name="friendsJoined">Friends joined!</string>
+    <string name="unutilizedCash">Unutilized-cash</string>
+
+    <string name="bonus">Bonus</string>
+    <string name="invitedFriends">Invited Friends</string>
+    <string name="selectYourTeamName">SELECT YOUR TEAM NAME</string>
+
+    <!--Change team name-->
+    <string name="changeTeamNameDescription">Keep this in mind\n
+    It\'s your identity. Your team name is what you will be known as on Eleven11. Choose wisely!\n\n
+    Choosing a name:\n
+    Minimum 8 characters. Space allowed. No special characters</string>
+
+    <string name="keepthisInMind">Keep this in mind</string>
+
+    <string name="ItsYourIdentity">It\'s your identity: </string>
+    <string name="yourTeamNameIs">Your Team Name is what you will be known as on Eleven11. Choose wisely!</string>
+    <string name="choosingName">Choosing a name:</string>
+    <string name="mininmum6Charecters">Minimum 8 characters. Space allowed. No special characters </string>
+    <string name="enteryourTeamName">Enter your team name eg. Team XYZ</string>
+    <string name="saveTeamName">SAVE TEAM NAME</string>
+    <string name="emptyTeamName">Please enter team name.</string>
+    <string name="champions">Champions</string>
+    <string name="international">International</string>
+    <string name="favoriteTeamText">Select team you support. This way we will make sure you don\'t miss your favourite teams matches.</string>
+    <string name="save">Save</string>
+    <string name="alreadygaveAccount">Already a user? Log in</string>
+
+    <!--startup Registration-->
+    <string name="alreadyuser">Already a user?\n <b>Log in</b></string>
+    <string name="haveARefrralCode">Have a referral code? \n<u>Enter code</u></string>
+    <string name="haveRefrralCode">Have a referral code?\n<u>Enter code</u></string>
+    <string name="emailMobile">Email ID or Mobile No</string>
+    <string name="notaMemeber">Don\'t have an account?\n<u>Register</u></string>
+    <string name="ragisterPlay">Register &amp; Play</string>
+    <string name="justStepAway">₹ 100 just a step away</string>
+    <string name="claimYourbonus">Claim your bonus on registration</string>
+    <string name="register">Register</string>
+    <string name="registerAndPlay">Register &amp; Play</string>
+    <string name="iAgree">By registering, I agree to Playtel games <u>T&amp;C</u></string>
+    <string name="mobileNo">Mobile No</string>
+    <string name="game_mode">What would you like to play?</string>
+    <string name="loginUsingMobileNumber">Login using mobile number</string>
+
+    <string name="enterTheOTPYouRecived">Enter the OTP you received.</string>
+    <string name="otpSendTo">OTP send to </string>
+    <string name="loginUsingEmail">Login using email</string>
+    <string name="accountNumber">Account Number</string>
+
+
+    <string name="lable_do_not_account">Don\'t have an account?</string>
+    <string name="label_do_not_register"><u>Register</u></string>
+
+    <!--Wire transfer-->
+    <string name="add_cash_from_your_bank_account">Add cash from your bank account.</string>
+    <string name="wireTransfer">Wire Transfer</string>
+    <string name="wireTransferTo">Wire transfer to :</string>
+    <string name="transaction_ID">Transaction ID </string>
+    <string name="pleaseEnterAccountNo">Please enter account number</string>
+
+    <string name="pleaseEnterTransectionId">Please enter transaction Id</string>
+    <string name="pleaseEnterAmount">Please enter amount</string>
+    <string name="pleaseSelectImage">Please select receipt image.</string>
+    <string name="IFSCCode">IFSC Code :</string>
+    <string name="bankName">Bank : STATE BANK OF INDIA</string>
+    <string name="transaction_receipt">Transaction receipt(Optional).</string>
+    <string name="chooseAvatar">CHOOSE YOUR AVATAR</string>
+
+    <!--User Avatar-->
+    <string name="seriesByFilter">Filter By Series</string>
+
+    <!--Series Filter-->
+    <string name="allSeries">All series</string>
+    <string name="offers">Offers</string>
+
+    <string name="offerCode">Offer code</string>
+    <string name="referralCode">Referral code <font color='#FF0000'>*</font></string>
+    <string name="copyCode">Copy</string>
+
+    <string name="applyCode">Apply code</string>
+    <string name="haveACode"><u>Have a code?</u></string>
+    <string name="transactionId">Transaction Id:</string>
+
+    <!--Resent Transaction-->
+    <string name="transactionDate">Transaction Date:</string>
+    <string name="teamName">Team Name:</string>
+    <string name="default_notification_channel_id" translatable="false">Updates</string>
+
+    <!--Notification-->
+    <string name="today">TODAY</string>
+    <string name="older">OLDER</string>
+    <string name="no_notification_for_today">No notification for today!</string>
+
+    <string name="no_older_notification">No older notifications!</string>
+    <string name="today_notifications">Today notifications</string>
+    <string name="older_notifications">Older notifications</string>
+    <string name="emailInvoice"> EMAIL INVOICE </string>
+
+    <string name="withdraw_your_winnings">Withdraw Your Winning Cash</string>
+
+    <!--WITHDRAWAL-->
+
+    <string name="please_enter_amount">Please Enter Amount</string>
+    <string name="minimum_amount_validation">Minimum Amount you can withdraw Rs.200</string>
+    <string name="ex_amount">Ex. ₹1000</string>
+    <string name="maximum_amount">Maximum ₹8,000</string>
+    <string name="please_enter_amount_">Please enter amount.</string>
+    <string name="please_enter_valid_amount_">Please enter valid amount.</string>
+    <string name="continue_">Continue</string>
+    <string name="please_select_from_date_first">Please select from date first.</string>
+    <string name="ex_code">Ex: FFG333FFG</string>
+    <string name="enterYourCode">Please enter your offer code.</string>
+
+
+    <!--validate offercode-->
+    <string name="offer_code_applied">Offer code applied.</string>
+    <string name="deYouWantApplyCode">Do you want apply this offer code?</string>
+    <string name="price_pool">Prize Pool</string>
+
+
+    <!--winning numbers-->
+    <string name="choose_total_winner">Choose total no. of winners</string>
+    <string name="recommended"><font color='#11B149'>(Recommended)</font></string>
+    <string name="newContest">New Contest</string>
+    <string name="updateAvailable">Update Available</string>
+
+    <!--Download version-->
+    <string name="updateAvailableMessage">Updated version available for your app, do you want do update?</string>
+    <string name="updateAvailableMessage_compulsory">Updated version available for your app, You need to compulsory install new version!</string>
+    <string name="android_auto_update_dialog_title">Discover new version</string>
+    <string name="android_auto_update_notify_ticker">Discover new version, click to upgrade</string>
+    <string name="android_auto_update_notify_content">Discover new version, click to upgrade</string>
+    <string name="android_auto_update_dialog_btn_download">download immediately</string>
+    <string name="android_auto_update_dialog_btn_cancel">talk about it later</string>
+    <string name="android_auto_update_toast_no_new_update">Already the latest version</string>
+    <string name="android_auto_update_download_progress">Downloading:%1$d%%</string>
+    <string name="android_auto_update_dialog_checking">Checking version</string>
+    <string name="razorpay">Razorpay</string>
+    <string name="payment_verification_message">Please verify your mobile and email before add cash.</string>
+    <string name="daily_fantasy">Daily Fantasy</string>
+
+    <string name="auction">Auction</string>
+    <string name="snack_draft">Gully Fantasy</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="er">ER</string>
+    <string name="avg">AVG</string>
+    <string name="wk">WK</string>
+    <string name="str">STR</string>
+    <string name="test">Test</string>
+    <string name="odi">ODI</string>
+    <string name="t20">T20</string>
+    <string name="order">Order</string>
+    <string name="infinity">\u221e Teams</string>
+    <string name="infinity_spots">\u221e Spots</string>
+
+
+    <!--Auction-->
+    <string name="assistant">Assistant</string>
+    <string name="squad">Squad</string>
+    <string name="my_squad">My Squad</string>
+    <string name="other_squad">Other\'s Squad</string>
+    <string name="budget">Budget</string>
+    <string name="budget_used">Budget Used</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="auction_back_alert">Are you sure you want to leave?</string>
+    <string name="bid_history"> <u>Bid History</u></string>
+    <string name="enter_bid">Enter Your Bid</string>
+    <string name="draft_info_addPlayer">Complete list of all players competing in the match/tournament for which the contest is being played.</string>
+    <string name="join_draft">Join Draft</string>
+
+
+    <string name="safe">Safe</string>
+
+
+    <string name="advacnce">Advance</string>
+
+
+    <!--Draft-->
+    <string name="head_to_head_format">Head to Head</string>
+    <string name="league">League</string>
+    <string name="join_terms"><![CDATA[<i>( All prizes above or equal to Rs.10,000/- will subject to TDS )</i>]]></string>
+    <string name="advance_term">League is locked 40 minutes before the actual Match time.</string>
+    <string name="safe_term">League is locked 2 minutes before the actual Match time.</string>
+    <string name="advance_termforjoin">Teams are locked in 40 mins before the official start time of that particular match, with no changes allowed after the lock-in time has happened.</string>
+    <string name="safe_termforjoin">Teams are locked in at the official start time of that particular match, with users able to make the necessary changes even after the toss.</string>
+    <string name="safe_join_title">Are you sure you want to join safe play contest?</string>
+    <string name="advance_join_title">Are you sure you want to join advance play contest?</string>
+    <string name="for_any_concerns_suggestions_or_compliments_please_contact_us_at">For any concerns, suggestions or compliments, please contact us at :</string>
+    <string name="no_contest">Contests for this match will open soon. Stay tuned!</string>
+    <string name="balance">Balance</string>
+    <string name="max_size_4mb_formats_jpg_jpeg_png_only_we_don_t_accept_password_protected_docs">Max size 4MB. \nFormats - .jpg .jpeg .png only. \nWe don’t accept password-protected docs.</string>
+    <string name="sign_up_state_warning">Sorry, You are a resident of either Assam, Odisha, Sikkim, Nagaland or Telangana, such Participant will not be permitted to proceed to sign up.</string>
+    <string name="state_warning">Sorry! You are a resident of Assam/Odisha/Sikkim/Nagaland or Telangana. Paid games are not allowed for users from these states</string>
+    <string name="entry_fee_per_teamC">ENTRY FEE PER TEAM</string>
+    <string name="submit_squad">submit Squad</string>
+    <string name="share_via_mail">Share via Mail</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="your_earnings">Referral Earnings</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="share_with_nfriends_via_social">Share with \nFriends via Social</string>
+    <string-array name="steps_letstart">
+        <item>@string/selectmatches</item>
+        <item>@string/create_team</item>
+        <item>@string/joinContest</item>
+    </string-array>
+    <string-array name="bid_arrays">
+        <item>1 Lacs</item>
+        <item>2 Lacs</item>
+        <item>3 Lacs</item>
+        <item>4 Lacs</item>
+        <item>5 Lacs</item>
+        <item>6 Lacs</item>
+        <item>7 Lacs</item>
+        <item>8 Lacs</item>
+        <item>9 Lacs</item>
+        <item>10 Lacs</item>
+        <item>20 Lacs</item>
+        <item>30 Lacs</item>
+        <item>40 Lacs</item>
+        <item>50 Lacs</item>
+        <item>60 Lacs</item>
+        <item>70 Lacs</item>
+        <item>80 Lacs</item>
+        <item>90 Lacs</item>
+        <item>1 Crs</item>
+        <item>2 Crs</item>
+        <item>3 Crs</item>
+        <item>4 Crs</item>
+        <item>5 Crs</item>
+        <item>6 Crs</item>
+        <item>7 Crs</item>
+        <item>8 Crs</item>
+        <item>9 Crs</item>
+        <item>10 Crs</item>
+        <item>20 Crs</item>
+        <item>30 Crs</item>
+        <item>40 Crs</item>
+        <item>50 Crs</item>
+        <item>60 Crs</item>
+        <item>70 Crs</item>
+        <item>80 Crs</item>
+        <item>90 Crs</item>
+        <item>100 Crs</item>
+    </string-array>
+
+
+    <string-array name="bid_arrays_assistant">
+        <item>Select</item>
+        <item>1 Lacs</item>
+        <item>2 Lacs</item>
+        <item>3 Lacs</item>
+        <item>4 Lacs</item>
+        <item>5 Lacs</item>
+        <item>6 Lacs</item>
+        <item>7 Lacs</item>
+        <item>8 Lacs</item>
+        <item>9 Lacs</item>
+        <item>10 Lacs</item>
+        <item>20 Lacs</item>
+        <item>30 Lacs</item>
+        <item>40 Lacs</item>
+        <item>50 Lacs</item>
+        <item>60 Lacs</item>
+        <item>70 Lacs</item>
+        <item>80 Lacs</item>
+        <item>90 Lacs</item>
+        <item>1 Crs</item>
+        <item>2 Crs</item>
+        <item>3 Crs</item>
+        <item>4 Crs</item>
+        <item>5 Crs</item>
+        <item>6 Crs</item>
+        <item>7 Crs</item>
+        <item>8 Crs</item>
+        <item>9 Crs</item>
+        <item>10 Crs</item>
+        <item>20 Crs</item>
+        <item>30 Crs</item>
+        <item>40 Crs</item>
+        <item>50 Crs</item>
+        <item>60 Crs</item>
+        <item>70 Crs</item>
+        <item>80 Crs</item>
+        <item>90 Crs</item>
+        <item>100 Crs</item>
+    </string-array>
+    <string-array name="player_role">
+        <item>Select</item>
+        <item>Wicket Keeper</item>
+        <item>Batsman</item>
+        <item>Bowler</item>
+        <item>All Rounder</item>
+    </string-array>
+
+
+    <!--Draft-->
+
+
+    <string name="auc_btn_font">Lato-Black.ttf</string>
+    <string name="invite_amp_my_referrals"><![CDATA[Invite & My Referrals]]></string>
+
+
+    <string name="AuctionTime">Auction Time</string>
+    <string name="DraftTime">Draft Time</string>
+
+    <string name="Aadhaar_Verfication">Aadhaar Verification</string>
+    <string name="Verify_Your_Aadhar">Verify Your Aadhaar Card for Paytm withdraw</string>
+    <string name="Aadhar_Number">Aadhaar Number</string>
+    <string name="SUBMIT_DETAILS">SUBMIT DETAILS</string>
+    <string name="Why_should_Aadhar">Why should I submit my Aadhaar Card?</string>
+    <string name="aadhar_front">UPLOAD AADHAAR CARD\nFRONT IMAGE</string>
+    <string name="aadhar_back">UPLOAD AADHAAR CARD\nBACK IMAGE</string>
+    <string name="upload_aadhar_front">Upload Aadhaar card front image.</string>
+    <string name="upload_aadhar_back">Upload Aadhaar card back image.</string>
+    <string name="Next">Next</string>
+    <string name="Skip">Skip</string>
+
+
+    <!--NC-->
+
+    <string name="VERIFY">VERIFY</string>
+    <string name="WITHDRAW">WITHDRAW</string>
+    <string name="Sorry_Insufficient_winning_amount">Sorry, Insufficient winning amount.</string>
+    <string name="BANK_AADHAR_STEP_3">BANK\n Step 3</string>
+    <string name="Aadhaar_Verification">Aadhaar Verification</string>
+    <string name="Bank_Verification">Bank Verification</string>
+    <string name="Front_Image">Front Image</string>
+    <string name="Back_Image">Back Image</string>
+    <string name="UPLOAD_AADHAAR_IMAGE">UPLOAD \nAADHAAR IMAGE</string>
+    <string name="Last_Aadhaar_verification_request_rejected">Last Aadhaar verification request rejected</string>
+    <string name="Max_1000_dfs">Min : <font color='#99151515'>10</font> &amp; Max : <font color='#99151515'>1000</font></string>
+    <string name="min_two_max_handrad">Min  <font color='#99151515'>2</font>  &amp; Max  <font color='#99151515'>50</font> </string>
+
+
+    <string name="Max_1000">Max 10,000</string>
+    <string name="Private_Contest">Private Contest</string>
+    <string name="Contest_name">Contest name</string>
+    <string name="Give_your_league_a_cool_name">Give your league a cool name</string>
+    <string name="Draft_time">Draft time</string>
+    <string name="Time_on_which_you_want_to_play_draft">Time on which you want to play draft</string>
+    <string name="Total_winning_amount__">Total winning amount (₹)</string>
+    <string name="Min__">Min : </string>
+    <string name="Max__">&amp; Max : </string>
+    <string name="Size_of_contest">Size of contest</string>
+    <string name="Entry_Fee_Per_Team">Entry Fee Per Team : </string>
+    <string name="Entry_fee_is_calculated_based_on_total_price_amount_and_contest_size">Entry fee is calculated based on price amount &amp; contest size</string>
+    <string name="CREATE_CONTEST">CREATE CONTEST</string>
+    <string name="awesome">Awesome!</string>
+    <string name="welcome">Welcome to <font color='#000000'><b><u>Eleven11</u></b></font></string>
+    <string name="bravo">Bravo!</string>
+    <string name="manage_your_team_amp_auction"><![CDATA[Manage your team & auction.]]></string>
+    <string name="mange_team_draft"><![CDATA[Manage your team & Draft.]]></string>
+    <string-array name="colors">
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+        <item>#EEEEEE</item>
+    </string-array>
+
+    <string-array name="colors1">
+        <item>#cde0cc</item>
+        <item>#d1d1e9</item>
+        <item>#cecece</item>
+        <item>#efd6d9</item>
+        <item>#d8d6ef</item>
+        <item>#e9efd6</item>
+        <item>#d6efde</item>
+        <item>#d7d6ef</item>
+    </string-array>
+
+
+    <string name="Running">Running</string>
+    <string name="bf_PER_C_BY">% C BY</string>
+    <string name="bf_PER_VC_BY">% VC BY</string>
+    <string name="bf_Deposited">Deposited</string>
+    <string name="bf_Winnings">Winnings</string>
+    <string name="bf_Bonus">Bonus</string>
+
+    <string name="menu_wallet">Wallet</string>
+    <string name="menu_notification">Notification</string>
+    <string name="lable_lineups_out">Lineups Out</string>
+
+
+    <string name="lable_have_an_account">Don\'t have an account?\n<font color='#ed0a0a'><u>Register</u></font></string>
+
+
+    <string name="lable_have_rest_account">Forgot password?\n
+        <font color='#ed0a0a'><u>Reset</u></font></string>
+
+    <string name="lable_have_refrral_code">Have a referral code?\n
+        <font color='#ed0a0a'><u>Enter code</u></font></string>
+
+    <string name="lable_already_user">Already a user?\n
+        <font color='#ed0a0a'><u>Log In</u></font></string>
+
+    <string name="hint_email_test">Email ID or Mobile No <font color='#FF0000'>*</font></string>
+    <string name="mobile_No">Mobile No <font color='#FF0000'>*</font></string>
+    <string name="title_activity_stock_matches">StockMatchesActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.howToPlay.HowToPlayActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbHowToPlay"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/header_background_home_page"
+        android:gravity="center"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivBck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tvHowToPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_toEndOf="@id/ivBck"
+                android:text="How To Play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/eleven_small" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/cricket_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/football_small" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/football_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/auction_fsl" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/auction_fsl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/auction_fsl" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/auction_fsl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/ivBanner9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/auction_fsl" />
+
+        <ImageView
+            android:id="@+id/ivBanner10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/auction_fsl" />
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.verifyEmail.VeriyOtpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/header_background_home_page"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            android:gravity="center"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="18dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/menu"
+                    android:layout_toLeftOf="@+id/menu"
+                    android:layout_toEndOf="@+id/back"
+                    android:layout_toRightOf="@+id/back"
+                    android:text="@string/verify"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/_16ssp"
+                    app:textfont="@string/bold" />
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="18dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_back" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linout"
+            android:layout_below="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/element_margin_top"
+                    android:layout_marginRight="@dimen/element_margin_top"
+                    android:layout_marginTop="@dimen/form_margin_top"
+                    android:background="@drawable/login_form_bg_inner"
+                    android:orientation="vertical">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_your_code"
+                        android:gravity="center"
+                        app:textfont="light"
+                        android:textColor="@color/secondary_txt_color"
+
+                        android:textSize="@dimen/text_medium"/>
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pleaseCheckYourMail"
+                        android:gravity="center"
+                        app:textfont="light"
+                        android:textColor="@color/secondary_txt_color"
+                        android:layout_marginTop="@dimen/element_margin_top"
+                        android:textSize="@dimen/text_medium"/>
+                    <com.mw.eleven11.customView.CustomPinView
+                        android:id="@+id/pinView"
+                        style="@style/PinWidget.PinView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:hint=""
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/secondary_txt_color"
+                        android:textSize="18sp"
+                        app:borderColor="@color/black"
+                        app:borderWidth="1dp"
+                        app:itemCount="6"
+                        app:itemSize="45dp"
+                        app:itemSpacing="5dp"
+                        app:itemRadius="4dp"  />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/submit_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/element_margin_top"
+                        android:background="@drawable/button_color_primary"
+                        android:gravity="center"
+                        android:text="@string/verify"
+                        android:padding="@dimen/dimen_10dp"
+                        app:textfont="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium"
+                        android:elevation="@dimen/elevation_4"/>
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/resendCode_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/element_margin_top"
+                        android:background="@drawable/button_color_primary"
+                        android:gravity="center"
+                        android:text="@string/resetCode"
+                        android:padding="@dimen/dimen_10dp"
+                        app:textfont="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium"
+                        android:elevation="@dimen/elevation_4"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

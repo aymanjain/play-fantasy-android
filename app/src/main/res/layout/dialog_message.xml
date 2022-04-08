@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+
+    <com.mw.eleven11.customView.CustomTextView
+        android:id="@+id/dm_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="10"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dialog_title_txt_size"
+        app:textfont="bold" />
+
+
+
+
+    <View
+        android:id="@+id/upper_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <com.mw.eleven11.customView.CustomTextView
+        android:id="@+id/dm_okay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/okay"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/primary_txt_size"
+        app:textfont="bold" />
+
+
+
+</LinearLayout>

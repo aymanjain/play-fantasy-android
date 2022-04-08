@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.stockTrade.fragment.UpcomingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/cvBull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                app:cardBackgroundColor="#2648D1"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="@dimen/_8sdp"
+                app:cardMaxElevation="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginVertical="@dimen/_8sdp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_bu" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Bull 5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Select 5 Stocks From Bull 50"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/textView16"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        app:cardElevation="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView16">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingHorizontal="@dimen/_14sdp"
+                            android:paddingVertical="@dimen/_4sdp"
+                            android:text="Play Now"
+                            android:textColor="#2648D1"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:id="@+id/view11"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/white"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Type"
+                        android:textColor="#FFF0B0"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toStartOf="@+id/tvEntry"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+                    <TextView
+                        android:id="@+id/tvEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Entry Fee"
+                        android:textColor="#FFF0B0"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toStartOf="@+id/tvPrizePool"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvType"
+                        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrizePool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Prize Pool"
+                        android:textColor="#FFF0B0"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvEntry"
+                        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+                    <TextView
+                        android:id="@+id/tvFree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Free"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvType"
+                        app:layout_constraintStart_toStartOf="@+id/tvType"
+                        app:layout_constraintTop_toBottomOf="@+id/tvType" />
+
+                    <TextView
+                        android:id="@+id/tvFee1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="0"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvEntry"
+                        app:layout_constraintStart_toStartOf="@+id/tvEntry"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEntry" />
+
+                    <TextView
+                        android:id="@+id/tvPool1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="200"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrizePool"
+                        app:layout_constraintStart_toStartOf="@+id/tvPrizePool"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPrizePool" />
+
+                    <TextView
+                        android:id="@+id/tvPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Paid"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvType"
+                        app:layout_constraintStart_toStartOf="@+id/tvType"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFree" />
+
+                    <TextView
+                        android:id="@+id/tvFee2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Free"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvType"
+                        app:layout_constraintStart_toStartOf="@+id/tvType"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPaid" />
+
+                    <TextView
+                        android:id="@+id/tvFee3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="0"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvEntry"
+                        app:layout_constraintStart_toStartOf="@+id/tvEntry"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFee1" />
+
+                    <TextView
+                        android:id="@+id/tvFee4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvEntry"
+                        app:layout_constraintStart_toStartOf="@+id/tvEntry"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFee3" />
+
+                    <TextView
+                        android:id="@+id/tvPool2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="200"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrizePool"
+                        app:layout_constraintStart_toStartOf="@+id/tvPrizePool"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPool1" />
+
+                    <TextView
+                        android:id="@+id/tvPool3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="200"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrizePool"
+                        app:layout_constraintStart_toStartOf="@+id/tvPrizePool"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPool2" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/cvBear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                app:cardBackgroundColor="#F6CCCC"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="@dimen/_8sdp"
+                app:cardMaxElevation="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvBull">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginVertical="@dimen/_8sdp">
+
+                    <ImageView
+                        android:id="@+id/ivBrear"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_bu" />
+
+                    <TextView
+                        android:id="@+id/tvBear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Bear 11"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintStart_toEndOf="@+id/ivBrear"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvBearTitile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Make a Team of 11 Playtel Games"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/tvBear"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBear" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvPlayBear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#2648D1"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="8dp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvBear"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingHorizontal="@dimen/_14sdp"
+                            android:paddingVertical="@dimen/_4sdp"
+                            android:text="Play Now"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/white"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBearTitile" />
+
+                    <TextView
+                        android:id="@+id/tvTypeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Type"
+                        android:textColor="#2648D1"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toStartOf="@+id/tvEntryB"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                    <TextView
+                        android:id="@+id/tvEntryB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Entry Fee"
+                        android:textColor="#2648D1"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toStartOf="@+id/tvPrizePoolB"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvTypeB"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrizePoolB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Prize Pool"
+                        android:textColor="#2648D1"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvEntryB"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                    <TextView
+                        android:id="@+id/tvFreeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Free"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvTypeB"
+                        app:layout_constraintStart_toStartOf="@+id/tvTypeB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTypeB" />
+
+                    <TextView
+                        android:id="@+id/tvFee1B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvEntryB"
+                        app:layout_constraintStart_toStartOf="@+id/tvEntryB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEntryB" />
+
+                    <TextView
+                        android:id="@+id/tvPool1B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="200"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrizePoolB"
+                        app:layout_constraintStart_toStartOf="@+id/tvPrizePoolB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPrizePoolB" />
+
+                    <TextView
+                        android:id="@+id/tvPaidB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Paid"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvTypeB"
+                        app:layout_constraintStart_toStartOf="@+id/tvTypeB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFreeB" />
+
+                    <TextView
+                        android:id="@+id/tvFee2B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Free"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvTypeB"
+                        app:layout_constraintStart_toStartOf="@+id/tvTypeB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPaidB" />
+
+                    <TextView
+                        android:id="@+id/tvFee3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="0"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvEntryB"
+                        app:layout_constraintStart_toStartOf="@+id/tvEntryB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFee1B" />
+
+                    <TextView
+                        android:id="@+id/tvFee4B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="0"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvEntryB"
+                        app:layout_constraintStart_toStartOf="@+id/tvEntryB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFee3B" />
+
+                    <TextView
+                        android:id="@+id/tvPool2B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="200"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrizePoolB"
+                        app:layout_constraintStart_toStartOf="@+id/tvPrizePoolB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPool1B" />
+
+                    <TextView
+                        android:id="@+id/tvPool3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="200"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrizePoolB"
+                        app:layout_constraintStart_toStartOf="@+id/tvPrizePoolB"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPool2B" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.design.card.MaterialCardView>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

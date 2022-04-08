@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_start_screen_01"
+    tools:context=".UI.startup.StartupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/eleven_logo_text"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15dp">
+            <!-- android:background="#33711C83"-->
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white"
+                android:elevation="@dimen/_2ssp"
+                android:gravity="center"
+                app:fontFamily="@font/roboto"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:textfont="r"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="@string/beingAuser" />
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white"
+                android:elevation="@dimen/_2ssp"
+                android:gravity="center"
+                app:fontFamily="@font/roboto"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="@string/alreadygaveAccount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:textfont="r" />
+
+            <com.mw.eleven11.customView.CustomTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/shedow_button_background"
+                android:elevation="@dimen/elevation_4"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15dp"
+                android:text="@string/register"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_regular"
+                android:visibility="gone"
+                app:textfont="semibold" />
+
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+                android:id="@+id/letsStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shedow_button_background"
+                android:elevation="@dimen/elevation_4"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15dp"
+                android:text="@string/letsStart"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_regular"
+                android:visibility="gone"
+                app:textfont="semibold" />
+
+            <com.mw.eleven11.customView.RobotoRegularTextView
+                android:id="@+id/alreadyUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:background="@drawable/edit_txt_form_bg"
+                android:drawableTint="@color/drawbleColor"
+                android:elevation="@dimen/elevation_4"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15dp"
+                android:text="@string/alreadygaveAccount"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/textsize_small"
+                android:visibility="gone"
+                app:textfont="light" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/haveARefrralCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/elevation_4"
+                        app:fontFamily="@font/play_regular"
+                        android:text="@string/haveARefrralCode"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        app:textfont="r" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1">
+
+                    <com.mw.eleven11.customView.RobotoRegularTextView
+                        android:id="@+id/register1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/elevation_4"
+                        android:gravity="left"
+                        android:visibility="gone"
+                        android:text="@string/beingAuser"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        app:textfont="r"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

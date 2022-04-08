@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/header_background_home_page">
+
+    </solid>
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/header_background_home_page">
+
+    </stroke>
+
+
+    <corners android:radius="@dimen/_4sdp">
+
+    </corners>
+
+</shape>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.Fragments.VerifyAaadharFragment">
+
+    <ScrollView
+        android:id="@+id/sv_form_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.mw.eleven11.customView.CustomTextView
+                    android:id="@+id/ctv_error_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_verify_title_icon"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/Verify_Your_Aadhar"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp">
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_verify_aadhar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Aadhaar_Verfication"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:textfont="@string/MONTSERRAT_REGULAR" />
+
+
+                    <com.mw.eleven11.customView.CustomInputEditText
+                        android:id="@+id/edt_aadhar_no"
+
+                        style="@style/SignUPCustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_verify_aadhar"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:background="@drawable/rectangle_border"
+                        android:hint="@string/Aadhar_Number"
+                        android:imeActionLabel="Next"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:paddingLeft="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_2dp"
+                        android:paddingRight="@dimen/dimen_8dp"
+                        android:paddingBottom="@dimen/dimen_10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/edt_txt_size_normal"
+                        app:et_dividerColor="@android:color/transparent"
+                        app:et_labelTextColor="@color/black"
+                        app:hint_font="@string/MONTSERRAT_REGULAR"
+                        app:textfont="@string/MONTSERRAT_REGULAR" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_pics_root"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_aadhar_no"
+                        android:layout_marginTop="48dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <FrameLayout
+                            android:id="@+id/fl_pic_front_root"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/circle_aadhar"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    app:srcCompat="@drawable/ic_upload_aadhar" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dimen_8dp"
+                                    android:layout_marginRight="@dimen/dimen_8dp"
+                                    android:gravity="center"
+                                    android:text="@string/UPLOAD_AADHAAR_IMAGE"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            </LinearLayout>
+
+                            <com.mw.eleven11.customView.CustomImageView
+                                android:id="@+id/civ_front_img"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                app:actualImageScaleType="fitXY"
+                                app:image_type="square"
+                                app:roundAsCircle="true" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_pic_back_root"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/circle_aadhar"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    app:srcCompat="@drawable/ic_upload_aadhar" />
+
+                                <com.mw.eleven11.customView.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dimen_8dp"
+                                    android:layout_marginRight="@dimen/dimen_8dp"
+                                    android:gravity="center"
+                                    android:text="@string/UPLOAD_AADHAAR_IMAGE"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                            </LinearLayout>
+
+                            <com.mw.eleven11.customView.CustomImageView
+                                android:id="@+id/civ_back_img"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                app:actualImageScaleType="fitXY"
+                                app:image_type="square"
+                                app:roundAsCircle="true" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pic_label_root"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_pics_root"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="48dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Front_Image"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                        <com.mw.eleven11.customView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Back_Image"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:textfont="@string/MONTSERRAT_REGULAR" />
+                    </LinearLayout>
+
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_label_all_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_pic_label_root"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/margin_5"
+                        android:text="@string/all_fields_are_mandatory"
+                        android:textColor="@color/gray"
+                        android:textSize="10sp"
+                        app:textfont="@string/MONTSERRAT_REGULAR" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_btn_sumit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_label_all_field"
+                        android:background="@drawable/shedow_aadhar_background"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_12dp"
+                        android:text="@string/SUBMIT_DETAILS"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:textfont="@string/MONTSERRAT_BOLD" />
+
+                    <com.mw.eleven11.customView.CustomTextView
+                        android:id="@+id/ctv_label_why"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_btn_sumit"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/margin_5"
+                        android:text="@string/all_fields_are_mandatory"
+                        android:textColor="@color/gray"
+                        android:textSize="10sp"
+                        app:textfont="@string/MONTSERRAT_REGULAR" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/item_warning_bank"
+        android:visibility="gone"></include>
+
+
+    <include
+        layout="@layout/item_aadhar_verified"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/loader_layout"
+        android:visibility="gone"></include>
+
+
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_date_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/selectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select All"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/margin_20"
+                android:buttonTint="@color/black" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                tools:listitem="@layout/list_item_notifications" />
+
+            <include
+                layout="@layout/footer_layout"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@color/header_background_home_page">
+
+            <com.mw.eleven11.customView.CustomTextView
+                android:id="@+id/ctv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_green_bg_white"
+                android:text="DELETE"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/loader_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

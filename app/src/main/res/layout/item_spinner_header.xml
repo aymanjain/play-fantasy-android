@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+<app:au.com.carsalespro.Util.customView.CustomTextView
+    android:textColor="@color/primary_txt_color"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    app:textfont="normal"
+    android:drawableRight="@drawable/ic_down"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />-->
+
+
+<com.mw.eleven11.customView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableTint="@color/header_background_home_page"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:textAlignment="inherit"
+    android:textColor="@color/primary_text"
+    android:textSize="@dimen/primary_txt_size"
+    app:drawableRightCompat="@drawable/ic_down"
+    app:textfont="r" />

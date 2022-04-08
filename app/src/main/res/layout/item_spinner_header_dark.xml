@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mw.eleven11.customView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    app:drawableRightCompat="@drawable/ic_down_white"
+    app:textfont="light"
+    android:textSize="@dimen/text_small"
+    android:textColor="@color/white"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit" />

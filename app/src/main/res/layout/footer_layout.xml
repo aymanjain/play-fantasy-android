@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_lode_more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:visibility="gone"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    <ProgressBar
+        android:id="@+id/pb_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:indeterminateDrawable="@drawable/loader"/>
+    <TextView
+        android:id="@+id/tv_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/header_background_home_page"
+        android:gravity="center"
+        android:text="@string/loading"/>
+</LinearLayout>
